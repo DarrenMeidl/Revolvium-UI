@@ -5,12 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    #region Main Menu Functions
-    public void LoadMainMenu()
-    {
-        GameManager.InMainMenu = true;
-    }
-    #endregion
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -32,7 +26,6 @@ public class ButtonHandler : MonoBehaviour
     public void Resume()
     {
         Debug.Log("Game Resumed");
-        Time.timeScale = 1f;
         GameManager.GameIsPaused = false;
     }
     #endregion
@@ -41,6 +34,13 @@ public class ButtonHandler : MonoBehaviour
     public void LoadOptions()
     {
         GameManager.InOptionsMenu = true;
+    }
+    #endregion
+
+    #region Main Menu Functions
+    public void LoadMainMenu()
+    {
+        GameManager.InMainMenu = true;
     }
     #endregion
 }

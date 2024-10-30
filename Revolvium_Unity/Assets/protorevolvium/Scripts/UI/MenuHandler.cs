@@ -30,35 +30,44 @@ public class MenuHandler : MonoBehaviour
             optionsCanvas.SetActive(false);
             endLevelCanvas.SetActive(false); 
             playerHUDCanvas.SetActive(false);
+            Debug.Log("Main Menu");
         }
         // if we're not in the main menu or options menu
         else if (!GameManager.InMainMenu && !GameManager.InOptionsMenu)
         { 
             mainMenuCanvas.SetActive(false);
-            playerHUDCanvas.SetActive(true); 
+            playerHUDCanvas.SetActive(true);
+            Debug.Log("Not Main Menu, Not Options Menu");
         }
         // if we're in the options menu
         if (GameManager.InOptionsMenu)
         {
             optionsCanvas.SetActive(true);
+            playerHUDCanvas.SetActive(false);
+            mainMenuCanvas.SetActive(false);
+
+            Debug.Log("Options Menu");
         }
         else if (!GameManager.InOptionsMenu)
         {
             optionsCanvas.SetActive(false);
+            Debug.Log("Not Options Menu");
         }
         // if game is paused
         if (GameManager.GameIsPaused)
         {
             pauseCanvas.SetActive(true); 
             playerHUDCanvas.SetActive(false);
+            Debug.Log("Game Is Paused");
         }
         // if game is not paused
-        else if (!GameManager.GameIsPaused)
+        else if (!GameManager.GameIsPaused && !GameManager.InMainMenu)
         {
             pauseCanvas.SetActive(false); 
             playerHUDCanvas.SetActive(true); 
             endLevelCanvas.SetActive(false);
             optionsCanvas.SetActive(false);
+            Debug.Log("Game Not Paused, Not Main Menu");
         }
         // if level is finished
         if (GameManager.LevelIsFinished)
@@ -66,7 +75,8 @@ public class MenuHandler : MonoBehaviour
             optionsCanvas.SetActive(false);
             endLevelCanvas.SetActive(true); 
             pauseCanvas.SetActive(false); 
-            playerHUDCanvas.SetActive(false); 
+            playerHUDCanvas.SetActive(false);
+            Debug.Log("Level Finished");
         }
     }
 }

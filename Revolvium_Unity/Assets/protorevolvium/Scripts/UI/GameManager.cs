@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private bool canPause;
     void Awake()
     {
+        #region Setup
         if (Instance == null)
         {
             Instance = this;
@@ -25,16 +26,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        #endregion
 
-        SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Time.timeScale = 1f;
-        // if we're in a main menu, we can't pause
-        if (InMainMenu)
+        #region Perform Tasks Upon Awake
+        // if we're in a main menu, we can't access other menus
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
+            InMainMenu = true;
             canPause = false;
         }
         else
@@ -46,6 +44,32 @@ public class GameManager : MonoBehaviour
         GameIsPaused = false;
         // Game is not finished
         LevelIsFinished = false;
+        // Not in Options Menu
+        InOptionsMenu = false;
+        #endregion
+
+        SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // if we're in a main menu, we can't access other menus
+        if (scene.buildIndex == 0)
+        {
+            InMainMenu = true;
+            canPause = false;
+        }
+        else
+        { // if not, we must be in a level
+            InMainMenu = false;
+            canPause = true;
+        }
+        // Game is not paused
+        GameIsPaused = false;
+        // Game is not finished
+        LevelIsFinished = false;
+        // Not in Options Menu
+        InOptionsMenu = false;
     }
 
     private void Update()
@@ -58,12 +82,22 @@ public class GameManager : MonoBehaviour
         {
             if (GameIsPaused)
             { // if we press the pause button when we're already paused
-                // resume the game
+                Resume();
             }
             else
             {
-                // pause the game
+                Pause();
             }
         }
+    }
+
+    private void Resume()
+    {
+        GameIsPaused = false;
+    }
+
+    private void Pause()
+    {
+        GameIsPaused = true;
     }
 }
