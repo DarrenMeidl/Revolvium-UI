@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4939091879224446003}
   - component: {fileID: 8193475730060761157}
   - component: {fileID: 7203409078124347197}
+  - component: {fileID: 4095002438620170286}
   m_Layer: 0
   m_Name: level
   m_TagString: Untagged
@@ -54,6 +55,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74dca48c705a9ce4aa9dec32eb09fb0d, type: 2}
   currentRotationDirection: {fileID: 11400000, guid: e746954634f142f4a81c94d760c76cae, type: 2}
   canRotate: 1
+  evenDimensions: 0
 --- !u!114 &8193475730060761157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +114,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4095002438620170286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647176330651623519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfdd0b0ef3816747b7ea5883d203b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  w: 1
+  h: 1
+  d: 1
+  blocks: []
+  blockWidth: 1
