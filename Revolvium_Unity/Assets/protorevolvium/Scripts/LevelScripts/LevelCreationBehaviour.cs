@@ -5,26 +5,36 @@ using UnityEngine;
 public class LevelCreationBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private int w, h, d; // width, height, and depth of level
+    private levelCreationSettings creationSettings;
+    [ReadOnly, SerializeField]
+    private float offsetX, offsetY, offsetZ;
     [SerializeField]
-    private List<Transform> blocks;
-    [SerializeField]
-    private int blockWidth; // only width since blocks should fit into cubes, therefore the width, height, and depth would be the same
+    public List<Transform> blocks;
+
+    private void Start()
+    {
+        offsetX = (creationSettings.w % 2 == 0) ? 0.5f : 0; 
+        offsetY = (creationSettings.h % 2 == 0) ? 0.5f : 0; 
+        offsetZ = (creationSettings.d % 2 == 0) ? 0.5f : 0;
+        sortLevelBlocks();
+    }
+
+
 
     [ContextMenu("Sort Level Blocks")]
     void sortLevelBlocks()
     {
-        if(blocks.Count == w*h*d) {
+        if(blocks.Count == creationSettings.w * creationSettings.h * creationSettings.d) {
             int currentBlock = 0;
 
-            int wEnd = ((int)(w / 2));
-            int hEnd = ((int)(h / 2));
-            int dEnd = ((int)(d / 2));
+            int wEnd = creationSettings.w;
+            int hEnd = creationSettings.h;
+            int dEnd = creationSettings.d;
 
-            for (int x = -wEnd; x < wEnd; x++) {
-                for (int y = -hEnd; y < hEnd; y++) {
-                    for (int z = -dEnd; z < dEnd; z++) {
-                        blocks[currentBlock].position = new Vector3(x * blockWidth, y * blockWidth, z * blockWidth);
+            for (int x = 0; x < wEnd; x++) {
+                for (int y = 0; y < hEnd; y++) {
+                    for (int z =0; z < dEnd; z++) {
+                        blocks[currentBlock].position = new Vector3(x * creationSettings.blockWidth + offsetX, y * creationSettings.blockWidth + offsetY, z * creationSettings.blockWidth + offsetZ);
                         currentBlock++;
                     }
                 }
@@ -32,7 +42,7 @@ public class LevelCreationBehaviour : MonoBehaviour
         }
         else
         {
-            Debug.Log($"There are not the correct amount of level blocks in the list. Expected: {w*h*d}. Actual: {blocks.Count}");
+            Debug.Log($"There are not the correct amount of level blocks in the list. Expected: {creationSettings.w *creationSettings.h *creationSettings.d}. Actual: {blocks.Count}");
         }
     }
 
