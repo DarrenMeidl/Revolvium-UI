@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 284060677}
   - component: {fileID: 284060676}
   - component: {fileID: 284060680}
+  - component: {fileID: 284060681}
   m_Layer: 0
   m_Name: LevelTile
   m_TagString: Untagged
@@ -355,6 +356,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &284060681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284060675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a95ddbae023fb48800998c96dc4ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area: {fileID: 284060680}
+  needsCorrectOrientation: 1
+  transform: {fileID: 284060679}
+  enableRotation: {fileID: 11400000, guid: 1c68c8c983ef5f0499506272eac2097a, type: 2}
+  disableRotation: {fileID: 0}
 --- !u!1 &682525593
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +773,10 @@ PrefabInstance:
     - target: {fileID: 1783967904570181888, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783967904570181888, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
+      propertyPath: m_TagString
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 6571348351883040123, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
       propertyPath: m_LocalPosition.x

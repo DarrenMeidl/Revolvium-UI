@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - levelChunk
+  - player
   layers:
   - Default
   - TransparentFX
