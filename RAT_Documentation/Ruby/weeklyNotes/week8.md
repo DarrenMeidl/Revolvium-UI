@@ -5,7 +5,7 @@
 
 # Darren 
 - Func ui
-- Improve rig
+- Low poly models of key, lock, door, rotation tile
 
 # Jay
 - review youtube (i <3 game dev)
