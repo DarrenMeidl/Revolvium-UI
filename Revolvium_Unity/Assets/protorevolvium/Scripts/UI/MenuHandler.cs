@@ -12,17 +12,17 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private GameObject playerHUDCanvas;
     void Awake()
     { // we start in the main menu
-        pauseCanvas.SetActive(false);
+        /*pauseCanvas.SetActive(false);
         endLevelCanvas.SetActive(false);
         playerHUDCanvas.SetActive(false);
         optionsCanvas.SetActive(false);
-        mainMenuCanvas.SetActive(true);
+        mainMenuCanvas.SetActive(true);*/
     }
 
 
     void Update()
     {
-        // if we're in the main menu
+        /*// if we're in the main menu
         if (GameManager.InMainMenu)
         {
             mainMenuCanvas.SetActive(true);
@@ -77,6 +77,6 @@ public class MenuHandler : MonoBehaviour
             pauseCanvas.SetActive(false); 
             playerHUDCanvas.SetActive(false);
             Debug.Log("Level Finished");
-        }
+        }*/
     }
 }

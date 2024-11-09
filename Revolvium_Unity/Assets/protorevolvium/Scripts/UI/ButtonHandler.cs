@@ -8,7 +8,7 @@ public class ButtonHandler : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        GameManager.InMainMenu = false;
+        //GameManager.InMainMenu = false;
     }
     public void RestartLevel()
     {
@@ -43,4 +43,15 @@ public class ButtonHandler : MonoBehaviour
         GameManager.InMainMenu = true;
     }
     #endregion
+
+
+    public void OnClick_Menu1()
+    {
+        MenuManager.OpenMenu(Menu.MENU1, gameObject);
+    }
+
+    public void OnClick_Menu2()
+    {
+        MenuManager.OpenMenu(Menu.MENU2, gameObject);
+    }
 }
