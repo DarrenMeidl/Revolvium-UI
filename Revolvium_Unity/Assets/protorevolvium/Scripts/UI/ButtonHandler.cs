@@ -2,27 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+// Called MenuManager functions from: https://www.youtube.com/watch?v=MmsbM89SVbM&t=268s&ab_channel=Comp-3Interactive
 public class ButtonHandler : MonoBehaviour
 {
-    public void LoadNextLevel()
+    public void OnClick_LoadNextLevel()
     {
+        Debug.Log("NEXT LEVEL LOADING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //GameManager.InMainMenu = false;
+        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
-    public void RestartLevel()
+    public void OnClick_RestartLevel()
     {
+        Debug.Log("GAME RESTARTING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
 
-    public void Quit()
+    public void OnClick_Quit()
     {
-        Debug.Log("GAME QUIT");
+        Debug.Log("GAME QUITING...");
         Application.Quit(); // This will quit the game
     }
 
 
-    #region Pause Functions
+    #region Pause Menu Functions
     public void Resume()
     {
         Debug.Log("Game Resumed");
@@ -30,21 +33,21 @@ public class ButtonHandler : MonoBehaviour
     }
     #endregion
 
-    #region Options Funcitons
-    public void LoadOptions()
+    #region Options Menu Funcitons
+    public void OnClick_Options()
     {
-        GameManager.InOptionsMenu = true;
+        MenuManager.OpenMenu(Menu.OPTIONS, gameObject);
     }
     #endregion
 
     #region Main Menu Functions
-    public void LoadMainMenu()
+    public void OnClick_MainMenu()
     {
-        GameManager.InMainMenu = true;
+        MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
     }
     #endregion
 
-
+    #region Test Menu Functions
     public void OnClick_Menu1()
     {
         MenuManager.OpenMenu(Menu.MENU1, gameObject);
@@ -54,4 +57,5 @@ public class ButtonHandler : MonoBehaviour
     {
         MenuManager.OpenMenu(Menu.MENU2, gameObject);
     }
+    #endregion
 }

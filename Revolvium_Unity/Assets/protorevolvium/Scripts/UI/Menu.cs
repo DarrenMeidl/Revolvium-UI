@@ -5,5 +5,10 @@ using UnityEngine;
 public enum Menu
 {
     MENU1,
-    MENU2
+    MENU2,
+    TITLE_SCREEN,
+    PAUSE,
+    OPTIONS,
+    LEVEL_END,
+    PLAYER_HUD
 }
