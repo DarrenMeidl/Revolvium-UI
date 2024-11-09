@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 // Called MenuManager functions from: https://www.youtube.com/watch?v=MmsbM89SVbM&t=268s&ab_channel=Comp-3Interactive
 public class ButtonHandler : MonoBehaviour
 {
-    public void OnClick_LoadNextLevel()
+    #region Common Functions
+    public void OnClick_Level_Next()
     {
         Debug.Log("NEXT LEVEL LOADING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
-    public void OnClick_RestartLevel()
+    public void OnClick_Level_Restart()
     {
         Debug.Log("GAME RESTARTING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
+        gameObject.SetActive(false); // turn off this menu
     }
 
     public void OnClick_Quit()
@@ -23,13 +24,12 @@ public class ButtonHandler : MonoBehaviour
         Debug.Log("GAME QUITING...");
         Application.Quit(); // This will quit the game
     }
-
+    #endregion
 
     #region Pause Menu Functions
-    public void Resume()
+    public void OnClick_Resume()
     {
-        Debug.Log("Game Resumed");
-        GameManager.GameIsPaused = false;
+        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
     #endregion
 
@@ -56,6 +56,14 @@ public class ButtonHandler : MonoBehaviour
     public void OnClick_Menu2()
     {
         MenuManager.OpenMenu(Menu.MENU2, gameObject);
+    }
+    public void OnClick_Level_End()
+    {
+        MenuManager.OpenMenu(Menu.LEVEL_END, gameObject);
+    }
+    public void OnClick_Pause()
+    {
+        MenuManager.OpenMenu(Menu.PAUSE, gameObject);
     }
     #endregion
 }

@@ -5,25 +5,12 @@ using UnityEngine;
 public static class MenuManager
 {
     public static bool IsInitialized { get; private set; } // read anywhere, only set in this script
+  
     // Menu objects (panels)
     public static GameObject menu1, menu2, title_screen, pause, options, level_end, player_hud;
-    public static void Initialize()
-    {
-        GameObject canvas = GameObject.Find("Canvas");
-
-        menu1 = canvas.transform.Find("menu1").gameObject;
-        menu2 = canvas.transform.Find("menu2").gameObject;
-        title_screen = canvas.transform.Find("title_screen").gameObject;
-        pause = canvas.transform.Find("pause").gameObject;
-        options = canvas.transform.Find("optons").gameObject;
-        level_end = canvas.transform.Find("level_end").gameObject;
-        player_hud = canvas.transform.Find("player_hud").gameObject;
-
-        IsInitialized = true;
-    }
-
     public static void OpenMenu(Menu menu, GameObject callingMenu)
     {
+        
         // Initialize our menus
         if (!IsInitialized)
             Initialize();
@@ -52,7 +39,22 @@ public static class MenuManager
                 player_hud.SetActive(true);
                 break;
         }
-        // turn off the current menu
-        callingMenu.SetActive(false);  
+        // turn off the calling menu object (unless you're the GameManager object)
+        if (callingMenu != GameManager.Instance.gameObject)
+            callingMenu.SetActive(false);  
+    }
+    public static void Initialize()
+    {
+        GameObject canvas = GameObject.Find("Canvas");
+
+        menu1 = canvas.transform.Find("menu1").gameObject;
+        menu2 = canvas.transform.Find("menu2").gameObject;
+        title_screen = canvas.transform.Find("title_screen").gameObject;
+        pause = canvas.transform.Find("pause").gameObject;
+        options = canvas.transform.Find("options").gameObject;
+        level_end = canvas.transform.Find("level_end").gameObject;
+        player_hud = canvas.transform.Find("player_hud").gameObject;
+
+        IsInitialized = true;
     }
 }

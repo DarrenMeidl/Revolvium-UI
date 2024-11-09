@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         // if we're in a main menu, we can't access other menus
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
             canPause = false;
         }
         else
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
         // if we're in a main menu, we can't access other menus
         if (scene.buildIndex == 0)
         {
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
             canPause = false;
         }
         else
