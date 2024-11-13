@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ *  LEVEL CREATION BEHAVIOUR - STARTED BY AND WRITTEN BY RUBY
+ */
 public class LevelCreationBehaviour : MonoBehaviour
 {
     [SerializeField]

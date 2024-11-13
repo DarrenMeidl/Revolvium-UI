@@ -24,7 +24,7 @@ public class LevelController : MonoBehaviour
     public levelRotationDirection currentRotationDirection;
 
 
-    [SerializeField]
+    [SerializeField, ReadOnly]
     private bool canRotate;
 
     // will need to be improved
@@ -48,6 +48,7 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         currentRotationDirection = rotationDirections[0];
+        canRotate = false;
     }
 
     // Update is called once per frame

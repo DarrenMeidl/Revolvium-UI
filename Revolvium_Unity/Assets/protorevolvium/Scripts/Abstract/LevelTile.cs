@@ -20,11 +20,12 @@ public abstract class LevelTile : MonoBehaviour
     }
     protected abstract void interact();
 
-    private void OnTriggerEnter(Collider other)
-    {
-       if(other.tag == "player" && isCorrectlyOrientated())
+    private void OnTriggerStay(Collider other)
+    {//                                                                        change this
+       if(other.tag == "player" && isCorrectlyOrientated() && Input.GetKeyDown(KeyCode.E))
         {
             interact();
         } 
     }
+
 }
