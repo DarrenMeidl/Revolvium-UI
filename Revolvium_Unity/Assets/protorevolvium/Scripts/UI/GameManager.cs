@@ -58,35 +58,36 @@ public class GameManager : MonoBehaviour
         GameIsPaused = false;
     }
 
-    private void Update()
-    {
-        CheckPlayerInput();
-        Debug.Log("Game Paused -> "+GameIsPaused);
-    }
-    private void CheckPlayerInput()
-    {
-        if (Input.GetButtonDown("Pause") && canPause)
-        {
-            if (GameIsPaused)
-            { // if we press the pause button when we're already paused
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-    }
+    //private void Update()
+    //{
+    //    CheckPlayerInput();
+    //}
+    //private void CheckPlayerInput()
+    //{
+    //    if (Input.GetButtonDown("Pause") && canPause)
+    //    {
+    //        if (GameIsPaused)
+    //        { // if we press the pause button when we're already paused
+    //            Resume();
+    //        }
+    //        else
+    //        {
+    //            Pause();
+    //        }
+    //    }
+    //}
 
-    private void Resume()
-    {
-        GameIsPaused = false;
-        MenuManager.CloseMenu(Menu.PAUSE);
-    }
+    //private void Resume()
+    //{
+    //    GameIsPaused = false;
+    //    MenuManager.CloseMenu(Menu.PAUSE);
+    //    MenuManager.OpenMenu(Menu.PLAYER_HUD);
+    //}
 
-    private void Pause()
-    {
-        GameIsPaused = true;
-        MenuManager.OpenMenu(Menu.PAUSE);
-    }
+    //private void Pause()
+    //{
+    //    GameIsPaused = true;
+    //    MenuManager.OpenMenu(Menu.PAUSE);
+    //    MenuManager.CloseMenu(Menu.PLAYER_HUD);
+    //}
 }

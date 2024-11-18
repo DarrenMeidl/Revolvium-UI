@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/protorevolvium/Scenes/testScenes/MenusTest.unity
+    path: Assets/protorevolvium/Scenes/testScenes/UI_Test/MenusTest.unity
     guid: 45ad00178cfc9644aa982b5a8b1e6651
   - enabled: 1
-    path: Assets/protorevolvium/Scenes/testScenes/BlankLevel.unity
+    path: Assets/protorevolvium/Scenes/testScenes/UI_Test/BlankLevel.unity
     guid: 4762ae5a09b163a40b4578df6df37ce1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
