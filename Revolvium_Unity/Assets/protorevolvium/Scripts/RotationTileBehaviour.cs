@@ -32,8 +32,10 @@ public class RotationTileBehaviour : LevelTile
         Debug.Log("ROTATION MODE IS TURNED ON!! :3");
     }
 
-    protected override void interact()
+    protected override void interact(GameObject player)
     {
-        evokeEnableRotation();
+        evokeEnableRotation();                                      //dont' change player Y
+        player.transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z); //makes sure the player is correctly positioned on the tile
+        // fixes bug "Player can get stuck in wall after rotation" in sprint 7 
     }
 }

@@ -16,10 +16,13 @@ public class LevelCreationBehaviour : MonoBehaviour
 
     private void Start()
     {
-        offsetX = (creationSettings.w % 2 == 0) ? 0.5f : 0; 
-        offsetY = (creationSettings.h % 2 == 0) ? 0.5f : 0; 
-        offsetZ = (creationSettings.d % 2 == 0) ? 0.5f : 0;
         sortLevelBlocks();
+    }
+
+    private void setOffsets() {
+        offsetX = (creationSettings.w % 2 == 0) ? 0.5f : 0;
+        offsetY = (creationSettings.h % 2 == 0) ? 0.5f : 0;
+        offsetZ = (creationSettings.d % 2 == 0) ? 0.5f : 0;
     }
 
 
@@ -27,6 +30,7 @@ public class LevelCreationBehaviour : MonoBehaviour
     [ContextMenu("Sort Level Blocks")]
     void sortLevelBlocks()
     {
+        setOffsets();
         if(blocks.Count == creationSettings.w * creationSettings.h * creationSettings.d) {
             int currentBlock = 0;
 
@@ -38,6 +42,7 @@ public class LevelCreationBehaviour : MonoBehaviour
                 for (int y = 0; y < hEnd; y++) {
                     for (int z =0; z < dEnd; z++) {
                         blocks[currentBlock].position = new Vector3(x * creationSettings.blockWidth + offsetX, y * creationSettings.blockWidth + offsetY, z * creationSettings.blockWidth + offsetZ);
+                        Debug.Log(blocks[currentBlock].position);
                         currentBlock++;
                     }
                 }

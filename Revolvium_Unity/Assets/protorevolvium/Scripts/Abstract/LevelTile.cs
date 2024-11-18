@@ -18,13 +18,13 @@ public abstract class LevelTile : MonoBehaviour
     {
         return transform.up.y == 1 || !needsCorrectOrientation;
     }
-    protected abstract void interact();
+    protected abstract void interact(GameObject player);
 
     private void OnTriggerStay(Collider other)
     {//                                                                        change this
        if(other.tag == "player" && isCorrectlyOrientated() && Input.GetKeyDown(KeyCode.E))
         {
-            interact();
+            interact(other.gameObject);
         } 
     }
 

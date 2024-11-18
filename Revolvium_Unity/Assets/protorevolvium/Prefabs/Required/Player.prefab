@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 7379927814983025275}
-  speed: 2.95
+  speed: 3
   canMove: 1
 --- !u!1001 &7103233713470398316
 PrefabInstance:
