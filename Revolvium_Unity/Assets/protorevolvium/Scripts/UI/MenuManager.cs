@@ -39,10 +39,72 @@ public static class MenuManager
                 player_hud.SetActive(true);
                 break;
         }
-        // turn off the calling menu object (unless you're the GameManager object)
-        if (callingMenu != GameManager.Instance.gameObject)
-            callingMenu.SetActive(false);  
+        callingMenu.SetActive(false);  
     }
+    public static void OpenMenu(Menu menu)
+    {
+
+        // Initialize our menus
+        if (!IsInitialized)
+            Initialize();
+        // find the next menu, turn it on
+        switch (menu)
+        {
+            case Menu.MENU1:
+                menu1.SetActive(true);
+                break;
+            case Menu.MENU2:
+                menu2.SetActive(true);
+                break;
+            case Menu.TITLE_SCREEN:
+                title_screen.SetActive(true);
+                break;
+            case Menu.PAUSE:
+                pause.SetActive(true);
+                break;
+            case Menu.OPTIONS:
+                options.SetActive(true);
+                break;
+            case Menu.LEVEL_END:
+                level_end.SetActive(true);
+                break;
+            case Menu.PLAYER_HUD:
+                player_hud.SetActive(true);
+                break;
+        }
+    } // don't turn off previous menu
+    public static void CloseMenu(Menu menu)
+    {
+
+        // Initialize our menus
+        if (!IsInitialized)
+            Initialize();
+        // find the next menu, turn it on
+        switch (menu)
+        {
+            case Menu.MENU1:
+                menu1.SetActive(false);
+                break;
+            case Menu.MENU2:
+                menu2.SetActive(false);
+                break;
+            case Menu.TITLE_SCREEN:
+                title_screen.SetActive(false);
+                break;
+            case Menu.PAUSE:
+                pause.SetActive(false);
+                break;
+            case Menu.OPTIONS:
+                options.SetActive(false);
+                break;
+            case Menu.LEVEL_END:
+                level_end.SetActive(false);
+                break;
+            case Menu.PLAYER_HUD:
+                player_hud.SetActive(false);
+                break;
+        }
+    } 
     public static void Initialize()
     {
         GameObject canvas = GameObject.Find("Canvas");

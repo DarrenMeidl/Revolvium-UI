@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         // if we're in a main menu, we can't access other menus
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN);
             canPause = false;
         }
         else
@@ -46,11 +46,12 @@ public class GameManager : MonoBehaviour
         // if we're in a main menu, we can't access other menus
         if (scene.buildIndex == 0)
         {
-            MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN);
             canPause = false;
         }
         else
         { // if not, we must be in a level
+            MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
         // Game is not paused
@@ -80,10 +81,12 @@ public class GameManager : MonoBehaviour
     private void Resume()
     {
         GameIsPaused = false;
+        MenuManager.CloseMenu(Menu.PAUSE);
     }
 
     private void Pause()
     {
         GameIsPaused = true;
+        MenuManager.OpenMenu(Menu.PAUSE);
     }
 }
