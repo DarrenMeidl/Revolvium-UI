@@ -43,6 +43,7 @@ public class ButtonHandler : MonoBehaviour
     #region Main Menu Functions
     public void OnClick_MainMenu()
     {
+        SceneManager.LoadScene(0); // load title screen scene
         MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
     }
     #endregion
