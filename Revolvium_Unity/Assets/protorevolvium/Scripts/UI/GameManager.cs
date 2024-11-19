@@ -95,7 +95,8 @@ public class GameManager : MonoBehaviour
 
     private void EndLevel()
     {
-        MenuManager.CloseAllMenus();
+        canPause = false;
+        MenuManager.CloseAllMenus(); // Ensure no other menus are open
         MenuManager.OpenMenu(Menu.LEVEL_END);
     }
 }
