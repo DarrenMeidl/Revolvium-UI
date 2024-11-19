@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class MenuInput : MonoBehaviour
 {
-    public static GameManager Instance; // static reference to the GameManager script
+    public static MenuInput Instance { get; private set; }
     private bool paused;
     private bool canPause;
     void Awake()
@@ -66,34 +66,34 @@ public class GameManager : MonoBehaviour
         {
             if (paused)
             { // if we press the pause button when we're already paused
-                Resume();
+                Pause_Close();
             }
             else
             {
-                Pause();
+                Pause_Open();
             }
         }
         if (Input.GetButtonDown("End Level"))
         {
-            EndLevel();
+            Level_End_Open();
         }
     }
 
-    private void Resume()
+    private void Pause_Close()
     {
         paused = false;
         MenuManager.CloseMenu(Menu.PAUSE);
         MenuManager.OpenMenu(Menu.PLAYER_HUD);
     }
 
-    private void Pause()
+    private void Pause_Open()
     {
         paused = true;
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);
     }
 
-    private void EndLevel()
+    private void Level_End_Open()
     {
         canPause = false;
         MenuManager.CloseAllMenus(); // Ensure no other menus are open
