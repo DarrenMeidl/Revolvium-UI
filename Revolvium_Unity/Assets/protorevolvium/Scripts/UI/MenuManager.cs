@@ -79,7 +79,7 @@ public static class MenuManager
         // Initialize our menus
         if (!IsInitialized)
             Initialize();
-        // find the next menu, turn it on
+        // find the next menu, turn it off
         switch (menu)
         {
             case Menu.MENU1:
@@ -104,7 +104,21 @@ public static class MenuManager
                 player_hud.SetActive(false);
                 break;
         }
-    } 
+    }
+    public static void CloseAllMenus()
+    {
+        // Initialize menus
+        if (!IsInitialized)
+            Initialize();
+        // Turn off all menus
+        menu1.SetActive(false);
+        menu2.SetActive(false);
+        title_screen.SetActive(false);
+        pause.SetActive(false);
+        options.SetActive(false);
+        level_end.SetActive(false);
+        player_hud.SetActive(false);
+    }
     public static void Initialize()
     {
         GameObject canvas = GameObject.Find("Canvas");

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance; // static reference to the GameManager script
-    public static bool GameIsPaused;
+    private bool paused;
     private bool canPause;
     void Awake()
     {
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         #endregion
 
         #region Perform Tasks Upon Awake
-        // if we're in a main menu, we can't access other menus
+        // if we're in a main menu, we can't access pause menu
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
         { // if not, we must be in a level
             canPause = true;
         }
-        // Game is not paused
-        GameIsPaused = false;
+        paused = false;
         #endregion
 
         SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
@@ -43,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // if we're in a main menu, we can't access other menus
+        // if we're in a main menu, we can't access pause menu
         if (scene.buildIndex == 0)
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
@@ -54,8 +53,7 @@ public class GameManager : MonoBehaviour
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
-        // Game is not paused
-        GameIsPaused = false;
+        paused = false;
     }
 
     private void Update()
@@ -66,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Pause") && canPause)
         {
-            if (GameIsPaused)
+            if (paused)
             { // if we press the pause button when we're already paused
                 Resume();
             }
@@ -83,20 +81,21 @@ public class GameManager : MonoBehaviour
 
     private void Resume()
     {
-        GameIsPaused = false;
+        paused = false;
         MenuManager.CloseMenu(Menu.PAUSE);
         MenuManager.OpenMenu(Menu.PLAYER_HUD);
     }
 
     private void Pause()
     {
-        GameIsPaused = true;
+        paused = true;
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);
     }
 
     private void EndLevel()
     {
-
+        MenuManager.CloseAllMenus();
+        MenuManager.OpenMenu(Menu.LEVEL_END);
     }
 }
