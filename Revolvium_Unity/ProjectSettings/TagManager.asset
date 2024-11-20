@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - levelChunk
+  - player
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - LevelBlock
   - 
   - 
   - 

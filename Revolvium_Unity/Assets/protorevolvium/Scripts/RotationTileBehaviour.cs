@@ -12,28 +12,12 @@ using UnityEngine;
  *  ROTATION TILE BEHAVIOUR - STARTED BY AND WRITTEN BY RUBY
  */
 
-public class RotationTileBehaviour : MonoBehaviour
+public class RotationTileBehaviour : LevelTile
 {
     [SerializeField]
     private GameEvent enableRotation;
     [SerializeField]
     private GameEvent disableRotation;
-
-    [SerializeField]
-    private Transform parentTransform;
-
-    [SerializeField]
-    private Transform transform;
-
-    public void Start()
-    {
-
-    }
-
-    public bool isCorrectlyOrientated()
-    {
-        return transform.up.y == 1;
-    }
 
 
     [ContextMenu("Disable Rotation")]
@@ -44,8 +28,14 @@ public class RotationTileBehaviour : MonoBehaviour
     [ContextMenu("Enable Rotation")]
     public void evokeEnableRotation()
     {
-        if(isCorrectlyOrientated())
-            enableRotation?.Raise();
+        enableRotation?.Raise();
+        Debug.Log("ROTATION MODE IS TURNED ON!! :3");
+    }
 
+    protected override void interact(GameObject player)
+    {
+        evokeEnableRotation();                                      //dont' change player Y
+        player.transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z); //makes sure the player is correctly positioned on the tile
+        // fixes bug "Player can get stuck in wall after rotation" in sprint 7 
     }
 }
