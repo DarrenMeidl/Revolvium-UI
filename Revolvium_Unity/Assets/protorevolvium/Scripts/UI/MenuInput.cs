@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class MenuInput : MonoBehaviour
 {
-    public static GameManager Instance; // static reference to the GameManager script
-    #region Public Static Variables
-    public static bool GameIsPaused;
-    public static bool LevelIsFinished; 
-    public static bool InMainMenu;
-    public static bool InOptionsMenu;
-    #endregion
+    public static MenuInput Instance { get; private set; }
+    private bool paused;
     private bool canPause;
     void Awake()
     {
@@ -29,23 +24,17 @@ public class GameManager : MonoBehaviour
         #endregion
 
         #region Perform Tasks Upon Awake
-        // if we're in a main menu, we can't access other menus
+        // if we're in a main menu, we can't access pause menu
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            InMainMenu = true;
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN);
             canPause = false;
         }
         else
         { // if not, we must be in a level
-            InMainMenu = false;
             canPause = true;
         }
-        // Game is not paused
-        GameIsPaused = false;
-        // Game is not finished
-        LevelIsFinished = false;
-        // Not in Options Menu
-        InOptionsMenu = false;
+        paused = false;
         #endregion
 
         SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
@@ -53,23 +42,18 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // if we're in a main menu, we can't access other menus
+        // if we're in a main menu, we can't access pause menu
         if (scene.buildIndex == 0)
         {
-            InMainMenu = true;
+            MenuManager.OpenMenu(Menu.TITLE_SCREEN);
             canPause = false;
         }
         else
         { // if not, we must be in a level
-            InMainMenu = false;
+            MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
-        // Game is not paused
-        GameIsPaused = false;
-        // Game is not finished
-        LevelIsFinished = false;
-        // Not in Options Menu
-        InOptionsMenu = false;
+        paused = false;
     }
 
     private void Update()
@@ -80,24 +64,39 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Pause") && canPause)
         {
-            if (GameIsPaused)
+            if (paused)
             { // if we press the pause button when we're already paused
-                Resume();
+                Pause_Close();
             }
             else
             {
-                Pause();
+                Pause_Open();
             }
+        }
+        if (Input.GetButtonDown("End Level"))
+        {
+            Level_End_Open();
         }
     }
 
-    private void Resume()
+    private void Pause_Close()
     {
-        GameIsPaused = false;
+        paused = false;
+        MenuManager.CloseMenu(Menu.PAUSE);
+        MenuManager.OpenMenu(Menu.PLAYER_HUD);
     }
 
-    private void Pause()
+    private void Pause_Open()
     {
-        GameIsPaused = true;
+        paused = true;
+        MenuManager.OpenMenu(Menu.PAUSE);
+        MenuManager.CloseMenu(Menu.PLAYER_HUD);
+    }
+
+    private void Level_End_Open()
+    {
+        canPause = false;
+        MenuManager.CloseAllMenus(); // Ensure no other menus are open
+        MenuManager.OpenMenu(Menu.LEVEL_END);
     }
 }

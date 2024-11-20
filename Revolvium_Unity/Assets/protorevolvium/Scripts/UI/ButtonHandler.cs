@@ -2,45 +2,69 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+// Called MenuManager functions from: https://www.youtube.com/watch?v=MmsbM89SVbM&t=268s&ab_channel=Comp-3Interactive
 public class ButtonHandler : MonoBehaviour
 {
-    public void LoadNextLevel()
+    #region Common Functions
+    public void OnClick_Level_Next()
     {
+        Debug.Log("NEXT LEVEL LOADING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        GameManager.InMainMenu = false;
+        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
-    public void RestartLevel()
+    public void OnClick_Level_Restart()
     {
+        Debug.Log("GAME RESTARTING...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameObject.SetActive(false); // turn off this menu
     }
 
-    public void Quit()
+    public void OnClick_Quit()
     {
-        Debug.Log("GAME QUIT");
+        Debug.Log("GAME QUITING...");
         Application.Quit(); // This will quit the game
-    }
-
-
-    #region Pause Functions
-    public void Resume()
-    {
-        Debug.Log("Game Resumed");
-        GameManager.GameIsPaused = false;
     }
     #endregion
 
-    #region Options Funcitons
-    public void LoadOptions()
+    #region Pause Menu Functions
+    public void OnClick_Resume()
     {
-        GameManager.InOptionsMenu = true;
+        MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
+    }
+    #endregion
+
+    #region Options Menu Funcitons
+    public void OnClick_Options()
+    {
+        MenuManager.OpenMenu(Menu.OPTIONS, gameObject);
     }
     #endregion
 
     #region Main Menu Functions
-    public void LoadMainMenu()
+    public void OnClick_MainMenu()
     {
-        GameManager.InMainMenu = true;
+        SceneManager.LoadScene(0); // load title screen scene
+        MenuManager.OpenMenu(Menu.TITLE_SCREEN, gameObject);
+    }
+    #endregion
+
+    #region Test Menu Functions
+    public void OnClick_Menu1()
+    {
+        MenuManager.OpenMenu(Menu.MENU1, gameObject);
+    }
+
+    public void OnClick_Menu2()
+    {
+        MenuManager.OpenMenu(Menu.MENU2, gameObject);
+    }
+    public void OnClick_Level_End()
+    {
+        MenuManager.OpenMenu(Menu.LEVEL_END, gameObject);
+    }
+    public void OnClick_Pause()
+    {
+        MenuManager.OpenMenu(Menu.PAUSE, gameObject);
     }
     #endregion
 }
