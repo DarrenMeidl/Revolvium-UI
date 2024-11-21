@@ -1,5 +1,5 @@
 ## Irabel
-- Irabel is a determined young explorer driven by curiosity and resilience, on a quest to uncover the truth about her father's disappearance and the lost technology of a forgotten world.
+- Irabel is a determined young explorer driven by curiosity and resilience. After his death, Irabel discovers one of her father's old journals now setting on a quest to uncover the truth about the lost technology of a forgotten world.
 
 ### Physical Description
 - Clothing: Boots, Utility belt, worn gloves
@@ -10,7 +10,7 @@
 - Environment: Dirt from travelling?
 
 ### Main Motivation
-- Uncover the truth about her father's disappearance and understand the ancient technology he dedicated his life to studying
+- Uncover the mystery of the ancient technology her father dedicated his life to studying, and why he did so.
 
 ### Personality Traits
 - Curious
@@ -20,7 +20,7 @@
 ### Brief Backstory: 
 - Irabel grew up in a society that revered ancient technology, but the knowledge of how it worked has long since faded.
 - As the daughter of a once-great scholar, she’s driven by the desire to continue her family’s work of rediscovering the old world’s lost technology.
-- After her father went missing while exploring, she took up his quest, seeking answers not just about the past but about his fate
+- After her father's passing she took up his quest, seeking answers not just about the past but what this technology could mean for the future
 
 ### Emotional Journey Ideas
 - Wonder/Curiosity: Irabel is in awe awe of what she's discovered, wants to understand how these old technologies were made and how they work.
