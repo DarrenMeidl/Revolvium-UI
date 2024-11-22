@@ -16,3 +16,5 @@
 - https://freesound.org/people/gvgmedia/sounds/321656/
 - https://freesound.org/people/mickleness/sounds/269198/
 - https://freesound.org/people/unadamlar/sounds/341985/
+### Lock
+- https://freesound.org/people/Jamitch2/sounds/344702/
