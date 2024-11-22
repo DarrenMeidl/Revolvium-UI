@@ -20,9 +20,10 @@ public class LevelCreationBehaviour : MonoBehaviour
     }
 
     private void setOffsets() {
-        offsetX = (creationSettings.w % 2 == 0) ? 0.5f : 0;
-        offsetY = (creationSettings.h % 2 == 0) ? 0.5f : 0;
-        offsetZ = (creationSettings.d % 2 == 0) ? 0.5f : 0;
+        //offsetX = (creationSettings.w % 2 == 0) ? 0.5f : 0;
+        //offsetY = (creationSettings.h % 2 == 0) ? 0.5f : 0;
+        //offsetZ = (creationSettings.d % 2 == 0) ? 0.5f : 0;
+        offsetX = offsetY = offsetZ = 0;
     }
 
 

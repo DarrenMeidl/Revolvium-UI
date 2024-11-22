@@ -14,7 +14,14 @@ public class LevelChunkBehaviour : MonoBehaviour
     [SerializeField]
     private LevelController levelController;
 
-    
+    private void Start() {
+        if (levelController.GetCreationSettings().w % 2 == 0)
+            cubeCenter.x = 0.5f;
+        if (levelController.GetCreationSettings().h % 2 == 0)
+            cubeCenter.y = 0.5f;
+        if (levelController.GetCreationSettings().d % 2 == 0)
+            cubeCenter.z = 0.5f;
+    }
 
     [ContextMenu("rotate")]
     public void rotate()

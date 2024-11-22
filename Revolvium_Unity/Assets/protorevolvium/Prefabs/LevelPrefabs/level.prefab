@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2887639807892287680}
   - component: {fileID: 4939091879224446003}
-  - component: {fileID: 8193475730060761157}
-  - component: {fileID: 7203409078124347197}
   - component: {fileID: 4095002438620170286}
   - component: {fileID: 7971826245179662783}
   m_Layer: 0
@@ -55,79 +53,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8d875349cd152342ac0c4cf7805709e, type: 2}
   - {fileID: 11400000, guid: 74dca48c705a9ce4aa9dec32eb09fb0d, type: 2}
   currentRotationDirection: {fileID: 11400000, guid: e746954634f142f4a81c94d760c76cae, type: 2}
-  canRotate: 1
   evenDimensions: 0
   creationSettings: {fileID: 0}
---- !u!114 &8193475730060761157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3647176330651623519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c27b817c508b074c8a4defb3a811503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: 
-  Event: {fileID: 11400000, guid: 1c68c8c983ef5f0499506272eac2097a, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4939091879224446003}
-        m_TargetAssemblyTypeName: LevelController, Assembly-CSharp
-        m_MethodName: enableRotation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7971826245179662783}
-        m_TargetAssemblyTypeName: RotatioModeController, Assembly-CSharp
-        m_MethodName: enabledRotation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7203409078124347197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3647176330651623519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c27b817c508b074c8a4defb3a811503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: 
-  Event: {fileID: 11400000, guid: d8cda6c0ac8fc174c8076f3bfa742ef0, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4939091879224446003}
-        m_TargetAssemblyTypeName: LevelController, Assembly-CSharp
-        m_MethodName: disableRotation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4095002438620170286
 MonoBehaviour:
   m_ObjectHideFlags: 0
