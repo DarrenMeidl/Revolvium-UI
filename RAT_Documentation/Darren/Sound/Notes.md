@@ -18,3 +18,7 @@
 - https://freesound.org/people/unadamlar/sounds/341985/
 ### Lock
 - https://freesound.org/people/Jamitch2/sounds/344702/
+### Door
+- https://freesound.org/people/Profispiesser/sounds/583241/
+- https://freesound.org/people/chewiesmissus/sounds/213406/
+- https://freesound.org/people/kyles/sounds/407306/
