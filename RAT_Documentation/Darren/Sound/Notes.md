@@ -22,3 +22,13 @@
 - https://freesound.org/people/Profispiesser/sounds/583241/
 - https://freesound.org/people/chewiesmissus/sounds/213406/
 - https://freesound.org/people/kyles/sounds/407306/
+### Camera
+- https://freesound.org/people/DJT4NN3R/sounds/449990/
+- https://freesound.org/people/ch_ase/sounds/423792/
+- https://freesound.org/people/Alex_hears_things/sounds/521047/
+### Stingers
+- Thud: https://freesound.org/people/InMotionAudio/sounds/652035/
+- https://freesound.org/people/xkeril/sounds/736852/
+### Tree Rustling
+- https://freesound.org/people/Garuda1982/sounds/708176/
+- https://freesound.org/people/arpeggio1980/sounds/523389/
