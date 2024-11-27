@@ -638,6 +638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 7738871688786881831, guid: cea456bf956f23743bb50e0a492ba05d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2432090755550338912, guid: 048d0d0149da4034c9e3e20985c5e1bb, type: 3}
     - target: {fileID: 8645335989467507702, guid: cea456bf956f23743bb50e0a492ba05d, type: 3}
       propertyPath: levelController
       value: 
