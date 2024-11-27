@@ -20,6 +20,7 @@ public class RotationTileBehaviour : LevelTile
     private GameEvent disableRotation;
 
 
+
     [ContextMenu("Disable Rotation")]
     public void evokeDisableRotation()
     {
@@ -31,6 +32,8 @@ public class RotationTileBehaviour : LevelTile
         enableRotation?.Raise();
         Debug.Log("ROTATION MODE IS TURNED ON!! :3");
     }
+
+    
 
     protected override void interact(GameObject player)
     {

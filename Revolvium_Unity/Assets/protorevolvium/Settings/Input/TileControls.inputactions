@@ -1,0 +1,34 @@
+{
+    "name": "TileControls",
+    "maps": [
+        {
+            "name": "TileControls",
+            "id": "54784357-1869-4927-84f5-6b51e8a0b369",
+            "actions": [
+                {
+                    "name": "Interract",
+                    "type": "Button",
+                    "id": "53efa7a1-fbe5-4d0e-873c-f5e2df145f17",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "778c701d-48c5-497d-842b-43b6ce8779ab",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

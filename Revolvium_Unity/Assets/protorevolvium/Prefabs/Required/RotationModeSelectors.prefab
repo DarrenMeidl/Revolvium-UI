@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 1052797091732764537}
   - component: {fileID: 8740174971109775450}
   - component: {fileID: 5186320529628665074}
+  - component: {fileID: 268863038870459743}
   m_Layer: 0
   m_Name: RotationModeSelectors
   m_TagString: Untagged
@@ -414,6 +415,7 @@ MonoBehaviour:
   - {fileID: 849482941144759983}
   currentSelector: 0
   canRotate: 0
+  disableRotationEvent: {fileID: 0}
 --- !u!114 &8740174971109775450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +474,132 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &268863038870459743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7299581377671057261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 96031afbb955ceb49a1733e3a16b49a5, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: Rotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 385ca17f-ad15-4350-be21-13d5deaaa9b9
+    m_ActionName: 'RotateActions/Rotate[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: DisableRotation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8b0045f7-7ed9-40b9-a42f-78b35a5621d1
+    m_ActionName: RotateActions/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: MoveSelectorLeftt
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 78f41813-49ff-4d55-a2e9-2d777c808fcd
+    m_ActionName: RotateActions/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: MoveSelectorRight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0e3f3b29-93b0-4f3a-8c80-49e0d1fc228d
+    m_ActionName: 'RotateActions/MoveLeft1[/Keyboard/a,/Keyboard/leftArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: ToggleSelectorDirectionUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7452ff1b-1698-4d69-b4d6-1137dc600f6f
+    m_ActionName: RotateActions/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: ToggleSelectorDirectionDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f385f6e3-d0f3-4bd8-ae1c-fd58f6bbddee
+    m_ActionName: 'RotateActions/ToggleSelectorUp1[/Keyboard/w,/Keyboard/upArrow]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: RotateActions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8284912775004492306
 GameObject:
   m_ObjectHideFlags: 0

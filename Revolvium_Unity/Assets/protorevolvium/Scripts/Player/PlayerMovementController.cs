@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 /*
  *  PLAYER MOVEMENT CONTROLLER - STARTED BY AND WRITTEN BY RUBY
  */
@@ -16,22 +17,34 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField, ReadOnly]
     private bool canMove = true;
 
+    private Vector3 rawInputMovement;
+
     private void Start()
     {
         canMove = true;
+        rawInputMovement = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void OnMovement(InputAction.CallbackContext value)
     {
         if ( canMove ) {
-            characterController.SimpleMove(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed); //deltatime is not considered, since simplemove will do that for you
+            Vector2 inputMovement = value.ReadValue<Vector2>();
+            rawInputMovement = new Vector3(inputMovement.x, 0, inputMovement.y);
         }
     }
+
+    private void FixedUpdate() {
+        if (canMove) {
+            characterController.SimpleMove(rawInputMovement);
+        }
+    }
+
 
     public void enableRotation()
     {
         canMove = false;
+        rawInputMovement = new Vector3(0, 0, 0); //stops player from continueing to move after rotation
     }
     public void disableRotation()
     {

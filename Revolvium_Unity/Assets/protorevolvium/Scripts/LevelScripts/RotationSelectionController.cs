@@ -2,12 +2,15 @@ using GD;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RotationSelectionController : MonoBehaviour {
     [SerializeField]
     private LevelController levelController;
     [SerializeField]
     private levelCreationSettings creationSettings;
+    [SerializeField]
+    private LevelSelectorBoundaries levelSelectorBoundaries;
 
 
     private int blockSize;
@@ -42,6 +45,51 @@ public class RotationSelectionController : MonoBehaviour {
         }
         blockSize = creationSettings.blockWidth;
     }
+
+    public void Rotate(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) {
+            levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
+            selectors[currentSelector].enableSelector();
+            delay = 1;
+        }
+    }
+
+    public void MoveSelectorRight(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) 
+            moveSelector(1);
+    }
+    public void MoveSelectorLeftt(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) 
+            moveSelector(-1);
+    }
+
+    public void ToggleSelectorDirectionUp(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) {
+            selectors[currentSelector].disableHighLight();
+            currentSelector += 1;
+            if (currentSelector == selectors.Count)
+                currentSelector = 0;
+                selectors[currentSelector].enableHighLight();
+        }
+    }
+    public void ToggleSelectorDirectionDown(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) {
+            selectors[currentSelector].disableHighLight();
+            currentSelector -= 1;
+            if (currentSelector < 0)
+                currentSelector = selectors.Count - 1;
+            selectors[currentSelector].enableHighLight();
+        }
+    }
+
+
+    public void DisableRotation(InputAction.CallbackContext value) {
+        if (value.started && canRotate && delay <= 0) 
+            disableRotationEvent?.Raise();
+    }
+
+
+
     private void FixedUpdate() {
         if (canRotate) {
             if (delay > 0) {
@@ -49,35 +97,8 @@ public class RotationSelectionController : MonoBehaviour {
             }
             else {
                 selectors[currentSelector].disableSelector();
-                if (Input.GetKeyDown(KeyCode.RightArrow)) {
-                    moveSelector(1);
-                }
-                else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-                    moveSelector(-1);
-                }
 
-                else if (Input.GetKeyDown(KeyCode.Space)) {
-                    levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
-                    selectors[currentSelector].enableSelector();
-                }
 
-                else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-                    selectors[currentSelector].disableHighLight();
-                    currentSelector += 1;
-                    if (currentSelector == selectors.Count)
-                        currentSelector = 0;
-                    selectors[currentSelector].enableHighLight();
-                }
-                else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-                    selectors[currentSelector].disableHighLight();
-                    currentSelector -= 1;
-                    if (currentSelector == 0)
-                        currentSelector = selectors.Count - 1;
-                    selectors[currentSelector].enableHighLight();
-                }
-                else if (Input.GetKeyDown(KeyCode.Escape)) {
-                    disableRotationEvent?.Raise();
-                }
             }
         }
     }
@@ -86,7 +107,20 @@ public class RotationSelectionController : MonoBehaviour {
         dir = (int)math.sign(dir);
         Vector3 moveDir = selectors[currentSelector].selectorMoveDir.dir;
         Vector3 currentPosition = selectors[currentSelector].gameObject.transform.position;
-        Vector3 newPosition = new Vector3(currentPosition.x + (blockSize * moveDir.x * dir), currentPosition.y + (blockSize * moveDir.y * dir), currentPosition.z + (blockSize * moveDir.z * dir));
+
+        float newX = currentPosition.x + (blockSize * moveDir.x * dir);
+        float newY = currentPosition.y + (blockSize * moveDir.y * dir);
+        float newZ = currentPosition.z + (blockSize * moveDir.z * dir);
+
+        Debug.Log(newX);
+        Debug.Log((newX < levelSelectorBoundaries.minX));
+        Debug.Log((newX > levelSelectorBoundaries.maxX));
+
+        newX = ((newX>levelSelectorBoundaries.minX) || (newX <= levelSelectorBoundaries.maxX)) ? currentPosition.x : newX;
+        newY = ((newY-1>levelSelectorBoundaries.minY) || (newY <= levelSelectorBoundaries.maxY)) ? currentPosition.y : newY;
+        newZ = ((newZ-1>levelSelectorBoundaries.maxZ) || (newZ <= levelSelectorBoundaries.minZ)) ? currentPosition.z : newZ;
+
+        Vector3 newPosition = new Vector3(newX, newY, newZ);
         delay = 1;
         selectors[currentSelector].gameObject.transform.position = newPosition;
     }
