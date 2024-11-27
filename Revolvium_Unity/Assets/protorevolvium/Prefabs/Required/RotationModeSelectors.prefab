@@ -115,13 +115,14 @@ GameObject:
   m_Component:
   - component: {fileID: 139295604943709523}
   - component: {fileID: 849482941144759983}
+  - component: {fileID: 23461514592241074}
   m_Layer: 0
   m_Name: FTURNS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &139295604943709523
 Transform:
   m_ObjectHideFlags: 0
@@ -154,6 +155,27 @@ MonoBehaviour:
   selectorMoveDir: {fileID: 11400000, guid: 386640e966ede6f4b8b30b9c394fe718, type: 2}
   highlight: {fileID: 6832266498307829881}
   selector: {fileID: 4187914683719221268}
+--- !u!65 &23461514592241074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999185112914403298}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.8, z: 2.8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4038353007391331129
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638079100755058402}
   - component: {fileID: 6599369289440494135}
+  - component: {fileID: 5593689355606006606}
   m_Layer: 0
   m_Name: RTURNS
   m_TagString: Untagged
@@ -203,6 +226,27 @@ MonoBehaviour:
   selectorMoveDir: {fileID: 11400000, guid: c0117a983ea3ae14ab0834ce90563b84, type: 2}
   highlight: {fileID: 360357696789296414}
   selector: {fileID: 7782604803334565005}
+--- !u!65 &5593689355606006606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038353007391331129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.8, z: 2.8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6005978118688663846
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,13 +257,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2621930449105233805}
   - component: {fileID: 819210796501425781}
+  - component: {fileID: 7367758579429160802}
   m_Layer: 0
   m_Name: UTURNS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2621930449105233805
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +297,27 @@ MonoBehaviour:
   selectorMoveDir: {fileID: 11400000, guid: 9ad08d49798fba24b8c90aa0a1f4032f, type: 2}
   highlight: {fileID: 8284912775004492306}
   selector: {fileID: 499191576759443393}
+--- !u!65 &7367758579429160802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005978118688663846}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.8, z: 2.8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6832266498307829881
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,10 +475,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelController: {fileID: 0}
   creationSettings: {fileID: 11400000, guid: c981e59126e299f4988ae643e9ee9adb, type: 2}
+  levelSelectorBoundaries: {fileID: 0}
   selectors:
   - {fileID: 6599369289440494135}
   - {fileID: 819210796501425781}
   - {fileID: 849482941144759983}
+  player: {fileID: 0}
   currentSelector: 0
   canRotate: 0
   disableRotationEvent: {fileID: 0}

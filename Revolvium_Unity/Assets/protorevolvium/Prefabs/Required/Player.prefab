@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7379927814983025275}
   - component: {fileID: 259876126282036080}
   - component: {fileID: 2230159393316501807}
+  - component: {fileID: 3467103446356512184}
   m_Layer: 3
   m_Name: Player
   m_TagString: player
@@ -102,10 +103,6 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e7aebb92-fcd1-44ff-85bf-74c165eb2908
-    m_ActionName: 'PlayerControls/Interract[/Keyboard/e]'
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 259876126282036080}
         m_TargetAssemblyTypeName: PlayerMovementController, Assembly-CSharp
@@ -121,11 +118,64 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4bb31b1e-08e3-4340-a8dc-43ec4b36251c
     m_ActionName: 'PlayerControls/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d7d3eca1-2fbb-4a2a-a3cb-534b597f5e88
+    m_ActionName: 'PlayerControls/Camera Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d9f43e22-41ba-4e11-a82d-9248f5d46ab2
+    m_ActionName: 'PlayerControls/Activate Rotation Platform[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9670c323-41cc-493f-99b1-ec3fd9f63313
+    m_ActionName: 'PlayerControls/Exit Rotation Mode[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4da9e1f0-f63c-46ba-81ca-e69a42201a58
+    m_ActionName: PlayerControls/Next Rotation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5832509b-c83f-483e-b1d2-fc2ff6b4ac49
+    m_ActionName: PlayerControls/Previous Rotation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9bc6e0bc-9722-474b-8ac1-ddc3ae24f503
+    m_ActionName: PlayerControls/Next Selection
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 68c30495-6e14-4df4-bf89-6b16f0b84a1b
+    m_ActionName: PlayerControls/Previous Selection
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f73bae46-4820-45fc-8267-0aeb19959a85
+    m_ActionName: 'PlayerControls/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!65 &3467103446356512184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783967904570181888}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7103233713470398316
 PrefabInstance:
   m_ObjectHideFlags: 0

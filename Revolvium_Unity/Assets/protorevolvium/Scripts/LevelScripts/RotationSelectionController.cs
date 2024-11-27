@@ -20,6 +20,9 @@ public class RotationSelectionController : MonoBehaviour {
     [SerializeField]
     private List<SelectorBehaviour> selectors = new List<SelectorBehaviour>();
 
+    [SerializeField]
+    private BoxCollider player;
+
     [SerializeField, ReadOnly]
     private int currentSelector = 0;
     [SerializeField, ReadOnly]
@@ -47,7 +50,13 @@ public class RotationSelectionController : MonoBehaviour {
     }
 
     public void Rotate(InputAction.CallbackContext value) {
-        if (value.started && canRotate && delay <= 0) {
+
+        BoxCollider selector = selectors[currentSelector].gameObject.GetComponent<BoxCollider>();
+
+        if (player.bounds.Intersects(selector.bounds)) {
+            return;
+        }
+        else if (value.started && canRotate && delay <= 0) {
             levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
             selectors[currentSelector].enableSelector();
             delay = 1;
@@ -112,16 +121,17 @@ public class RotationSelectionController : MonoBehaviour {
         float newY = currentPosition.y + (blockSize * moveDir.y * dir);
         float newZ = currentPosition.z + (blockSize * moveDir.z * dir);
 
-        Debug.Log(newX);
-        Debug.Log((newX < levelSelectorBoundaries.minX));
-        Debug.Log((newX > levelSelectorBoundaries.maxX));
+        //Debug.Log(newX);
+        //Debug.Log((newX < levelSelectorBoundaries.minX));
+        //Debug.Log((newX > levelSelectorBoundaries.maxX));
 
-        newX = ((newX>levelSelectorBoundaries.minX) || (newX <= levelSelectorBoundaries.maxX)) ? currentPosition.x : newX;
-        newY = ((newY-1>levelSelectorBoundaries.minY) || (newY <= levelSelectorBoundaries.maxY)) ? currentPosition.y : newY;
-        newZ = ((newZ-1>levelSelectorBoundaries.maxZ) || (newZ <= levelSelectorBoundaries.minZ)) ? currentPosition.z : newZ;
+        //newX = ((newX>levelSelectorBoundaries.maxX) || (newX < levelSelectorBoundaries.minX)) ? currentPosition.x : newX;
+        //newY = ((newY>levelSelectorBoundaries.maxY) || (newY < levelSelectorBoundaries.minY)) ? currentPosition.y : newY;
+        //newZ = ((newZ>levelSelectorBoundaries.maxZ) || (newZ < levelSelectorBoundaries.minZ)) ? currentPosition.z : newZ;
 
         Vector3 newPosition = new Vector3(newX, newY, newZ);
         delay = 1;
         selectors[currentSelector].gameObject.transform.position = newPosition;
+
     }
 }
