@@ -85,17 +85,6 @@
                 },
                 {
                     "name": "",
-                    "id": "ba535b8e-de53-4d5f-92ab-e067e5bcd040",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ExitRotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9b2ecab5-b582-4c20-b622-2d9625ff9b34",
                     "path": "<Keyboard>/escape",
                     "interactions": "",

@@ -7,7 +7,13 @@ using UnityEngine;
  */
 public class LevelChunkBehaviour : MonoBehaviour
 {
+    [SerializeField, ReadOnly]
     private Vector3 cubeCenter = new Vector3(1, 1, 1);
+
+    public void SetCenter(Vector3 center) {
+        cubeCenter = center;
+    }
+
     [SerializeField]
     private levelRotationDirection rotateDirection;
 
@@ -15,12 +21,7 @@ public class LevelChunkBehaviour : MonoBehaviour
     private LevelController levelController;
 
     private void Start() {
-        if (levelController.GetCreationSettings().w % 2 == 0)
-            cubeCenter.x = 0.5f;
-        if (levelController.GetCreationSettings().h % 2 == 0)
-            cubeCenter.y = 0.5f;
-        if (levelController.GetCreationSettings().d % 2 == 0)
-            cubeCenter.z = 0.5f;
+       
     }
 
     [ContextMenu("rotate")]

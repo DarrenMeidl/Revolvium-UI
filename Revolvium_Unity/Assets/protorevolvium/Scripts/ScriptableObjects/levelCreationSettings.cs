@@ -9,5 +9,6 @@ public class levelCreationSettings : ScriptableObject
     public int w = 1, h = 1, d = 1; // width, height, and depth of level
     [SerializeField]
     public int blockWidth; // only width since blocks should fit into cubes, therefore the width, height, and depth would be the same
-
+    [SerializeField]
+    public Vector3 cubeCenter = new Vector3(1,1,1);
 }

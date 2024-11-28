@@ -15,13 +15,5 @@ MonoBehaviour:
   w: 2
   h: 2
   d: 2
-  blocks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  blockWidth: 1
+  blockWidth: 2
+  cubeCenter: {x: 1, y: 1, z: 1}

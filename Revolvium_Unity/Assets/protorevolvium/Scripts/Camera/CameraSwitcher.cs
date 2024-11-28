@@ -14,6 +14,10 @@ public class CameraSwitcher : MonoBehaviour
 
     [SerializeField]
     private Transform Transform;
+    [SerializeField]
+    private Transform PlayerTransform;
+    [SerializeField]
+    private Transform LevelTransform;
 
     [SerializeField]
     private Vector3 playerOffset = new Vector3(0, 0, -10);
@@ -26,14 +30,18 @@ public class CameraSwitcher : MonoBehaviour
         //https://discussions.unity.com/t/cinemachine-base-follow-offset/698432 13/11/2024
         transposer = VirtualCamera.GetCinemachineComponent<CinemachineTransposer>();
         transposer.m_FollowOffset = playerOffset;
+
+        VirtualCamera.LookAt = PlayerTransform;
     }   
 
     public void enableRotation()
     {
         transposer.m_FollowOffset = rotateOffset;
+        VirtualCamera.LookAt = LevelTransform;
     }
     public void disableRotation()
     {
         transposer.m_FollowOffset = playerOffset;
+        VirtualCamera.LookAt = PlayerTransform;
     }
 }

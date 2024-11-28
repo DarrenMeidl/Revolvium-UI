@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
-      value: smallPlatform (1)
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -274,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
-      value: smallPlatform (3)
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
-      value: smallPlatform (4)
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -490,7 +490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
-      value: smallPlatform (2)
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
