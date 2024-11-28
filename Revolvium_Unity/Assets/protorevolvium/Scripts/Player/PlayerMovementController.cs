@@ -50,4 +50,13 @@ public class PlayerMovementController : MonoBehaviour
     {
         canMove = true;
     }
+
+    public void Movement_Disable()
+    {
+        canMove = false;
+    }
+    public void Movement_Enable()
+    {
+        canMove = true;
+    }
 }
