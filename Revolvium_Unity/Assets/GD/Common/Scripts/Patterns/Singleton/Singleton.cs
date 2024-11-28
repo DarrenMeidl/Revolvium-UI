@@ -45,7 +45,7 @@ namespace GD {
             }
 
             // Optionally, keep this object across scenes
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
 
         private void OnDestroy() {

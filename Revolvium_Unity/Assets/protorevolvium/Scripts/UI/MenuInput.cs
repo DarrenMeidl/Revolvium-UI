@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GD;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class MenuInput : MonoBehaviour
     public static MenuInput Instance { get; private set; }
     private bool paused;
     private bool canPause;
+
+    [SerializeField] private GameEvent pause, resume;
     void Awake()
     {
         #region Setup
@@ -81,6 +84,7 @@ public class MenuInput : MonoBehaviour
 
     private void Pause_Close()
     {
+        resume?.Raise();
         paused = false;
         MenuManager.CloseMenu(Menu.PAUSE);
         MenuManager.OpenMenu(Menu.PLAYER_HUD);
@@ -88,6 +92,7 @@ public class MenuInput : MonoBehaviour
 
     private void Pause_Open()
     {
+        pause?.Raise();
         paused = true;
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);
