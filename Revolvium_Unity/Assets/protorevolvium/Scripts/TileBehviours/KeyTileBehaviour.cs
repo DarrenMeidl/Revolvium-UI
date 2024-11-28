@@ -17,6 +17,12 @@ public class KeyTileBehaviour : LevelTile
     [SerializeField]
     private List<GameObject> locks = new List<GameObject>();
 
+    [SerializeField]
+    private IntGameEvent gameEvent;
+
+    [SerializeField]
+    private int keyID;
+
     private void Start() {
         foreach (GameObject l in locks) {
             l.SetActive(true);
@@ -25,9 +31,7 @@ public class KeyTileBehaviour : LevelTile
 
 
     protected override void interact(GameObject player){
-        foreach (GameObject l in locks) {
-            l.SetActive(false);
-        }
+        gameEvent?.Raise(keyID);
 
         gameObject.SetActive(false);
     }

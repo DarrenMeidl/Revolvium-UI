@@ -40,7 +40,8 @@ Material:
     m_Floats:
     - _Alpha: 0
     - _AlphaMultiplier: 11.22
-    - _AlphaSpeedMultiplier: 11
+    - _AlphaSpeedMultiplier: 4
+    - _Max: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors: []
