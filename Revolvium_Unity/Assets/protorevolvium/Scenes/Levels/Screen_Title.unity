@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &79392332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &260385966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &358279833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
 --- !u!1 &559632470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3042,6 +3046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &824534685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,7 +4622,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 0
 --- !u!114 &1306872436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4891,6 +4896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &1458340125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5963,12 +5969,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612028517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1810988900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716359284
 GameObject:
@@ -6138,6 +6144,7 @@ Transform:
   m_Children:
   - {fileID: 1306872434}
   - {fileID: 733027500}
+  - {fileID: 1612028520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1810988901
@@ -6394,6 +6401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b080ff2dec366149b2898da40c7be48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resume: {fileID: 0}
 --- !u!1 &1920245661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,7 +6825,6 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1612028520}
   - {fileID: 1328029106}
   - {fileID: 575197272}
   - {fileID: 1810988900}
