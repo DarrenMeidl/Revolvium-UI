@@ -10,7 +10,7 @@ public static class MenuManager
     public static GameObject menu1, menu2, title_screen, pause, options, level_end, player_hud;
     public static void OpenMenu(Menu menu, GameObject callingMenu)
     {
-        
+        IsInitialized = false;
         // Initialize our menus
         if (!IsInitialized)
             Initialize();
@@ -43,7 +43,7 @@ public static class MenuManager
     }
     public static void OpenMenu(Menu menu)
     {
-
+        IsInitialized = false;
         // Initialize our menus
         if (!IsInitialized)
             Initialize();
@@ -75,7 +75,7 @@ public static class MenuManager
     } // don't turn off previous menu
     public static void CloseMenu(Menu menu)
     {
-
+        IsInitialized = false;
         // Initialize our menus
         if (!IsInitialized)
             Initialize();
@@ -107,6 +107,7 @@ public static class MenuManager
     }
     public static void CloseAllMenus()
     {
+        IsInitialized = false;
         // Initialize menus
         if (!IsInitialized)
             Initialize();
@@ -132,5 +133,6 @@ public static class MenuManager
         player_hud = canvas.transform.Find("player_hud").gameObject;
 
         IsInitialized = true;
+        Debug.Log("INITIALISED");
     }
 }

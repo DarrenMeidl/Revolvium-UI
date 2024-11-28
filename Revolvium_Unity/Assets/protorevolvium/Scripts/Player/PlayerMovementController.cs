@@ -50,4 +50,14 @@ public class PlayerMovementController : MonoBehaviour
     {
         canMove = true;
     }
+
+    public void Movement_Disable()
+    {
+        canMove = false;
+        rawInputMovement = new Vector3(0, 0, 0); //stops player from continueing to move after pausing
+    }
+    public void Movement_Enable()
+    {
+        canMove = true;
+    }
 }
