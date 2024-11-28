@@ -1,4 +1,5 @@
 using GD;
+using GD.Audio;
 using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,10 @@ public class RotationTileBehaviour : LevelTile
     [SerializeField]
     private GameEvent disableRotation;
 
+    [SerializeField]
+    private AudioClip enable;
+
+
 
 
     [ContextMenu("Disable Rotation")]
@@ -30,7 +35,6 @@ public class RotationTileBehaviour : LevelTile
     public void evokeEnableRotation()
     {
         enableRotation?.Raise();
-        Debug.Log("ROTATION MODE IS TURNED ON!! :3");
     }
 
     
@@ -40,5 +44,7 @@ public class RotationTileBehaviour : LevelTile
         evokeEnableRotation();                                      //dont' change player Y
         player.transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z); //makes sure the player is correctly positioned on the tile
         // fixes bug "Player can get stuck in wall after rotation" in sprint 7 
+
+        AudioManager.Instance.PlaySound(enable, GD.Types.AudioMixerGroupName.SFX);
     }
 }

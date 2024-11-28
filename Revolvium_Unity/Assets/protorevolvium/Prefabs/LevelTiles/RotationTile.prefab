@@ -193,6 +193,8 @@ MonoBehaviour:
   canInterract: 0
   enableRotation: {fileID: 11400000, guid: 1c68c8c983ef5f0499506272eac2097a, type: 2}
   disableRotation: {fileID: 11400000, guid: d8cda6c0ac8fc174c8076f3bfa742ef0, type: 2}
+  enable: {fileID: 8300000, guid: 1d0103f8f84ea5f48a2c0b89ca455c37, type: 3}
+  audioManager: {fileID: 0}
 --- !u!4 &6772266652225831498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 601002966786667842, guid: 6021154be47c2eb4c8e91357415d3aa6, type: 3}
