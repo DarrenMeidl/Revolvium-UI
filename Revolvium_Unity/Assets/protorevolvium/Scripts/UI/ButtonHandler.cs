@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using GD;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 // Called MenuManager functions from: https://www.youtube.com/watch?v=MmsbM89SVbM&t=268s&ab_channel=Comp-3Interactive
+
 public class ButtonHandler : MonoBehaviour
 {
+    [SerializeField] private GameEvent resume;
     #region Common Functions
     public void OnClick_Level_Next()
     {
@@ -29,6 +32,7 @@ public class ButtonHandler : MonoBehaviour
     #region Pause Menu Functions
     public void OnClick_Resume()
     {
+        resume?.Raise();
         MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
     #endregion

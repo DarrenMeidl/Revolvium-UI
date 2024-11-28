@@ -1,27 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using GD;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuInput : MonoBehaviour
+public class MenuInput : Singleton<MenuInput>
 {
-    public static MenuInput Instance { get; private set; }
     private bool paused;
     private bool canPause;
-    void Awake()
+
+    [SerializeField] private GameEvent pause, resume;
+    protected override void Awake()
     {
-        #region Setup
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);  
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        #endregion
+        base.Awake();
 
         #region Perform Tasks Upon Awake
         // if we're in a main menu, we can't access pause menu
@@ -32,6 +23,8 @@ public class MenuInput : MonoBehaviour
         }
         else
         { // if not, we must be in a level
+            MenuManager.CloseAllMenus();
+            MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
         paused = false;
@@ -50,6 +43,7 @@ public class MenuInput : MonoBehaviour
         }
         else
         { // if not, we must be in a level
+            MenuManager.CloseAllMenus();
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
@@ -81,6 +75,7 @@ public class MenuInput : MonoBehaviour
 
     private void Pause_Close()
     {
+        resume?.Raise();
         paused = false;
         MenuManager.CloseMenu(Menu.PAUSE);
         MenuManager.OpenMenu(Menu.PLAYER_HUD);
@@ -88,6 +83,7 @@ public class MenuInput : MonoBehaviour
 
     private void Pause_Open()
     {
+        pause?.Raise();
         paused = true;
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);

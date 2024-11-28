@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dfc03d57e7af94ca981332bd76afde, type: 3}
-  m_Name: GETKEYEVENT
+  m_Script: {fileID: 11500000, guid: 8a8d836e0baba6c44bd9dd06d9d38c64, type: 3}
+  m_Name: TURNMODE_ENABLE
   m_EditorClassIdentifier: 
-  Description: 
+  Description: Changes the camera to the turn mode perspective and allows the player
+    to turn the level

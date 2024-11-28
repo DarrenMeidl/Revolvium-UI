@@ -45,4 +45,11 @@ public abstract class LevelTile : MonoBehaviour
         canInterract = false;
     }
 
+    public void Interact_Enabled() {
+        canInterract = true;
+    }
+    public void Interact_Disabled() {
+        canInterract = false;
+    }
+
 }
