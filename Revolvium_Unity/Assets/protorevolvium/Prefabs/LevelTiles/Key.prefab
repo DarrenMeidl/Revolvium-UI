@@ -202,3 +202,5 @@ MonoBehaviour:
   transform: {fileID: 3792072310573742554}
   canInterract: 0
   locks: []
+  gameEvent: {fileID: 11400000, guid: 4c1b8f3f9cbeb4c4eb8664785b7b2f95, type: 2}
+  keyID: 0

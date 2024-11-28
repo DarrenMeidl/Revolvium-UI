@@ -12,7 +12,6 @@ public class LockTileBehaviour : LevelTile {
 
 
     public void AttemptUnlock(int keyID) {
-        Debug.Log(keyID);
         if (keyID == this.keyID) {
             this.gameObject.SetActive(false);
         }

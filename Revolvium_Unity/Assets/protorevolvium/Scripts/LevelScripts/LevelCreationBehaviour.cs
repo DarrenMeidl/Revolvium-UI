@@ -55,7 +55,7 @@ public class LevelCreationBehaviour : MonoBehaviour
         }
         else
         {
-            Debug.Log($"There are not the correct amount of level blocks in the list. Expected: {creationSettings.w *creationSettings.h *creationSettings.d}. Actual: {blocks.Count}");
+            Debug.LogWarning($"There are not the correct amount of level blocks in the list. Expected: {creationSettings.w *creationSettings.h *creationSettings.d}. Actual: {blocks.Count}");
         }
     }
 
