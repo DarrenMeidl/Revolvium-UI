@@ -543,6 +543,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653145387}
     m_Modifications:
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 1653145392}
     - target: {fileID: 2568292796640137782, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
       propertyPath: m_Name
       value: SmallRamp
@@ -616,10 +620,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7777465288658117762, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
-      propertyPath: levelController
-      value: 
-      objectReference: {fileID: 1653145392}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
       propertyPath: levelController
       value: 
       objectReference: {fileID: 1653145392}
@@ -1774,6 +1774,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653145387}
     m_Modifications:
+    - target: {fileID: 2654070331786796370, guid: 945f6a654b3571f47accaa369c81c333, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8284697073995782814, guid: 945f6a654b3571f47accaa369c81c333, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -2044,6 +2048,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9018456023490353721, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
   m_PrefabInstance: {fileID: 78545526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1163201445 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6965800237474039938, guid: 945f6a654b3571f47accaa369c81c333, type: 3}
+  m_PrefabInstance: {fileID: 826112143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654266a6bd0bff94683db360eb60f83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1202892824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9018456023490353721, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
@@ -2195,7 +2210,7 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1163201445}
         m_TargetAssemblyTypeName: LockTileBehaviour, Assembly-CSharp
         m_MethodName: AttemptUnlock
         m_Mode: 0

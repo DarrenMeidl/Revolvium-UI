@@ -14,8 +14,6 @@ using UnityEngine;
 
 public class KeyTileBehaviour : LevelTile
 {
-    [SerializeField]
-    private List<GameObject> locks = new List<GameObject>();
 
     [SerializeField]
     private IntGameEvent gameEvent;
@@ -24,9 +22,6 @@ public class KeyTileBehaviour : LevelTile
     private int keyID;
 
     private void Start() {
-        foreach (GameObject l in locks) {
-            l.SetActive(true);
-        }
     }
 
 

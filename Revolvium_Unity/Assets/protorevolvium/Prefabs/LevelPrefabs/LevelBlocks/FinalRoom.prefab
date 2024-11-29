@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601002966786667842, guid: 226243b86a166494585fb6f27263dd1b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.017
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601002966786667842, guid: 226243b86a166494585fb6f27263dd1b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4426479140932875539, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
       propertyPath: m_Name
-      value: Room (1) Variant
+      value: FinalRoom
       objectReference: {fileID: 0}
     - target: {fileID: 5489676707281431142, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
