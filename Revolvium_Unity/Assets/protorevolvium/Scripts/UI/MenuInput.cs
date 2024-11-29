@@ -95,4 +95,14 @@ public class MenuInput : Singleton<MenuInput>
         MenuManager.CloseAllMenus(); // Ensure no other menus are open
         MenuManager.OpenMenu(Menu.LEVEL_END);
     }
+
+    public void Can_Pause_True()
+    {
+        canPause = true;
+    }
+    public void Can_Pause_False()
+    {
+        canPause = false;
+    }
+
 }
