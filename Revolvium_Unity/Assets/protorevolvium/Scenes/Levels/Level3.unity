@@ -365,6 +365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShortPlatform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: cubeCenter.x
       value: 2
@@ -1753,6 +1757,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653145387}
     m_Modifications:
+    - target: {fileID: 2023477665111553843, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
     - target: {fileID: 3705895327791518004, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1829,6 +1837,18 @@ PrefabInstance:
       propertyPath: levelController
       value: 
       objectReference: {fileID: 1653145392}
+    - target: {fileID: 5489676707281431142, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
+    - target: {fileID: 5940459689716923807, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
+    - target: {fileID: 8523905730498599998, guid: 74113da1ad120fc44b9fcbeea0c7dea1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5706,6 +5726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShortPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: cubeCenter.x
       value: 2
@@ -6717,6 +6741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShortPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: cubeCenter.x
       value: 2
@@ -7272,6 +7300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShortPlatform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: cubeCenter.x
       value: 2
@@ -10958,6 +10990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShortPlatform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: cubeCenter.x
       value: 2
