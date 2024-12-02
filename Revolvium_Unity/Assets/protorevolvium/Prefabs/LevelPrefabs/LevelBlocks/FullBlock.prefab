@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d697981c71b25a4d86a6c6609a8de70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cubeCenter: {x: 1, y: 1, z: 1}
   rotateDirection: {fileID: 11400000, guid: e746954634f142f4a81c94d760c76cae, type: 2}
   levelController: {fileID: 0}
 --- !u!1001 &9130254832878441067
@@ -161,6 +162,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: -6400281290468069383, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Mesh
       value: 
