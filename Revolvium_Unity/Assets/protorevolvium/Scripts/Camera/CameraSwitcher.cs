@@ -1,7 +1,6 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using GD.Audio;
 
 /*
  *  CAMERA SWITCHER - STARTED BY AND WRITTEN BY RUBY
@@ -24,6 +23,9 @@ public class CameraSwitcher : MonoBehaviour
     [SerializeField]
     private Vector3 rotateOffset = new Vector3(0, 0, -20);
 
+    [SerializeField]
+    private AudioClip cameraWhoosh;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +40,12 @@ public class CameraSwitcher : MonoBehaviour
     {
         transposer.m_FollowOffset = rotateOffset;
         VirtualCamera.LookAt = LevelTransform;
+        AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
     }
     public void disableRotation()
     {
         transposer.m_FollowOffset = playerOffset;
         VirtualCamera.LookAt = PlayerTransform;
+        AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
     }
 }
