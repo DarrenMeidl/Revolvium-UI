@@ -1321,7 +1321,8 @@ PrefabInstance:
       value: EndOfLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6549761244177337516, guid: 09b2c468d3a9fd14d88ca1ddbe2a8ac9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09b2c468d3a9fd14d88ca1ddbe2a8ac9, type: 3}
