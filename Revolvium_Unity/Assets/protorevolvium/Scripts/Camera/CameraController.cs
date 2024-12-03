@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour {
     public void OnMovement(InputAction.CallbackContext value) {
         if (value.started) {
             float inputCameraHorizontal = value.ReadValue<Vector2>().x;
+            Debug.Log(value.ReadValue<Vector2>());
             if (inputCameraHorizontal > 0.8) {
                 offSetValue--;
                 if (offSetValue < 0) offSetValue = camOffsets.Count - 1;

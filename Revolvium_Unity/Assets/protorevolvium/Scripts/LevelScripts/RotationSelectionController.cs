@@ -58,16 +58,18 @@ public class RotationSelectionController : MonoBehaviour {
     }
 
     public void Rotate(InputAction.CallbackContext value) {
+        if (value.started) {
 
-        BoxCollider selector = selectors[currentSelector].gameObject.GetComponent<BoxCollider>();
+            BoxCollider selector = selectors[currentSelector].gameObject.GetComponent<BoxCollider>();
 
-        if (player.bounds.Intersects(selector.bounds)) {
-            return;
-        }
-        else if (value.started && canRotate && delay <= 0) {
-            levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
-            selectors[currentSelector].enableSelector();
-            delay = 1;
+            if (player.bounds.Intersects(selector.bounds)) {
+                return;
+            }
+            else if (value.started && canRotate && delay <= 0) {
+                levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
+                selectors[currentSelector].enableSelector();
+                delay = 1;
+            }
         }
     }
 

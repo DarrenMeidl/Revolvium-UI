@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GD;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MenuInput : Singleton<MenuInput>
@@ -54,19 +55,21 @@ public class MenuInput : Singleton<MenuInput>
     {
         CheckPlayerInput();
     }
-    private void CheckPlayerInput()
-    {
-        if (Input.GetButtonDown("Pause") && canPause)
-        {
-            if (paused)
-            { // if we press the pause button when we're already paused
+
+    public void Pause(InputAction.CallbackContext value) {
+        if (value.started) {
+            if (paused) { // if we press the pause button when we're already paused
                 Pause_Close();
             }
-            else
-            {
+            else {
                 Pause_Open();
             }
         }
+    }
+
+    private void CheckPlayerInput()
+    {
+        
     }
 
     private void Pause_Close()

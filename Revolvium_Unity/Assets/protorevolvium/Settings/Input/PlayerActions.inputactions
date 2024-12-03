@@ -24,60 +24,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Activate Rotation Platform",
-                    "type": "Button",
-                    "id": "d9f43e22-41ba-4e11-a82d-9248f5d46ab2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Exit Rotation Mode",
-                    "type": "Button",
-                    "id": "9670c323-41cc-493f-99b1-ec3fd9f63313",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Next Rotation",
-                    "type": "Button",
-                    "id": "4da9e1f0-f63c-46ba-81ca-e69a42201a58",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Previous Rotation",
-                    "type": "Button",
-                    "id": "5832509b-c83f-483e-b1d2-fc2ff6b4ac49",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Next Selection",
-                    "type": "Button",
-                    "id": "9bc6e0bc-9722-474b-8ac1-ddc3ae24f503",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Previous Selection",
-                    "type": "Button",
-                    "id": "68c30495-6e14-4df4-bf89-6b16f0b84a1b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Pause",
                     "type": "Button",
                     "id": "f73bae46-4820-45fc-8267-0aeb19959a85",
@@ -365,116 +311,6 @@
                 },
                 {
                     "name": "",
-                    "id": "39924ff6-fc8e-4f8d-9fbd-26d1bb907069",
-                    "path": "<Gamepad>/{PrimaryAction}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate Rotation Platform",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f97affa2-ac08-4cdb-8f79-1d251f6b46ab",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate Rotation Platform",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e4d9f14-f1c5-465c-91ba-f87aded63c8d",
-                    "path": "<Gamepad>/{Back}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Exit Rotation Mode",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0bac91f0-5cfa-468f-ace1-9113654dec34",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Exit Rotation Mode",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f3de776b-3d4a-4a8e-b10a-f82be5f42527",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c590fe56-0543-4e90-a6fc-72a7f28435e7",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Previous Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "600e5bbe-bb0b-479e-92e3-34986a043ea0",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next Selection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "70041e07-fcc3-4b87-9249-6bc530b05b42",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next Selection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7d19fd12-330e-4446-9229-266b000bc2ab",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Previous Selection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "91f2d977-1a95-4624-b6be-17649630528c",
-                    "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Previous Selection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "53149e9c-d758-48de-b7e1-696730cde6cd",
                     "path": "<Gamepad>/start",
                     "interactions": "",
@@ -487,7 +323,7 @@
                 {
                     "name": "",
                     "id": "c6e7376a-1bfa-43b9-89b3-d14a8c217a9f",
-                    "path": "<Keyboard>/escape",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
