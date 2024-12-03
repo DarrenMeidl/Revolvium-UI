@@ -67,10 +67,6 @@ public class MenuInput : Singleton<MenuInput>
                 Pause_Open();
             }
         }
-        if (Input.GetButtonDown("End Level"))
-        {
-            Level_End_Open();
-        }
     }
 
     private void Pause_Close()
