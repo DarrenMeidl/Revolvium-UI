@@ -8771,6 +8771,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8412136237185162389, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: CameraOffset
+      value: 
+      objectReference: {fileID: 11400000, guid: df862ce49d1e330488acf1656789aa63, type: 2}
+    - target: {fileID: 8412136237185162389, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: VirtualCamera
       value: 
       objectReference: {fileID: 1085800048}

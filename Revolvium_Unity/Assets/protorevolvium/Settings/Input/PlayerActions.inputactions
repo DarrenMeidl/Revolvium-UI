@@ -256,7 +256,7 @@
                 {
                     "name": "Controller Right Stick",
                     "id": "ce2206dc-1738-4bbc-ae3b-a3ce3c567ec8",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -311,7 +311,7 @@
                 {
                     "name": "Arrow Keys",
                     "id": "1a34988d-461a-45d7-a54a-bc40a196089e",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

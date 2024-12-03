@@ -9,7 +9,7 @@ public class CameraSwitcher : MonoBehaviour
 {
     [SerializeField]
     private CinemachineVirtualCamera VirtualCamera;
-    CinemachineTransposer transposer;
+    private CinemachineTransposer transposer;
 
     [SerializeField]
     private Transform Transform;
@@ -19,9 +19,7 @@ public class CameraSwitcher : MonoBehaviour
     private Transform LevelTransform;
 
     [SerializeField]
-    private Vector3 playerOffset = new Vector3(0, 0, -10);
-    [SerializeField]
-    private Vector3 rotateOffset = new Vector3(0, 0, -20);
+    private CameraOffset CameraOffset;
 
     [SerializeField]
     private AudioClip cameraWhoosh;
@@ -31,21 +29,25 @@ public class CameraSwitcher : MonoBehaviour
     {
         //https://discussions.unity.com/t/cinemachine-base-follow-offset/698432 13/11/2024
         transposer = VirtualCamera.GetCinemachineComponent<CinemachineTransposer>();
-        transposer.m_FollowOffset = playerOffset;
+        transposer.m_FollowOffset = CameraOffset.playerOffset;
 
         VirtualCamera.LookAt = PlayerTransform;
+        VirtualCamera.Follow = PlayerTransform;
     }   
 
     public void enableRotation()
     {
-        transposer.m_FollowOffset = rotateOffset;
+        transposer.m_FollowOffset = CameraOffset.levelOffset;
         VirtualCamera.LookAt = LevelTransform;
+        VirtualCamera.Follow = LevelTransform;
+
         AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
     }
     public void disableRotation()
     {
-        transposer.m_FollowOffset = playerOffset;
+        transposer.m_FollowOffset = CameraOffset.playerOffset;
         VirtualCamera.LookAt = PlayerTransform;
+        VirtualCamera.Follow = PlayerTransform;
         AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
     }
 }
