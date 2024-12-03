@@ -31,15 +31,23 @@ public class RotationSelectionController : MonoBehaviour {
     [SerializeField]
     private GameEvent disableRotationEvent;
 
+    private Vector3 selectorMoveDirection = new Vector3(1,1,1);
+
     // these 2 functions could be made into one, using canRotate = !canRotate and making the event a toggle rather than an enable/disable
     public void enableRotation() {
         selectors[currentSelector].enableHighLight();
         canRotate = true;
+        selectorMoveDirection = new Vector3(1,1,1);
     }
     public void disableRotation() {
         selectors[currentSelector].disableHighLight();
         canRotate = false;
         delay = 1.5f;
+    }
+
+    public void CamMoved(Vector3 pos) {
+        selectorMoveDirection.z = (pos.z < 0) ? 1 : -1;
+        selectorMoveDirection.x = (pos.x < 0) ? 1 : -1;
     }
     // Start is called before the first frame update
     void Start() {
@@ -117,9 +125,9 @@ public class RotationSelectionController : MonoBehaviour {
         Vector3 moveDir = selectors[currentSelector].selectorMoveDir.dir;
         Vector3 currentPosition = selectors[currentSelector].gameObject.transform.position;
 
-        float newX = currentPosition.x + (blockSize * moveDir.x * dir);
+        float newX = currentPosition.x + (blockSize * moveDir.x * dir * selectorMoveDirection.z);
         float newY = currentPosition.y + (blockSize * moveDir.y * dir);
-        float newZ = currentPosition.z + (blockSize * moveDir.z * dir);
+        float newZ = currentPosition.z + (blockSize * moveDir.z * dir * selectorMoveDirection.x);
 
         //Debug.Log(newX);
         //Debug.Log((newX < levelSelectorBoundaries.minX));

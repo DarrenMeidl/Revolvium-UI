@@ -1,4 +1,5 @@
 using Cinemachine;
+using GD;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,9 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private CameraOffset CameraOffset;
 
+    [SerializeField]
+    private Vector3GameEvent camMoveEvent;
+
     private int offSetValue = 0;
 
     private void Start() {
@@ -25,14 +29,16 @@ public class CameraController : MonoBehaviour {
         if (value.started) {
             float inputCamera = value.ReadValue<Vector2>().x;
             if (inputCamera > 0.8) {
-                offSetValue ++;
-                if (offSetValue >= camOffsets.Count) offSetValue = 0; 
+                offSetValue--;
+                if (offSetValue < 0) offSetValue = camOffsets.Count - 1;
                 transposer.m_FollowOffset = new Vector3(CameraOffset.levelOffset.x * camOffsets[offSetValue].x, CameraOffset.levelOffset.y, CameraOffset.levelOffset.z * camOffsets[offSetValue].y);
+                camMoveEvent?.Raise(transposer.m_FollowOffset);
             }
             else if (inputCamera < -0.8) {
-                offSetValue--;
-                if (offSetValue < 0) offSetValue = camOffsets.Count-1;
+                offSetValue++;
+                if (offSetValue >= camOffsets.Count) offSetValue = 0;
                 transposer.m_FollowOffset = new Vector3(CameraOffset.levelOffset.x * camOffsets[offSetValue].x, CameraOffset.levelOffset.y, CameraOffset.levelOffset.z * camOffsets[offSetValue].y);
+                camMoveEvent?.Raise(transposer.m_FollowOffset);
             }
         }
     }

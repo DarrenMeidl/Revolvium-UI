@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 576632380447897258}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13913712, y: -0.0000000064880985, z: 9.116023e-10, w: 0.9902732}
-  m_LocalPosition: {x: 0.083, y: 1.336, z: -4.305}
+  m_LocalPosition: {x: 0.06, y: 3.1, z: -4.305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -113,8 +113,7 @@ MonoBehaviour:
   Transform: {fileID: 3499191914539554468}
   PlayerTransform: {fileID: 0}
   LevelTransform: {fileID: 0}
-  playerOffset: {x: 0, y: 1.5, z: -5}
-  rotateOffset: {x: -5, y: 5, z: -5}
+  CameraOffset: {fileID: 0}
   cameraWhoosh: {fileID: 8300000, guid: 24793e9d186baf84e97736e3b61b5d57, type: 3}
 --- !u!114 &598603672908243389
 MonoBehaviour:
@@ -168,6 +167,8 @@ MonoBehaviour:
   - {x: 1, y: -1}
   - {x: -1, y: -1}
   - {x: -1, y: 1}
+  CameraOffset: {fileID: 11400000, guid: 8b54e11f9c9008948bbf144e27a79127, type: 2}
+  camMoveEvent: {fileID: 11400000, guid: eb4edf0d687531e4fa32ef458b77cde0, type: 2}
 --- !u!114 &-2938071044584163872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +243,19 @@ MonoBehaviour:
     m_ActionId: 4bb31b1e-08e3-4340-a8dc-43ec4b36251c
     m_ActionName: 'PlayerControls/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7617631216826033758}
+        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
+        m_MethodName: OnMovement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d7d3eca1-2fbb-4a2a-a3cb-534b597f5e88
     m_ActionName: 'PlayerControls/Camera Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
