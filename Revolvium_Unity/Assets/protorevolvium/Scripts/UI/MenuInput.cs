@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class MenuInput : Singleton<MenuInput>
 {
     private bool paused;
-    private bool canPause;
 
     [SerializeField] private GameEvent pause, resume;
     protected override void Awake()
@@ -20,13 +19,11 @@ public class MenuInput : Singleton<MenuInput>
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
-            canPause = false;
         }
         else
         { // if not, we must be in a level
             MenuManager.CloseAllMenus();
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
-            canPause = true;
         }
         paused = false;
         #endregion
@@ -40,13 +37,11 @@ public class MenuInput : Singleton<MenuInput>
         if (scene.buildIndex == 0)
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
-            canPause = false;
         }
         else
         { // if not, we must be in a level
             MenuManager.CloseAllMenus();
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
-            canPause = true;
         }
         paused = false;
     }
@@ -90,18 +85,15 @@ public class MenuInput : Singleton<MenuInput>
 
     private void Level_End_Open()
     {
-        canPause = false;
         MenuManager.CloseAllMenus(); // Ensure no other menus are open
         MenuManager.OpenMenu(Menu.LEVEL_END);
     }
 
     public void Can_Pause_True()
     {
-        canPause = true;
     }
     public void Can_Pause_False()
     {
-        canPause = false;
     }
 
 }
