@@ -41,6 +41,8 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - _Max: 0.34
+    - _Min: 0.09
     - _QueueControl: 0
     m_Colors: []
   m_BuildTextureStacks: []

@@ -1904,7 +1904,7 @@ PrefabInstance:
     - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
+      objectReference: {fileID: 2100000, guid: 03430ce92b9147c4c9f5a3022b041cb7, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: levelController
       value: 
@@ -2718,7 +2718,7 @@ PrefabInstance:
     - target: {fileID: 7547248301913020678, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
+      objectReference: {fileID: 2100000, guid: 03430ce92b9147c4c9f5a3022b041cb7, type: 2}
     - target: {fileID: 8645335989467507702, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: levelController
       value: 
@@ -5615,7 +5615,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
+      objectReference: {fileID: 2100000, guid: ba2226aa273afb94eb9a2b21f04369a8, type: 2}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
       value: smallPlatform (1)
@@ -7539,7 +7539,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7566f004765b64046b3b33e2c3513c6e, type: 2}
+      objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 919132149155446097, guid: 2705be0f7836af143a993b09c6ab3ac3, type: 3}
       propertyPath: m_Name
       value: smallPlatform

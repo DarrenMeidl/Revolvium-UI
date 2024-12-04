@@ -207,3 +207,4 @@ MonoBehaviour:
   canInterract: 0
   gameEvent: {fileID: 11400000, guid: 4c1b8f3f9cbeb4c4eb8664785b7b2f95, type: 2}
   keyID: 0
+  getKey: {fileID: 8300000, guid: 21f8e607fb359fb4ab94c7df740dded0, type: 3}

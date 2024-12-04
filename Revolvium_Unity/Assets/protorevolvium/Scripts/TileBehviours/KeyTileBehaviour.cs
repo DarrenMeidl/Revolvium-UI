@@ -1,4 +1,5 @@
 using GD;
+using GD.Audio;
 using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,6 +22,9 @@ public class KeyTileBehaviour : LevelTile
     [SerializeField]
     private int keyID;
 
+    [SerializeField]
+    private AudioClip getKey;
+
     private void Start() {
     }
 
@@ -29,5 +33,7 @@ public class KeyTileBehaviour : LevelTile
         gameEvent?.Raise(keyID);
 
         gameObject.SetActive(false);
+
+        AudioManager.Instance.PlaySound(getKey, GD.Types.AudioMixerGroupName.SFX);
     }
 }
