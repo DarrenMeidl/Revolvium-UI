@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6883728681933048791, guid: c7bce334afeeeba4eafe893ad24df096, type: 3}
       propertyPath: m_Name
-      value: NoBlock Variant
+      value: AirBlock
       objectReference: {fileID: 0}
     - target: {fileID: 7659633549865896924, guid: c7bce334afeeeba4eafe893ad24df096, type: 3}
       propertyPath: m_Enabled
@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: c7bce334afeeeba4eafe893ad24df096, type: 3}
+      propertyPath: endRotation
+      value: 
+      objectReference: {fileID: 11400000, guid: 52754b963067df445898384a253f4caa, type: 2}
+    - target: {fileID: 8645335989467507702, guid: c7bce334afeeeba4eafe893ad24df096, type: 3}
+      propertyPath: startRotation
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b191738bf037604794720eec5d8b41b, type: 2}
     - target: {fileID: 9018456023490353721, guid: c7bce334afeeeba4eafe893ad24df096, type: 3}
       propertyPath: m_LocalScale.x
       value: 2

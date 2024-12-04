@@ -4215,6 +4215,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6626028210008781373, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
   m_PrefabInstance: {fileID: 141783565}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &807808258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1052797091732764537, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+  m_PrefabInstance: {fileID: 141783565}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141783566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6c2f82ee5d7a24c8900cbfe44e414e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &819769094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5331,6 +5342,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1377836377}
     m_Modifications:
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 141783566}
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 632101908996328168, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 741963456534427135, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -5445,6 +5480,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709401314091482244, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 807808258}
+    - target: {fileID: 1709401314091482244, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709401314091482244, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RotationSelectionController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709401314091482244, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2132912738459225141, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}

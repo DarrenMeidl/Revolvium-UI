@@ -1,4 +1,5 @@
 using GD;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
@@ -33,6 +34,9 @@ public class RotationSelectionController : MonoBehaviour {
 
     private Vector3 selectorMoveDirection = new Vector3(1,1,1);
 
+    private IEnumerator coroutine;
+
+
     // these 2 functions could be made into one, using canRotate = !canRotate and making the event a toggle rather than an enable/disable
     public void enableRotation() {
         selectors[currentSelector].enableHighLight();
@@ -44,6 +48,17 @@ public class RotationSelectionController : MonoBehaviour {
         canRotate = false;
         delay = 1.5f;
     }
+
+    IEnumerator DisableAfterRotationStart(GameObject poll) {
+        yield return null;
+        poll.SetActive(false);
+        yield break;
+    }
+    public void StartRotation() {
+        coroutine = DisableAfterRotationStart(gameObject);
+        StartCoroutine(coroutine);
+    }
+
 
     public void CamMoved(Vector3 pos) {
         selectorMoveDirection.z = (pos.z < 0) ? 1 : -1;
