@@ -4871,12 +4871,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 500296958}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 500296966}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: enableRotation
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: enableRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RotationEnabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CameraController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2132912738459225141, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: m_Name
@@ -4891,12 +4907,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 500296958}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 500296966}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: disableRotation
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: disableRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RotationDisabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CameraController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5720689147531072529, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size

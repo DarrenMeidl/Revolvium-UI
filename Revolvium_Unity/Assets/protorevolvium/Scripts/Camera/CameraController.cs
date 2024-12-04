@@ -21,14 +21,25 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private Vector3GameEvent camMoveEvent;
 
+
+    private bool canRotate = false;
+
     private int offSetValue = 0;
+
+
+    public void RotationEnabled() {
+        canRotate = true;
+    }
+    public void RotationDisabled() {
+        canRotate = false;
+    }
 
     private void Start() {
         transposer = VirtualCamera.GetCinemachineComponent<CinemachineTransposer>();
     }
 
     public void OnMovement(InputAction.CallbackContext value) {
-        if (value.started) {
+        if (value.started && canRotate) {
             float inputCameraHorizontal = value.ReadValue<Vector2>().x;
             Debug.Log(value.ReadValue<Vector2>());
             if (inputCameraHorizontal > 0.8) {
