@@ -485,6 +485,7 @@ MonoBehaviour:
   currentSelector: 0
   canRotate: 0
   disableRotationEvent: {fileID: 11400000, guid: d8cda6c0ac8fc174c8076f3bfa742ef0, type: 2}
+  RotationSound: {fileID: 8300000, guid: a9541a6171987724a8e15a275d190b2c, type: 3}
 --- !u!114 &8740174971109775450
 MonoBehaviour:
   m_ObjectHideFlags: 0

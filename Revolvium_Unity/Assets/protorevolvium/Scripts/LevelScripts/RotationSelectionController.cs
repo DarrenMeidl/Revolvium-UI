@@ -1,4 +1,5 @@
 using GD;
+using GD.Audio;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -35,6 +36,9 @@ public class RotationSelectionController : MonoBehaviour {
     private Vector3 selectorMoveDirection = new Vector3(1,1,1);
 
     private IEnumerator coroutine;
+
+    [SerializeField]
+    private AudioClip RotationSound;
 
 
     // these 2 functions could be made into one, using canRotate = !canRotate and making the event a toggle rather than an enable/disable
@@ -82,6 +86,7 @@ public class RotationSelectionController : MonoBehaviour {
                 return;
             }
             else if (value.started && canRotate && delay <= 0) {
+                AudioManager.Instance.PlaySound(RotationSound, GD.Types.AudioMixerGroupName.SFX);
                 levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
                 selectors[currentSelector].enableSelector();
                 delay = 1;
