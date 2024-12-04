@@ -52,6 +52,7 @@ public class RotationSelectionController : MonoBehaviour {
     IEnumerator DisableAfterRotationStart(GameObject poll) {
         yield return null;
         poll.SetActive(false);
+        selectors[currentSelector].disableSelector();
         yield break;
     }
     public void StartRotation() {
