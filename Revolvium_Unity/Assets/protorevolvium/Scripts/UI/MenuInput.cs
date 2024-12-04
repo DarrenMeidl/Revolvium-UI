@@ -46,11 +46,6 @@ public class MenuInput : Singleton<MenuInput>
         paused = false;
     }
 
-    private void Update()
-    {
-        CheckPlayerInput();
-    }
-
     public void Pause(InputAction.CallbackContext value) {
         if (value.started) {
             if (paused) { // if we press the pause button when we're already paused
@@ -62,10 +57,6 @@ public class MenuInput : Singleton<MenuInput>
         }
     }
 
-    private void CheckPlayerInput()
-    {
-        
-    }
 
     private void Pause_Close()
     {
@@ -87,13 +78,6 @@ public class MenuInput : Singleton<MenuInput>
     {
         MenuManager.CloseAllMenus(); // Ensure no other menus are open
         MenuManager.OpenMenu(Menu.LEVEL_END);
-    }
-
-    public void Can_Pause_True()
-    {
-    }
-    public void Can_Pause_False()
-    {
     }
 
 }
