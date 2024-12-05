@@ -7,13 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    [SerializeField] private GameEvent resume;
+    [SerializeField] private GameEvent gameEvent;
     #region Common Functions
     public void OnClick_Level_Next()
     {
-        Debug.Log("NEXT LEVEL LOADING...");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Hardcoded to loop back to level 1 if we're on the last level
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+            SceneManager.LoadScene(1);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
+        gameEvent?.Raise(); // resume game
     }
     public void OnClick_Level_Restart()
     {
@@ -32,7 +36,7 @@ public class ButtonHandler : MonoBehaviour
     #region Pause Menu Functions
     public void OnClick_Resume()
     {
-        resume?.Raise();
+        gameEvent?.Raise();
         MenuManager.OpenMenu(Menu.PLAYER_HUD, gameObject);
     }
     #endregion

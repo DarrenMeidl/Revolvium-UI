@@ -459,6 +459,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1236131474386092265, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
     - target: {fileID: 1250201643471340842, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -499,6 +503,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4587718423935096795, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
     - target: {fileID: 7448524913199680438, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_Name
       value: ---UI---

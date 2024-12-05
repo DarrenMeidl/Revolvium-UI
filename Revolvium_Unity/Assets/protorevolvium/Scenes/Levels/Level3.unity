@@ -780,6 +780,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1236131474386092265, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
     - target: {fileID: 1250201643471340842, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -820,6 +824,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4587718423935096795, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
     - target: {fileID: 7448524913199680438, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_Name
       value: ---UI---
@@ -2314,6 +2322,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7394228242130683111, guid: 945f6a654b3571f47accaa369c81c333, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 11400000, guid: 203ff4956dfdf9540819c29f78b13c09, type: 2}
     - target: {fileID: 8284697073995782814, guid: 945f6a654b3571f47accaa369c81c333, type: 3}
       propertyPath: m_LocalScale.x
       value: 2

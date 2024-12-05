@@ -22,11 +22,15 @@ public class EndTileBehaviour : LevelTile
     [SerializeField]
     private AudioClip win;
 
+    [SerializeField]
+    private GameEvent pause;
 
     protected override void interact(GameObject player)
     {
-        SceneManager.LoadScene($"Level{nextLevel}");
-        Debug.Log("dwnjdnhwiadnhwiadhnihn");
+        pause?.Raise();
+        MenuManager.CloseAllMenus();
+        MenuManager.OpenMenu(Menu.LEVEL_END);
+        //SceneManager.LoadScene($"Level{nextLevel}");
 
         AudioManager.Instance.PlaySound(win, GD.Types.AudioMixerGroupName.SFX);
     }
