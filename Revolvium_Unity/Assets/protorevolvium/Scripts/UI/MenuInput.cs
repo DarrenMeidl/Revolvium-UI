@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using GD;
+using GD.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,8 @@ public class MenuInput : Singleton<MenuInput>
     private bool paused;
 
     [SerializeField] private GameEvent pause, resume;
+    [SerializeField] private AudioClip click;
+    [SerializeField] private AudioClip hover;
     protected override void Awake()
     {
         base.Awake();
@@ -78,6 +81,16 @@ public class MenuInput : Singleton<MenuInput>
     {
         MenuManager.CloseAllMenus(); // Ensure no other menus are open
         MenuManager.OpenMenu(Menu.LEVEL_END);
+    }
+
+    public void Play_Click_Sound()
+    {
+        AudioManager.Instance.PlaySound(click, GD.Types.AudioMixerGroupName.SFX);
+    }
+
+    public void Play_Hover_Sound()
+    {
+        AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.SFX);
     }
 
 }
