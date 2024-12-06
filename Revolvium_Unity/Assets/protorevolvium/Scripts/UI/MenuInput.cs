@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class MenuInput : Singleton<MenuInput>
 {
     private bool paused;
+    private bool canPause;
 
     [SerializeField] private GameEvent pause, resume;
     [SerializeField] private AudioClip click;
@@ -22,11 +23,13 @@ public class MenuInput : Singleton<MenuInput>
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
+            canPause = false;
         }
         else
         { // if not, we must be in a level
             MenuManager.CloseAllMenus();
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
+            canPause = true;
         }
         paused = false;
         #endregion
@@ -50,7 +53,7 @@ public class MenuInput : Singleton<MenuInput>
     }
 
     public void Pause(InputAction.CallbackContext value) {
-        if (value.started) {
+        if (value.started && canPause) {
             if (paused) { // if we press the pause button when we're already paused
                 Pause_Close();
             }
@@ -93,4 +96,10 @@ public class MenuInput : Singleton<MenuInput>
         AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.SFX);
     }
 
+    public void CanPause(int state) {
+        if (state == 0)
+            canPause = true;
+        else
+            canPause = false;
+    }
 }
