@@ -206,7 +206,7 @@ MonoBehaviour:
   canInterract: 0
   nextLevel: 1
   win: {fileID: 8300000, guid: 1d0103f8f84ea5f48a2c0b89ca455c37, type: 3}
-  pause: {fileID: 11400000, guid: 3e59e168a95cf2147b99b36c46a2601e, type: 2}
+  disablePlayer: {fileID: 11400000, guid: 3e59e168a95cf2147b99b36c46a2601e, type: 2}
 --- !u!1001 &3663551152575750451
 PrefabInstance:
   m_ObjectHideFlags: 0

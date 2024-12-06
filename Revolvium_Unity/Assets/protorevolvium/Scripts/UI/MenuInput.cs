@@ -19,38 +19,22 @@ public class MenuInput : Singleton<MenuInput>
         base.Awake();
 
         #region Perform Tasks Upon Awake
-        // if we're in a main menu, we can't access pause menu
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        MenuManager.Initialize(); // prevents needing to look for menus every time we want to open/close them
+        MenuManager.CloseAllMenus(); // ensure no other menus are open
+        if (SceneManager.GetActiveScene().buildIndex == 0) // if we're in a main menu, we can't access pause menu
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
             canPause = false;
         }
         else
         { // if not, we must be in a level
-            MenuManager.CloseAllMenus();
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
         paused = false;
         #endregion
-
-        //SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
     }
 
-    //private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    // if we're in a main menu, we can't access pause menu
-    //    if (scene.buildIndex == 0)
-    //    {
-    //        MenuManager.OpenMenu(Menu.TITLE_SCREEN);
-    //    }
-    //    else
-    //    { // if not, we must be in a level
-    //        MenuManager.CloseAllMenus();
-    //        MenuManager.OpenMenu(Menu.PLAYER_HUD);
-    //    }
-    //    paused = false;
-    //}
 
     public void Pause(InputAction.CallbackContext value) {
         if (value.started && canPause) {

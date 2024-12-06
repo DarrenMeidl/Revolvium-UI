@@ -23,11 +23,11 @@ public class EndTileBehaviour : LevelTile
     private AudioClip win;
 
     [SerializeField]
-    private GameEvent pause;
+    private GameEvent disablePlayer;
 
     protected override void interact(GameObject player)
     {
-        pause?.Raise();
+        disablePlayer?.Raise();
         MenuManager.CloseAllMenus();
         MenuManager.OpenMenu(Menu.LEVEL_END);
         //SceneManager.LoadScene($"Level{nextLevel}");

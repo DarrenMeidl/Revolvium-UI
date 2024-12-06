@@ -547,7 +547,7 @@ PrefabInstance:
     - target: {fileID: 4505725976962670618, guid: 09b2c468d3a9fd14d88ca1ddbe2a8ac9, type: 3}
       propertyPath: pause
       value: 
-      objectReference: {fileID: 11400000, guid: 203ff4956dfdf9540819c29f78b13c09, type: 2}
+      objectReference: {fileID: 11400000, guid: 3e59e168a95cf2147b99b36c46a2601e, type: 2}
     - target: {fileID: 4505725976962670618, guid: 09b2c468d3a9fd14d88ca1ddbe2a8ac9, type: 3}
       propertyPath: nextLevel
       value: 2
@@ -3690,6 +3690,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3139006762905965344, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139006762905965344, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4587718423935096795, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: gameEvent
       value: 
@@ -3697,6 +3705,10 @@ PrefabInstance:
     - target: {fileID: 4638301988328135252, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641119706629576411, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7448524913199680438, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_Name
@@ -3707,7 +3719,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1586886429474134286, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 85250944919878777, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
