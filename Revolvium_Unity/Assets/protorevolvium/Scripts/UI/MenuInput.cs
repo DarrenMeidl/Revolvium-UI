@@ -34,23 +34,23 @@ public class MenuInput : Singleton<MenuInput>
         paused = false;
         #endregion
 
-        SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
+        //SceneManager.sceneLoaded += OnSceneLoaded; // subscribe to the sceneLoaded event
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // if we're in a main menu, we can't access pause menu
-        if (scene.buildIndex == 0)
-        {
-            MenuManager.OpenMenu(Menu.TITLE_SCREEN);
-        }
-        else
-        { // if not, we must be in a level
-            MenuManager.CloseAllMenus();
-            MenuManager.OpenMenu(Menu.PLAYER_HUD);
-        }
-        paused = false;
-    }
+    //private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    // if we're in a main menu, we can't access pause menu
+    //    if (scene.buildIndex == 0)
+    //    {
+    //        MenuManager.OpenMenu(Menu.TITLE_SCREEN);
+    //    }
+    //    else
+    //    { // if not, we must be in a level
+    //        MenuManager.CloseAllMenus();
+    //        MenuManager.OpenMenu(Menu.PLAYER_HUD);
+    //    }
+    //    paused = false;
+    //}
 
     public void Pause(InputAction.CallbackContext value) {
         if (value.started && canPause) {
