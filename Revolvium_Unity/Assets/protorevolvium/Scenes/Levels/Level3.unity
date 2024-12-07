@@ -5491,6 +5491,10 @@ PrefabInstance:
       propertyPath: nextLevel
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 2009575862}
     - target: {fileID: 1411515741508035882, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7052,6 +7056,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
   m_PrefabInstance: {fileID: 2008828002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2009575862 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5345622609201329272, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+  m_PrefabInstance: {fileID: 284343331}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2021228587
 PrefabInstance:

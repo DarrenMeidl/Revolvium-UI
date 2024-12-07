@@ -9,26 +9,16 @@ public class ButtonHandler : MonoBehaviour
 {
     [SerializeField] private GameEvent resumeEvent;
 
-    [SerializeField] private float transitionTime = 1f;
-    [SerializeField] private Animator transition;
+
     #region Common Functions
-    private IEnumerator LoadNextLevel() {
-        transition.SetTrigger("Start");
-        yield return new WaitForSeconds(transitionTime);
+     
+    public void OnClick_Level_Next() {
         LevelChangeManager.Instance.ChangeLevel();
-    }
-    public void OnClick_Level_Next()
-    {
-        StartCoroutine(LoadNextLevel());
         resumeEvent?.Raise(); // resume game ------------------
     }
-    private IEnumerator LoadCurrentLevel() {
-        transition.SetTrigger("Start");
-        yield return new WaitForSeconds(transitionTime);
-        LevelChangeManager.Instance.ReloadLevel();
-    }
+   
     public void OnClick_Level_Restart() {
-        StartCoroutine(LoadCurrentLevel());
+        LevelChangeManager.Instance.ReloadLevel();
     }
 
     public void OnClick_Quit()
@@ -62,7 +52,7 @@ public class ButtonHandler : MonoBehaviour
     #region Main Menu Functions
     public void OnClick_MainMenu()
     {
-        StartCoroutine(LoadNextLevel());
+        LevelChangeManager.Instance.ChangeToTitle();
     }
     #endregion  
 }

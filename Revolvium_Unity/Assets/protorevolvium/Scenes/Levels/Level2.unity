@@ -552,6 +552,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e477378157f9210418f69e160adfa114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &292676421 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5345622609201329272, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+  m_PrefabInstance: {fileID: 292676419}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &354891854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4653,6 +4658,10 @@ PrefabInstance:
       propertyPath: nextLevel
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 292676421}
     - target: {fileID: 1411515741508035882, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
