@@ -225,14 +225,14 @@ PrefabInstance:
     - target: {fileID: 3657580980239945391, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cbb49c9a95e75514683121ea56ec8555, type: 3}
+      objectReference: {fileID: 21300000, guid: 82a6f3d04abe97f4092d5c4ad4b4d376, type: 3}
     - target: {fileID: 4290560723396398135, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -175.7
+      value: -207.6
       objectReference: {fileID: 0}
     - target: {fileID: 4290560723396398135, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5575351906375319743, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_Pivot.x
@@ -317,9 +317,10 @@ PrefabInstance:
     - target: {fileID: 6810086864173574907, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4130ea0642a22064a8e265f5f9fd4ae0, type: 3}
+      objectReference: {fileID: 21300000, guid: 904f71ac404c0de4297dd9966f86af04, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6130014497047858840, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
@@ -465,7 +466,7 @@ PrefabInstance:
     - target: {fileID: 2821211202567690191, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 896801834c1a2b84cb8106ca03b668b8, type: 3}
+      objectReference: {fileID: 21300000, guid: a0ec61545a9ca4f409478ecc69dfd91b, type: 3}
     - target: {fileID: 4717476783810047720, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Name
       value: Select
@@ -685,7 +686,7 @@ PrefabInstance:
     - target: {fileID: 2821211202567690191, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 896801834c1a2b84cb8106ca03b668b8, type: 3}
+      objectReference: {fileID: 21300000, guid: a0ec61545a9ca4f409478ecc69dfd91b, type: 3}
     - target: {fileID: 4717476783810047720, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Name
       value: Select
@@ -891,9 +892,10 @@ PrefabInstance:
     - target: {fileID: 6810086864173574907, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4130ea0642a22064a8e265f5f9fd4ae0, type: 3}
+      objectReference: {fileID: 21300000, guid: cc7af3ded00fcdc4daaac93ec6be15d9, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6130014497047858840, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
@@ -1013,9 +1015,10 @@ PrefabInstance:
     - target: {fileID: 6810086864173574907, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4130ea0642a22064a8e265f5f9fd4ae0, type: 3}
+      objectReference: {fileID: 21300000, guid: 904f71ac404c0de4297dd9966f86af04, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6130014497047858840, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
@@ -1039,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 2821211202567690191, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 896801834c1a2b84cb8106ca03b668b8, type: 3}
+      objectReference: {fileID: 21300000, guid: a0ec61545a9ca4f409478ecc69dfd91b, type: 3}
     - target: {fileID: 4717476783810047720, guid: 7d39957bedf59c74e93631c59c4654e4, type: 3}
       propertyPath: m_Name
       value: Select
