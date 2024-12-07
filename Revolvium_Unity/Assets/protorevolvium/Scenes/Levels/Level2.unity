@@ -1850,7 +1850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -1873,6 +1873,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 292676420}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1867436900}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -1893,12 +1897,20 @@ PrefabInstance:
       value: CanPause
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Display_Controls_Rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: CameraController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: MenuInput, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: ControlsDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
@@ -1910,6 +1922,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 952823627210329276, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1709401314091482244, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
@@ -1998,7 +2014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -2021,6 +2037,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 292676420}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1867436900}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -2041,6 +2061,10 @@ PrefabInstance:
       value: CanPause
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Display_Controls_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: CameraController, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -2049,11 +2073,19 @@ PrefabInstance:
       value: MenuInput, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: ControlsDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765275076154953114, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5720689147531072529, guid: 73c0fea9aa428d34db772bbb592a2489, type: 3}
@@ -3815,6 +3847,17 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 3467103446356512184, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
   m_PrefabInstance: {fileID: 1805023312}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867436900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4748560651798998131, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+  m_PrefabInstance: {fileID: 292676419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b10143fadb77bf4da06cd74eccda179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1891211875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7299581377671057261, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
