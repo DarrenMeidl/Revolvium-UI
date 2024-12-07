@@ -7,7 +7,7 @@ public class ToggleControlType : MonoBehaviour
     [Header("Control Types")]
     [TextArea]
     [SerializeField]
-    private string description = "ORDER -> PC = 0, Xbox = 1, PS = 2, Switch = 3";
+    private string description;
     [SerializeField] private GameObject[] controls;
     public void EnableType(ControlType type)
     {

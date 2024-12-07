@@ -8,7 +8,7 @@ public class ControlsDisplay : MonoBehaviour
     [Header("Control Types")]
     [TextArea]
     [SerializeField]
-    private string description = "ORDER -> PC = 0, Xbox = 1, PS = 2, Switch = 3";
+    private string description;
     [SerializeField] private GameObject[] controls_gameplay;
     [SerializeField] private GameObject[] controls_menu;
 
@@ -18,9 +18,10 @@ public class ControlsDisplay : MonoBehaviour
     void Start()
     {
         var devices = InputSystem.devices;
-        if (currentDevice != devices[devices.Count-1] && devices.Count >= 1) // latest device connected will be stored
+        currentDevice = devices[0]; // first device connected will be stored
+        if (currentDevice != devices[devices.Count-1] && devices.Count >= 1) // ensure there is at least one device connected
         {
-            currentDevice = devices[devices.Count - 1]; // if multiple devices are connected, the first one will be stored
+            currentDevice = devices[devices.Count-1]; // if multiple devices are connected, the latest one will be stored
             UpdateDevice(currentDevice);
         }
         Debug.Log($"Current device: {currentDevice.displayName}");
@@ -45,11 +46,11 @@ public class ControlsDisplay : MonoBehaviour
         }
         else if (device is Gamepad)
         {
-            if (device.displayName.Contains("Xbox"))
+            if (device.layout.Contains("XboxGamepad") || device.displayName.Contains("Xbox"))
                 SetType(ControlType.XBOX);
-            else if (device.displayName.Contains("DualShock") || device.displayName.Contains("DualSense") || device.displayName.Contains("Wireless"))
+            else if (device.layout.Contains("DualShockGamepad") || device.displayName.Contains("Dual"))
                 SetType(ControlType.PS);
-            else if (device.displayName.Contains("Nintendo") || device.displayName.Contains("Joy-Con"))
+            else if (device.displayName.Contains("Joy-Con") || device.displayName.Contains("Pro Controller"))
                 SetType(ControlType.SWITCH);
             Debug.Log($"Gamepad detected: {device.displayName}");
         }

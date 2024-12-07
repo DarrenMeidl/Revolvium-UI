@@ -21,11 +21,4 @@ public class ToggleControls : MonoBehaviour
         playerControls.SetActive(false); // turn off player controls
         rotationControls.SetActive(true); // turn on rotation controls
     }
-    //public void Swap_Controls() // swap active state of controls
-    //{
-    //    foreach (GameObject child in controls)
-    //    {
-    //        child.SetActive(!child.activeSelf);
-    //    }
-    //}
 }
