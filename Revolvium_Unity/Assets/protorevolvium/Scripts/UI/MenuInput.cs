@@ -47,7 +47,6 @@ public class MenuInput : Singleton<MenuInput>
         }
     }
 
-
     private void Pause_Close()
     {
         resume?.Raise();
