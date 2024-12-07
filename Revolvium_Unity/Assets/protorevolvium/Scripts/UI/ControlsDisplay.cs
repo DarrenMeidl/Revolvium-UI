@@ -47,7 +47,7 @@ public class ControlsDisplay : MonoBehaviour
         {
             if (device.displayName.Contains("Xbox"))
                 SetType(ControlType.XBOX);
-            else if (device.displayName.Contains("DualShock") || device.displayName.Contains("DualSense"))
+            else if (device.displayName.Contains("DualShock") || device.displayName.Contains("DualSense") || device.displayName.Contains("Wireless"))
                 SetType(ControlType.PS);
             else if (device.displayName.Contains("Nintendo") || device.displayName.Contains("Joy-Con"))
                 SetType(ControlType.SWITCH);
