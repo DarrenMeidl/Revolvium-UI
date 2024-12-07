@@ -34,7 +34,6 @@ public class ControlsDisplay : MonoBehaviour
             currentDevice = devices[devices.Count - 1]; // if multiple devices are connected, the first one will be stored
             UpdateDevice(currentDevice);
         }                    
-        Debug.Log($"Current device: {currentDevice.displayName}");
     }
 
     private void UpdateDevice(InputDevice device)

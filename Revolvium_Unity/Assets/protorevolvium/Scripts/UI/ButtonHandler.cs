@@ -52,6 +52,11 @@ public class ButtonHandler : MonoBehaviour
         MenuManager.CloseAllMenus();
         MenuManager.OpenMenu(Menu.OPTIONS);
     }
+    public void OnClick_Back()
+    {
+        MenuManager.CloseAllMenus();
+        MenuManager.OpenMenu(Menu.TITLE_SCREEN);
+    }
     #endregion
 
     #region Main Menu Functions
