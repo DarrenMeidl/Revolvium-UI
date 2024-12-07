@@ -4,35 +4,50 @@ using UnityEngine;
 
 public class ControlsDisplay : MonoBehaviour
 {
-    [SerializeField] private GameObject[] controlTypes;
-    private int currentControl = 0;
-    // Start is called before the first frame update
+    [Header("Control Types")]
+    [TextArea]
+    [SerializeField]
+    private string description = "ORDER -> PC = 0, Xbox = 1, PS = 2, Switch = 3";
+    [SerializeField] private GameObject[] controls_gameplay;
+    [SerializeField] private GameObject[] controls_menu;
+    private ControlType currentControlType;
     void Start()
     {
-        // we assume it's a keyboard type input for now (will implement check later)
-        controlTypes[currentControl].SetActive(true);
-        // turn off all other control types
-        foreach (GameObject control in controlTypes)
-        {
-            if (control != controlTypes[currentControl])
-                control.SetActive(false);
-        }
+        SetType(ControlType.PC); // set the default type (keyboard)
     }
 
-    // Update is called once per frame
     void Update()
     {
         // if current input device is the same as the one we're displaying, do nothing
-        // else, disable all control types, and enable the one we want to display
+        // else, set ControlType to the current input device
+        // and display the controls for that device
+
+        // find current input device
+
     }
 
     public void Display_Controls_Player()
     {
-        controlTypes[currentControl].GetComponent<ToggleControls>().Enable_Player();
+        controls_gameplay[(int)currentControlType].GetComponent<ToggleControls>().Enable_Player();
     }
 
     public void Display_Controls_Rotation()
     {
-        controlTypes[currentControl].GetComponent<ToggleControls>().Enable_Rotation();
+        controls_gameplay[(int)currentControlType].GetComponent<ToggleControls>().Enable_Rotation();
+    }
+
+    public void SetType(ControlType type)
+    {
+        currentControlType = type;
+        foreach (GameObject control in controls_gameplay) // ensure all gameplay controls are off first
+        {
+            control.SetActive(false);
+        }
+        // turn on gameplay controls based on current type
+        controls_gameplay[(int)currentControlType].SetActive(true); 
+        foreach (GameObject controlsMenu in controls_menu) // turn on all menu controls associated with current type
+        {
+            controlsMenu.GetComponent<ToggleControlType>().EnableType(currentControlType);
+        }
     }
 }
