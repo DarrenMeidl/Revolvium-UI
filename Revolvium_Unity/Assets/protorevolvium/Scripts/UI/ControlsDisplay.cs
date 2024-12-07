@@ -18,7 +18,6 @@ public class ControlsDisplay : MonoBehaviour
     void Start()
     {
         var devices = InputSystem.devices;
-        currentDevice = devices[0]; // first device connected will be stored
         if (currentDevice != devices[devices.Count-1] && devices.Count >= 1) // ensure there is at least one device connected
         {
             currentDevice = devices[devices.Count-1]; // if multiple devices are connected, the latest one will be stored
@@ -52,6 +51,8 @@ public class ControlsDisplay : MonoBehaviour
                 SetType(ControlType.PS);
             else if (device.displayName.Contains("Joy-Con") || device.displayName.Contains("Pro Controller"))
                 SetType(ControlType.SWITCH);
+            else // if its anything else, default to Xbox
+                SetType(ControlType.XBOX);
             Debug.Log($"Gamepad detected: {device.displayName}");
         }
     }
@@ -72,6 +73,7 @@ public class ControlsDisplay : MonoBehaviour
         foreach (var control in controls_gameplay) // ensure all gameplay controls are off first
         {
             control.SetActive(false);
+            Debug.Log("All gameplay controls are off");
         }
         // turn on gameplay controls based on current type
         controls_gameplay[(int)currentControlType].SetActive(true); 
@@ -79,5 +81,6 @@ public class ControlsDisplay : MonoBehaviour
         {
             controlsMenu.GetComponent<ToggleControlType>().EnableType(currentControlType);
         }
+        Debug.Log("Called SetType()");
     }
 }
