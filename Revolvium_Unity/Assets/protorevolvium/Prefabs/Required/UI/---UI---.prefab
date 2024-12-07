@@ -2760,7 +2760,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 1599663686485965298}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.7830189, g: 0, b: 0.31444013, a: 1}
@@ -4716,7 +4716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1384059294020608413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5847,8 +5847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resumeEvent: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
-  transitionTime: 1
-  transition: {fileID: 5345622609201329272}
 --- !u!114 &4748560651798998131
 MonoBehaviour:
   m_ObjectHideFlags: 0
