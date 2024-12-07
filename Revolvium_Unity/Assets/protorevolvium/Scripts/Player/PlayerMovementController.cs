@@ -60,4 +60,10 @@ public class PlayerMovementController : MonoBehaviour
     {
         canMove = true;
     }
+
+    public void OnTriggerEnter(Collider other) {
+        if(other.tag == "Respawn") {
+            LevelChangeManager.Instance.ReloadLevel();
+        }
+    }
 }

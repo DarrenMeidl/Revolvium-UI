@@ -69,13 +69,14 @@ public class ControlsDisplay : MonoBehaviour
     private void SetType(ControlType type)
     {
         currentControlType = type;
-        foreach (var control in controls_gameplay) // ensure all gameplay controls are off first
+        foreach (GameObject control in controls_gameplay) // ensure all gameplay controls are off first
         {
             control.SetActive(false);
+            Debug.Log("All gays!!!");
         }
         // turn on gameplay controls based on current type
         controls_gameplay[(int)currentControlType].SetActive(true); 
-        foreach (var controlsMenu in controls_menu) // turn on all menu controls associated with current type
+        foreach (GameObject controlsMenu in controls_menu) // turn on all menu controls associated with current type
         {
             controlsMenu.GetComponent<ToggleControlType>().EnableType(currentControlType);
         }
