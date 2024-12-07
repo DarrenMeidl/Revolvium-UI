@@ -16,8 +16,6 @@ using UnityEngine.SceneManagement;
 
 public class EndTileBehaviour : LevelTile
 {
-    [SerializeField]
-    private int nextLevel;
 
     [SerializeField]
     private AudioClip win;
@@ -30,7 +28,6 @@ public class EndTileBehaviour : LevelTile
         disablePlayer?.Raise();
         MenuManager.CloseAllMenus();
         MenuManager.OpenMenu(Menu.LEVEL_END);
-        //SceneManager.LoadScene($"Level{nextLevel}");
 
         AudioManager.Instance.PlaySound(win, GD.Types.AudioMixerGroupName.SFX);
     }

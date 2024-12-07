@@ -124,30 +124,6 @@ MonoBehaviour:
     m_ActionName: 'PlayerControls/Camera Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: d9f43e22-41ba-4e11-a82d-9248f5d46ab2
-    m_ActionName: 'PlayerControls/Activate Rotation Platform[/Keyboard/e]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9670c323-41cc-493f-99b1-ec3fd9f63313
-    m_ActionName: 'PlayerControls/Exit Rotation Mode[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4da9e1f0-f63c-46ba-81ca-e69a42201a58
-    m_ActionName: PlayerControls/Next Rotation
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5832509b-c83f-483e-b1d2-fc2ff6b4ac49
-    m_ActionName: PlayerControls/Previous Rotation
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9bc6e0bc-9722-474b-8ac1-ddc3ae24f503
-    m_ActionName: PlayerControls/Next Selection
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 68c30495-6e14-4df4-bf89-6b16f0b84a1b
-    m_ActionName: PlayerControls/Previous Selection
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: f73bae46-4820-45fc-8267-0aeb19959a85
     m_ActionName: 'PlayerControls/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -202,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08fd16f04dfdb594b86b66c826a826bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.958
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08fd16f04dfdb594b86b66c826a826bc, type: 3}
       propertyPath: m_LocalPosition.z

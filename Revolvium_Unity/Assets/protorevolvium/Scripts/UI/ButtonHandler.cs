@@ -12,23 +12,23 @@ public class ButtonHandler : MonoBehaviour
     [SerializeField] private float transitionTime = 1f;
     [SerializeField] private Animator transition;
     #region Common Functions
-    private IEnumerator LoadLevel(int index) {
+    private IEnumerator LoadNextLevel() {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(index);
+        LevelChangeManager.Instance.ChangeLevel();
     }
     public void OnClick_Level_Next()
     {
-        // Hardcoded to loop back to level 1 if we're on the last level
-        if (SceneManager.GetActiveScene().buildIndex == 3)
-            StartCoroutine(LoadLevel(1));
-        else
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadNextLevel());
         resumeEvent?.Raise(); // resume game ------------------
     }
-    public void OnClick_Level_Restart()
-    {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+    private IEnumerator LoadCurrentLevel() {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        LevelChangeManager.Instance.ReloadLevel();
+    }
+    public void OnClick_Level_Restart() {
+        StartCoroutine(LoadCurrentLevel());
     }
 
     public void OnClick_Quit()
@@ -62,7 +62,7 @@ public class ButtonHandler : MonoBehaviour
     #region Main Menu Functions
     public void OnClick_MainMenu()
     {
-        StartCoroutine(LoadLevel(0));
+        StartCoroutine(LoadNextLevel());
     }
     #endregion  
 }
