@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using GD;
 using GD.Audio;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -34,8 +35,6 @@ public class MenuInput : Singleton<MenuInput>
         paused = false;
         #endregion
     }
-
-
     public void Pause(InputAction.CallbackContext value) {
         if (value.started && canPause) {
             if (paused) { // if we press the pause button when we're already paused
@@ -61,12 +60,6 @@ public class MenuInput : Singleton<MenuInput>
         paused = true;
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);
-    }
-
-    private void Level_End_Open()
-    {
-        MenuManager.CloseAllMenus(); // Ensure no other menus are open
-        MenuManager.OpenMenu(Menu.LEVEL_END);
     }
 
     public void Play_Click_Sound()
