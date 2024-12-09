@@ -55,6 +55,8 @@ public class ControlsDisplay : MonoBehaviour
                 SetType(ControlType.XBOX);
             Debug.Log($"Gamepad detected: {device.displayName}");
         }
+        else // if its anything else, default to PC
+            SetType(ControlType.PC);
     }
 
     public void Display_Controls_Player()
