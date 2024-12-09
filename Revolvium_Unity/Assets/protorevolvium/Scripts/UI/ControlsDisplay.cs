@@ -55,6 +55,8 @@ public class ControlsDisplay : MonoBehaviour
                 SetType(ControlType.XBOX);
             Debug.Log($"Gamepad detected: {device.displayName}");
         }
+        else // if its anything else, default to PC
+            SetType(ControlType.PC);
     }
 
     public void Display_Controls_Player()
@@ -73,7 +75,6 @@ public class ControlsDisplay : MonoBehaviour
         foreach (GameObject control in controls_gameplay) // ensure all gameplay controls are off first
         {
             control.SetActive(false);
-            Debug.Log("All gays!!!");
         }
         // turn on gameplay controls based on current type
         controls_gameplay[(int)currentControlType].SetActive(true); 
@@ -81,6 +82,5 @@ public class ControlsDisplay : MonoBehaviour
         {
             controlsMenu.GetComponent<ToggleControlType>().EnableType(currentControlType);
         }
-        Debug.Log("Called SetType()");
     }
 }

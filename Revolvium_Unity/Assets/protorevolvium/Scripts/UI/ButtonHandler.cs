@@ -14,7 +14,6 @@ public class ButtonHandler : MonoBehaviour
      
     public void OnClick_Level_Next() {
         LevelChangeManager.Instance.ChangeLevel();
-        resumeEvent?.Raise(); // resume game ------------------
     }
    
     public void OnClick_Level_Restart() {
