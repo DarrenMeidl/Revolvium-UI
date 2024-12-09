@@ -37,7 +37,8 @@ public class CameraSwitcher : MonoBehaviour
 
     public void enableRotation()
     {
-        transposer.m_FollowOffset = CameraOffset.levelOffset;
+        float y = CameraOffset.levelOffset.y * 1;
+        transposer.m_FollowOffset = new Vector3(CameraOffset.levelOffset.x, y, CameraOffset.levelOffset.z);
         VirtualCamera.LookAt = LevelTransform;
         VirtualCamera.Follow = LevelTransform;
 

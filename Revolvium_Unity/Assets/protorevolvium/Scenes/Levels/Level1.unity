@@ -3707,6 +3707,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: maxHeight
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: cameraFocus
+      value: 
+      objectReference: {fileID: 523444296}
+    - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: CameraOffset
       value: 
       objectReference: {fileID: 11400000, guid: df862ce49d1e330488acf1656789aa63, type: 2}

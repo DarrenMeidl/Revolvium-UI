@@ -765,6 +765,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: cameraFocus
+      value: 
+      objectReference: {fileID: 1762450592}
+    - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: VirtualCamera
       value: 
       objectReference: {fileID: 1813330527}

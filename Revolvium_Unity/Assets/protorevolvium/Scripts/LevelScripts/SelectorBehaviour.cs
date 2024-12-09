@@ -9,6 +9,12 @@ public class SelectorBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject highlight, selector;
 
+    private Vector3 originalPosition;
+
+    private void Start() {
+        originalPosition = transform.position;
+    }
+
     public void enableHighLight() {
         highlight.SetActive(true);
         disableSelector();
@@ -16,6 +22,7 @@ public class SelectorBehaviour : MonoBehaviour
     public void disableHighLight() {
         highlight.SetActive(false);
         disableSelector();
+        transform.position = originalPosition;
     }
 
     public void enableSelector() {

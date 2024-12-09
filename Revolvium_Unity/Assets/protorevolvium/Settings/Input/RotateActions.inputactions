@@ -96,6 +96,17 @@
                 },
                 {
                     "name": "",
+                    "id": "2c06739d-7951-4a12-b883-31d03b277411",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9b2ecab5-b582-4c20-b622-2d9625ff9b34",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -140,6 +151,28 @@
                 },
                 {
                     "name": "",
+                    "id": "dcfb5d6a-cb9c-4876-86bf-300c1916a58b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "485e1a37-6b2b-4375-a41a-6a5a5efaefeb",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a7faed53-11c0-4939-ab71-13088a175824",
                     "path": "<Keyboard>/d",
                     "interactions": "",
@@ -162,8 +195,30 @@
                 },
                 {
                     "name": "",
+                    "id": "ebc7d65f-43f8-4578-a03a-e047dee0ac8f",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRIght",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6231b63a-d44f-4246-8a27-f32d27fd137a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRIght",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "defca49c-e2b6-4fda-9585-d60601f00703",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -185,7 +240,7 @@
                 {
                     "name": "",
                     "id": "8f58d641-e55a-4cd6-8916-3477a8d04cd2",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
