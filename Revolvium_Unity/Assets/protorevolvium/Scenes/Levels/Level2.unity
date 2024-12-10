@@ -769,6 +769,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 1762450592}
+    - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1805023314}
+    - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: cameraFocus
       value: 
       objectReference: {fileID: 1762450592}
@@ -799,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 8412136237185162389, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 1863551474}
+      objectReference: {fileID: 1805023314}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3497,11 +3505,11 @@ PrefabInstance:
     - target: {fileID: 5106693396168720598, guid: 6d2b25f02c4ffc745b13dcac1f023ae1, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 1863551474}
+      objectReference: {fileID: 1805023314}
     - target: {fileID: 5106693396168720598, guid: 6d2b25f02c4ffc745b13dcac1f023ae1, type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 1863551474}
+      objectReference: {fileID: 1805023314}
     - target: {fileID: 8033367207451884018, guid: 6d2b25f02c4ffc745b13dcac1f023ae1, type: 3}
       propertyPath: m_Name
       value: Virtual Camera
@@ -3816,6 +3824,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379927814983025275, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
+      propertyPath: m_StepOffset
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7656728870219954948, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -3844,6 +3856,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe9eef62d3b34b4abe33f863e1fe7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1805023314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5061975719640489541, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
+  m_PrefabInstance: {fileID: 1805023312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1810685370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4076,11 +4093,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 38335279662569219, guid: 34d3f526198dae440bb2ce6005d86055, type: 3}
   m_PrefabInstance: {fileID: 1848621516}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1863551474 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6571348351883040123, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
-  m_PrefabInstance: {fileID: 1805023312}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &1863551477 stripped
 BoxCollider:

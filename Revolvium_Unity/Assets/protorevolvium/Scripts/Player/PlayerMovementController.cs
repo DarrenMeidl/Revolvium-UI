@@ -17,7 +17,11 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField, ReadOnly]
     private bool canMove = true;
 
+    private Vector2 inputMovement = Vector2.zero;
     private Vector3 rawInputMovement;
+
+    [SerializeField]
+    private Transform CameraFocus;
 
     private void Start()
     {
@@ -28,14 +32,12 @@ public class PlayerMovementController : MonoBehaviour
     // Update is called once per frame
     public void OnMovement(InputAction.CallbackContext value)
     {
-        if ( canMove ) {
-            Vector2 inputMovement = value.ReadValue<Vector2>();
-            rawInputMovement = new Vector3(inputMovement.x, 0, inputMovement.y);
-        }
+        inputMovement = value.ReadValue<Vector2>();
     }
 
     private void FixedUpdate() {
         if (canMove) {
+            rawInputMovement = inputMovement.y * CameraFocus.forward + inputMovement.x * CameraFocus.right;
             characterController.SimpleMove(rawInputMovement);
         }
     }
