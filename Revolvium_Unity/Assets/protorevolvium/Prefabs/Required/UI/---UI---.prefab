@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8593141656509974978}
   - component: {fileID: 2954292194179486021}
   - component: {fileID: 7608573943059240430}
-  - component: {fileID: 8577431821515770566}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -138,7 +137,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -167,7 +166,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -183,7 +182,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -207,21 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &8577431821515770566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26709486758695697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &171041657450903897
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +309,6 @@ GameObject:
   - component: {fileID: 1333227505666880457}
   - component: {fileID: 3828805105485917930}
   - component: {fileID: 8879377124575822386}
-  - component: {fileID: 3917878557318611760}
   m_Layer: 5
   m_Name: Music Slider
   m_TagString: Untagged
@@ -426,7 +409,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -442,7 +425,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -452,21 +435,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &3917878557318611760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414064742840139939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &572369692349970120
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +586,6 @@ GameObject:
   - component: {fileID: 8015249043285510930}
   - component: {fileID: 3754477661567667944}
   - component: {fileID: 1540055847833644610}
-  - component: {fileID: 5353071775683927966}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -742,7 +709,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -771,7 +738,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -787,7 +754,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -823,21 +790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &5353071775683927966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706155641650874474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &852911332369485873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +969,6 @@ GameObject:
   - component: {fileID: 3572947683760019724}
   - component: {fileID: 3037212781047319466}
   - component: {fileID: 2467004386769159953}
-  - component: {fileID: 1121422794089353031}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1141,7 +1092,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1170,7 +1121,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1186,7 +1137,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1210,21 +1161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &1121422794089353031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144323764490042718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &1172879591107549097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,7 +2104,6 @@ GameObject:
   - component: {fileID: 2606307544255171337}
   - component: {fileID: 5668760370663934197}
   - component: {fileID: 1839970597922729696}
-  - component: {fileID: 112773579923297147}
   m_Layer: 5
   m_Name: Effects Slider
   m_TagString: Untagged
@@ -2269,7 +2204,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2285,7 +2220,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2295,21 +2230,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &112773579923297147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2593907999068356868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &2743416420961923922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,7 +2530,6 @@ GameObject:
   - component: {fileID: 4552177607241930733}
   - component: {fileID: 7537898125806365645}
   - component: {fileID: 783506539938218919}
-  - component: {fileID: 5870062614462130892}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -2734,7 +2653,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2763,7 +2682,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2779,7 +2698,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2803,21 +2722,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &5870062614462130892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2910086455790786024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &2918441999644916388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,7 +2737,6 @@ GameObject:
   - component: {fileID: 6815140464853805941}
   - component: {fileID: 837881588087148084}
   - component: {fileID: 1660896673753021696}
-  - component: {fileID: 7185978220698478923}
   m_Layer: 5
   m_Name: Start Level
   m_TagString: Untagged
@@ -2957,7 +2860,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2986,7 +2889,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3002,7 +2905,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3038,21 +2941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a43ca28f7753041be310b9011497a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7185978220698478923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2918441999644916388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &3183790860766469241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3746,6 @@ GameObject:
   - component: {fileID: 3731728497697441927}
   - component: {fileID: 5951959457876678922}
   - component: {fileID: 3880134415235991162}
-  - component: {fileID: 980120626994614300}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -3982,7 +3869,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4011,7 +3898,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4027,7 +3914,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4051,21 +3938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &980120626994614300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4249783204866018184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &4471881614473528568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,7 +5250,6 @@ GameObject:
   - component: {fileID: 7042202301991530873}
   - component: {fileID: 7969456671301944925}
   - component: {fileID: 5675642739035621903}
-  - component: {fileID: 5202830893113812278}
   m_Layer: 5
   m_Name: NextLevel
   m_TagString: Untagged
@@ -5502,7 +5373,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5531,7 +5402,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5547,7 +5418,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5583,21 +5454,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &5202830893113812278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6716918788587941350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &6954985838884073916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,7 +5469,6 @@ GameObject:
   - component: {fileID: 9124685651575718377}
   - component: {fileID: 2030577501814515142}
   - component: {fileID: 2658399327316328825}
-  - component: {fileID: 5265190993497476438}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -5737,7 +5592,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5766,7 +5621,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5782,7 +5637,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5818,21 +5673,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &5265190993497476438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6954985838884073916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &6963694894158821532
 GameObject:
   m_ObjectHideFlags: 0
@@ -6415,7 +6255,6 @@ GameObject:
   - component: {fileID: 2392007057438067445}
   - component: {fileID: 7350695448407918826}
   - component: {fileID: 99777915167570764}
-  - component: {fileID: 2172129926071020330}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -6539,7 +6378,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6568,7 +6407,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6584,7 +6423,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6608,21 +6447,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2172129926071020330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7931697896234882473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &7956118860573212034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6637,7 +6461,6 @@ GameObject:
   - component: {fileID: 1599663686485965298}
   - component: {fileID: 4095307254784429995}
   - component: {fileID: 7356715506921802054}
-  - component: {fileID: 4333781802359034234}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -6761,7 +6584,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5529697127155202983}
         m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-        m_MethodName: Play_Click_Sound
+        m_MethodName: Actions_Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6790,7 +6613,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6806,7 +6629,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 5529697127155202983}
           m_TargetAssemblyTypeName: MenuInput, Assembly-CSharp
-          m_MethodName: Play_Hover_Sound
+          m_MethodName: Acitons_Highlight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6830,21 +6653,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultTextColor: {r: 0.59607846, g: 0.09411765, b: 0.34117648, a: 1}
   highlightedTextColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &4333781802359034234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7956118860573212034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df288eefdd855b48a8925fd0a5b3458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lowFrequency: 0.05
-  highFrequency: 0.12
-  rumbleTime: 0.12
 --- !u!1 &7973857454351909330
 GameObject:
   m_ObjectHideFlags: 0
