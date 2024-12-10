@@ -3,10 +3,6 @@ using UnityEngine.InputSystem;
 using GD;
 public class RumbleManager : Singleton<RumbleManager>
 {
-    protected override void Awake()
-    {
-        base.Awake();
-    }
     public void Rumble(float low, float high, float time)
     {
         if (Gamepad.current != null) // Check if any gamepad is connected

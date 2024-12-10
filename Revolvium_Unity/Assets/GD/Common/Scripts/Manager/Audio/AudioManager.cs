@@ -4,6 +4,8 @@ using GD.Pool;
 using GD.Types;
 using Sirenix.OdinInspector;
 using System.Collections;
+using DG.Tweening;
+using UnityEditor;
 
 namespace GD.Audio {
     /// <summary>
@@ -41,6 +43,9 @@ namespace GD.Audio {
         [SerializeField]
         private AudioMixerGroup uiGroup;
 
+        [Title("Current Volumes")]
+        [SerializeField] private VolumeState volumeLevels;
+
         private ObjectPool<AudioSource> audioSourcePool;
 
         protected override void Awake() {
@@ -68,7 +73,61 @@ namespace GD.Audio {
                 _ => null,
             };
         }
+        public void SetVolume(AudioMixerGroupName groupName, float volume)
+        {
+            if (volume < -0.1f || volume > 1f) // don't allow invalid values
+                return;
+            audioMixer.SetFloat(GetVolumeParameterName(groupName), Mathf.Log10(volume) * 20f);
+            switch (groupName)
+            {
+                case AudioMixerGroupName.Master:
+                    volumeLevels.MasterVolume = volume;
+                    break;
+                case AudioMixerGroupName.Ambient:
+                    volumeLevels.AmbientVolume = volume;
+                    break;
+                case AudioMixerGroupName.Background:
+                    volumeLevels.BackgroundVolume = volume;
+                    break;
+                case AudioMixerGroupName.SFX:
+                    volumeLevels.SFXVolume = volume;
+                    break;
+                case AudioMixerGroupName.UI:
+                    volumeLevels.UIVolume = volume;
+                    break;
+            }
+        }
+        
+        public float GetVolume(AudioMixerGroupName groupName) {
+            switch (groupName)
+            {
+                case AudioMixerGroupName.Master:
+                    return volumeLevels.MasterVolume;
+                case AudioMixerGroupName.Ambient:
+                    return volumeLevels.AmbientVolume;
+                case AudioMixerGroupName.Background:
+                    return volumeLevels.BackgroundVolume;
+                case AudioMixerGroupName.SFX:
+                    return volumeLevels.SFXVolume;
+                case AudioMixerGroupName.UI:
+                    return volumeLevels.UIVolume;
+            }
+            return 1f; // default value
+        }
 
+        private string GetVolumeParameterName(AudioMixerGroupName groupName)
+        {
+            string name = groupName switch
+            {
+                AudioMixerGroupName.Master => "volMaster",
+                AudioMixerGroupName.Ambient => "volAmbient",
+                AudioMixerGroupName.Background => "volBackground",
+                AudioMixerGroupName.SFX => "volSFX",
+                AudioMixerGroupName.UI => "volUI",
+                _ => null,
+            };
+            return name;
+        }
         public void PlaySound(AudioClip clip, AudioMixerGroupName groupName, Vector3 position = default) {
             AudioSource audioSource = audioSourcePool.Get();
             audioSource.transform.position = position;
