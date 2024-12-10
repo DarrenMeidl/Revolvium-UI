@@ -74,13 +74,13 @@ public class MenuInput : Singleton<MenuInput>
     }
     public void Actions_Click()
     {
-        AudioManager.Instance.PlaySound(click, GD.Types.AudioMixerGroupName.SFX);
+        AudioManager.Instance.PlaySound(click, GD.Types.AudioMixerGroupName.UI);
         RumbleManager.Instance.Rumble(0.22f, 0.22f, 0.12f);
     }
 
     public void Acitons_Highlight()
     {
-        AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.SFX);
+        AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.UI);
         RumbleManager.Instance.Rumble(0.15f, 0.15f, 0.08f);
     }
 }
