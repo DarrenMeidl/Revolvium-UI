@@ -5418,7 +5418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1384059294020608413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6089,9 +6089,9 @@ RectTransform:
   m_Children:
   - {fileID: 8098161641593836038}
   - {fileID: 2912347932634864519}
-  - {fileID: 4139142628821994705}
   - {fileID: 330887938762351026}
-  - {fileID: 8268239736120386714}
+  - {fileID: 3930857355785827151}
+  - {fileID: 4233126435916139810}
   m_Father: {fileID: 2529578571924310243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -12850,9 +12850,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5575351906375319743, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
       insertIndex: 2
       addedObject: {fileID: 8990037531208395980}
-    - targetCorrespondingSourceObject: {fileID: 5575351906375319743, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 6278551843908974563}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7ad548d39494f4aacef5cd5659f53b, type: 3}
 --- !u!224 &3930857355785827151 stripped

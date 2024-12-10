@@ -68,7 +68,7 @@ public class CameraController : MonoBehaviour {
     }
 
     public void OnMovement(InputAction.CallbackContext value) {
-        camMoveAmout = new Vector3(0, value.ReadValue<Vector2>().x * -sensativity * 10, 0);
-        camVerticalPos = value.ReadValue<Vector2>().y * sensativity;
+        camMoveAmout = new Vector3(0, value.ReadValue<Vector2>().x * -sensativity * 10, 0) * -1;
+        camVerticalPos = value.ReadValue<Vector2>().y * sensativity * -1;
     }
 }
