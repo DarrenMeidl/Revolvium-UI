@@ -265,6 +265,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1863551477}
     - target: {fileID: 1052797091732764537, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: RotationSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a9541a6171987724a8e15a275d190b2c, type: 3}
+    - target: {fileID: 1052797091732764537, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
       propertyPath: levelController
       value: 
       objectReference: {fileID: 1653145392}

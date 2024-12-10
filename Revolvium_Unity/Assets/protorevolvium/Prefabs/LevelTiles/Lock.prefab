@@ -117,7 +117,7 @@ MonoBehaviour:
   transform: {fileID: 601002966786667842}
   canInterract: 0
   keyID: 1
-  unlock: {fileID: 8300000, guid: fc477b263f035a147be89bbad8ec091d, type: 3}
+  unlock: {fileID: 8300000, guid: 13b6db6be930d0a46a1833f2e70a12c7, type: 3}
 --- !u!1001 &5314354694567386906
 PrefabInstance:
   m_ObjectHideFlags: 0
