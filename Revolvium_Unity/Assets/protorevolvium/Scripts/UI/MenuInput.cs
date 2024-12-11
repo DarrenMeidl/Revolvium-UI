@@ -22,6 +22,11 @@ public class MenuInput : Singleton<MenuInput>
         #region Perform Tasks Upon Awake
         MenuManager.Initialize(); // prevents needing to look for menus every time we want to open/close them
         MenuManager.CloseAllMenus(); // ensure no other menus are open
+        #endregion
+    }
+
+    private void Start()
+    {
         if (SceneManager.GetActiveScene().buildIndex == 0) // if we're in a main menu, we can't access pause menu
         {
             MenuManager.OpenMenu(Menu.TITLE_SCREEN);
@@ -33,7 +38,6 @@ public class MenuInput : Singleton<MenuInput>
             canPause = true;
         }
         paused = false;
-        #endregion
     }
     public void Pause(InputAction.CallbackContext value) {
         if (value.started && canPause) {
@@ -61,21 +65,22 @@ public class MenuInput : Singleton<MenuInput>
         MenuManager.OpenMenu(Menu.PAUSE);
         MenuManager.CloseMenu(Menu.PLAYER_HUD);
     }
-
-    public void Play_Click_Sound()
+    public void CanPause(int state)
     {
-        AudioManager.Instance.PlaySound(click, GD.Types.AudioMixerGroupName.SFX);
-    }
-
-    public void Play_Hover_Sound()
-    {
-        AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.SFX);
-    }
-
-    public void CanPause(int state) {
         if (state == 0)
             canPause = true;
         else
             canPause = false;
+    }
+    public void Actions_Click()
+    {
+        AudioManager.Instance.PlaySound(click, GD.Types.AudioMixerGroupName.UI);
+        RumbleManager.Instance.Rumble(0.22f, 0.22f, 0.12f);
+    }
+
+    public void Acitons_Highlight()
+    {
+        AudioManager.Instance.PlaySound(hover, GD.Types.AudioMixerGroupName.UI);
+        RumbleManager.Instance.Rumble(0.15f, 0.15f, 0.08f);
     }
 }
