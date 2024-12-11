@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using GD;
@@ -15,16 +16,23 @@ public class MenuInput : Singleton<MenuInput>
     [SerializeField] private GameEvent pause, resume;
     [SerializeField] private AudioClip click;
     [SerializeField] private AudioClip hover;
+    [SerializeField] private GameObject[] firstSelectButtons;
+
+    [SerializeField] private PlayerInput _UIInputs;
+    private InputAction _navigationAction;
+    private Vector2 _navigationInput;
+
     protected override void Awake()
     {
         base.Awake();
 
-        #region Perform Tasks Upon Awake
         MenuManager.Initialize(); // prevents needing to look for menus every time we want to open/close them
         MenuManager.CloseAllMenus(); // ensure no other menus are open
-        #endregion
-    }
 
+        _navigationAction = _UIInputs.actions["Navigate"];
+
+        
+    }
     private void Start()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0) // if we're in a main menu, we can't access pause menu
@@ -38,6 +46,27 @@ public class MenuInput : Singleton<MenuInput>
             canPause = true;
         }
         paused = false;
+    }
+
+    private void Update()
+    {
+        _navigationInput = _navigationAction.ReadValue<Vector2>();
+        // if we try to navigate but our button isn't active or doesn't exist
+        if ((_navigationInput.x != 0 || _navigationInput.y != 0) && (EventSystem.current.currentSelectedGameObject == null || EventSystem.current.currentSelectedGameObject.activeInHierarchy == false))
+        {
+            EnableFirstSelected(); // select the first button
+        }
+    }
+    private void EnableFirstSelected()
+    {
+        foreach (GameObject g in firstSelectButtons) // run through our first selected buttons
+        {
+            if (g.activeInHierarchy) // if the current first selected is active
+            {
+                EventSystem.current.SetSelectedGameObject(g); // set new selected button
+                return; // end loop early, we enable first active button so no need to loop through rest of array
+            }
+        }
     }
     public void Pause(InputAction.CallbackContext value) {
         if (value.started && canPause) {

@@ -11,15 +11,12 @@ public class ButtonHandler : MonoBehaviour
 
 
     #region Common Functions
-     
     public void OnClick_Level_Next() {
         LevelChangeManager.Instance.ChangeLevel();
-    }
-   
+    }  
     public void OnClick_Level_Restart() {
         LevelChangeManager.Instance.ReloadLevel();
     }
-
     public void OnClick_Quit()
     {
         Application.Quit(); // This will quit the game
@@ -40,7 +37,9 @@ public class ButtonHandler : MonoBehaviour
     {
         MenuManager.CloseAllMenus();
         MenuManager.OpenMenu(Menu.OPTIONS);
+
     }
+    
     public void OnClick_Back()
     {
         MenuManager.CloseAllMenus();

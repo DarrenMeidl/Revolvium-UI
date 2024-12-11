@@ -1503,6 +1503,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1619617084}
     m_Modifications:
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6772276485085626959, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1606,38 +1638,6 @@ PrefabInstance:
     - target: {fileID: 9018456023490353721, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: levelController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: levelController
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8162807026515359852, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
@@ -4211,7 +4211,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1540055847833644610, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 2467004386769159953, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 7608573943059240430, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 5675642739035621903, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 3880134415235991162, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 99777915167570764, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
+    - {fileID: 2658399327316328825, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

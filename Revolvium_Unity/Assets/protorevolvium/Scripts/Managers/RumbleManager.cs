@@ -3,8 +3,9 @@ using UnityEngine.InputSystem;
 using GD;
 public class RumbleManager : Singleton<RumbleManager>
 {
-    private void Awake()
+    protected override void Awake() // need to override original void
     {
+        base.Awake();
         StopRumble(); // ensure no rumble carries over from a previous scene
     }
     public void Rumble(float low, float high, float time)
