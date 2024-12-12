@@ -13,9 +13,12 @@ EditorBuildSettings:
     guid: 60fd57d11f00ea945a437c11ea6f002e
   - enabled: 1
     path: Assets/protorevolvium/Scenes/Levels/Level2.unity
-    guid: 64013e4fce63e3d44bbec0f1371a8225
+    guid: 592220bf0dbddfa4f9cea35524db809c
   - enabled: 1
     path: Assets/protorevolvium/Scenes/Levels/Level3.unity
+    guid: 64013e4fce63e3d44bbec0f1371a8225
+  - enabled: 1
+    path: Assets/protorevolvium/Scenes/Levels/Level4.unity
     guid: 8e885eec2b812964f96fdf8cf13ce5e6
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

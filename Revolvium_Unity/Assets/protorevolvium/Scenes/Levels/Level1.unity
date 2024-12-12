@@ -4064,7 +4064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: nextLevel
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: transition
@@ -4216,10 +4216,6 @@ PrefabInstance:
     - target: {fileID: 2621930449105233805, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5186320529628665074, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5186320529628665074, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
