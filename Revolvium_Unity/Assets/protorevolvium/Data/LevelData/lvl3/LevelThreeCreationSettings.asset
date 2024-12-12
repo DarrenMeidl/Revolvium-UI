@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca19a4c8489ac4a9f4b1cd14166f9d, type: 3}
   m_Name: LevelThreeCreationSettings
   m_EditorClassIdentifier: 
-  w: 3
-  h: 3
-  d: 3
+  w: 2
+  h: 2
+  d: 2
   blockWidth: 2
-  cubeCenter: {x: 2, y: 2, z: 2}
+  cubeCenter: {x: 1, y: 1, z: 1}

@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcb96a6be8637f47a813d27f1e2c20e, type: 3}
-  m_Name: LevelTwoCameraOffsets
+  m_Script: {fileID: 11500000, guid: db6269d9ef492144499f5598cadf263f, type: 3}
+  m_Name: LevelFourXYZBoundries
   m_EditorClassIdentifier: 
-  playerOffset: {x: 0, y: 0.7, z: -2}
-  levelOffset: {x: -5, y: 5, z: -5}
+  minX: 0
+  minY: 0
+  minZ: -1
+  maxX: 1
+  maxY: 1
+  maxZ: 0
