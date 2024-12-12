@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 7379927814983025275}
-  speed: 3
+  TurnSpeed: 0.3
   canMove: 1
   CameraFocus: {fileID: 5061975719640489541}
   Model: {fileID: 3687532937745733076}

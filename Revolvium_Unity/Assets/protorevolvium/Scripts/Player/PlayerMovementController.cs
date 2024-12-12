@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.LightAnchor;
 /*
  *  PLAYER MOVEMENT CONTROLLER - STARTED BY AND WRITTEN BY RUBY
  */
@@ -13,7 +10,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField]
     private CharacterController characterController;
     [SerializeField]
-    private float speed = 1f;
+    private float TurnSpeed = 0.5f;
 
     [SerializeField, ReadOnly]
     private bool canMove = true;
@@ -45,7 +42,7 @@ public class PlayerMovementController : MonoBehaviour
             // ported and fixed by Ruby :3 & Darren :D
             Vector3 movement = rawInputMovement.normalized;
             if (movement.magnitude > 0) {
-                Model.right = movement * -1; //rotate to face movement direction              
+                Model.right = Vector3.Lerp(Model.right, movement * -1, TurnSpeed); //rotate to face movement direction              
            
                 Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
                 euler.x = -90; // Force x-axis
