@@ -54,9 +54,9 @@ public class MenuInput : Singleton<MenuInput>
         {
             EnableFirstSelected(); // select the first button
         }
-        else if(EventSystem.current.currentSelectedGameObject == null)
+        else if(EventSystem.current.currentSelectedGameObject == null) // if we're not selecting a button
         {
-            StartCoroutine(WaitBeforeSelect(0.5f)); // if we haven't selected a button after a certain amount of time, auto-select the first button
+            StartCoroutine(WaitBeforeSelect(1.5f)); // if we haven't selected a button after a certain amount of time, auto-select the first button
             // gives time for user scrolling through buttons with a mouse to highlight next button without auto-selecting the first button in a menu instantly
         }
     }
