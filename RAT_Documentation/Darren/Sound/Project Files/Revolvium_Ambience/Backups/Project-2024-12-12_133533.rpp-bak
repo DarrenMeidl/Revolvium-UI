@@ -1,0 +1,2479 @@
+<REAPER_PROJECT 0.1 "7.25/win64" 1734010533
+  <NOTES 0 2
+  >
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3455 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 186.79472957028355
+  ZOOM 6.4905471518875 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0
+    SPLDEF 3 440 "" 0
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 198.92720961345415 0
+  SELECTION2 198.92720961345415 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {96DFC5B8-2D98-47E7-833D-9A939B06EF8E}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {BC9B6783-53A2-4725-A75C-9EB33E03AA07}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {43A59F06-7B30-4203-AE1D-47AAC7197075}
+    NAME Master
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {43A59F06-7B30-4203-AE1D-47AAC7197075}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {40EEE33C-CC06-4231-9A9D-27CD35B218D4}
+    NAME Wind
+    PEAKCOL 33554431
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {40EEE33C-CC06-4231-9A9D-27CD35B218D4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.21676374527545
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C5A76AEE-AC05-4E06-8FCE-39B88CDD4581}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {651C6C72-D1F6-4F25-8F0F-2BC3DC95423C}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 1.22457133440083
+      SNAPOFFS 0
+      LENGTH 3.45512018600606
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9457566B-5692-4CEF-89A6-EE10E394CDA9}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C0293AD0-DE83-4773-BF65-750FEBCE16AE}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 3.5
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DDE1FA93-29A4-4AFE-88FD-BFAE1B24116E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FB0EA74C-6F7A-4302-BA75-35F538AFD696}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 5.31
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BD09B031-AE3A-40A7-96F4-443CDD4916A6}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F9BAC15C-F32F-497E-B503-4F9D76B65050}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 7.36
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BDC71FB6-7073-4B9D-9217-C0FE08118BA8}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F0D3EE2E-5D66-4B1C-B732-091D9C652055}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 9.5
+      SNAPOFFS 0
+      LENGTH 3.45512018600606
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E4252ECF-1E85-48A0-9FAB-4F5D378C6601}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DCBF1EED-4D14-46AA-969A-A14867591933}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 12.45684633269813
+      SNAPOFFS 0
+      LENGTH 2.68441796957712
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {92AE5BDF-AFA3-4756-8B0F-4ABE0740429C}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F2671CFF-D6A4-44EF-807B-B6751F251FA3}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 14.57380643262785
+      SNAPOFFS 0
+      LENGTH 1.41599857747956
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.35808829791834 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CC9EB298-CC07-48E1-89A1-12F0F7635CAC}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2651A4B9-1750-4068-9453-8124767D5B48}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 15.63171671218907
+      SNAPOFFS 0
+      LENGTH 2.21676374527545
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.35808829791834 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CBACF26E-CA43-4932-8BD7-7A359CB7F3D6}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8C3FA07C-2664-4A91-88CE-87216BBA8CFB}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 16.85628804662002
+      SNAPOFFS 0
+      LENGTH 3.45512018600606
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2918675F-839A-45D5-91FC-27D1AB3166C3}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9DF1E059-B64F-457C-BED5-19BF7D0C5304}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 19.13171671218907
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6E43B85D-150C-43C5-8A2C-F156C44B2DFF}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5A3B91A0-A194-40A5-9363-6B28BD63D208}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 20.94171671224495
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {54C4D40C-46B5-48EB-A1FE-5CFA94D4E830}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {37082DC2-CF80-406E-8580-4CE0FF740CBE}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 22.99171671229152
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {17997D57-4B9F-4AAF-828A-3FF5C84BAF09}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D0B48064-8554-45FB-A076-3A55F3A723AE}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 25.13171671218907
+      SNAPOFFS 0
+      LENGTH 3.45512018600606
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F9983D12-96D3-46E0-8BD1-0F0E3624F8BC}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AAB1BA14-D3C6-4DE0-AEC5-7A9757360566}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 28.08856304494867
+      SNAPOFFS 0
+      LENGTH 2.68441796957712
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C66DCC35-B97E-4310-8691-681597003B42}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2EB6CA0E-EF66-495F-B32A-C6C9ABAB03C3}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 30.20552314484695
+      SNAPOFFS 0
+      LENGTH 1.41599857747958
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.58069489143501 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1ECAED40-5128-450A-B63E-5437517EA784}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {80CA7CD4-3499-4EE0-BE17-65E14ED9A408}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 31.04082683089152
+      SNAPOFFS 0
+      LENGTH 2.21676374527545
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.58069489143501 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AC5835E4-DC2A-416D-BB7E-CB86D2DC62D5}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C270D775-3D9B-4E36-8397-1CCB22EFF91F}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 32.26539816532247
+      SNAPOFFS 0
+      LENGTH 3.45512018600606
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {19440503-657E-46FE-AAD1-AB0CEE5B05CB}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DEFA7CC7-EB78-48C7-8284-CDB82D60B5E0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 34.54082683089152
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9D5353C5-F005-466B-BB44-F3D5062C1596}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AA8E565A-844E-40EC-AF08-71B586AFE3E5}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 36.3508268309474
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D2BF3354-B8C4-4C35-AD5D-DCEDC04DC557}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3BFA48F5-F32F-4971-A09D-A4DB76228693}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 38.40082683087755
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CA0DE295-B87C-4522-8AB9-8B9EB6220CD9}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D82A930A-CDDB-4897-98AC-D2517045DB2D}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 40.54082683089152
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4EE604A8-8228-456B-A141-3365E977C28E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6FE443A1-BAD5-41D8-861C-DEFAFF5AD4D2}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 43.49767316365111
+      SNAPOFFS 0
+      LENGTH 2.68441796957713
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {54AD4F1F-6754-4E92-8921-88E210FFDF18}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39D4BE2F-1B07-4CC1-BB55-91CDE721C0C4}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 45.61463326354939
+      SNAPOFFS 0
+      LENGTH 1.41599857747956
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.56624852418615 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {46608AA7-2BCE-497C-B082-8692EF011FBB}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A34EB7E1-C59D-4D57-B99A-26C576484996}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 46.46438331684281
+      SNAPOFFS 0
+      LENGTH 2.21676374527546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.56624852418615 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {84932018-99A6-4765-B110-7DFBE6430833}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {09229087-C41B-4C10-8F06-514D9706A715}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 47.68895465127375
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {99C669BA-199E-405D-8A36-B8139EE9B16B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {984C7C67-6820-427B-9932-A4AA61584BD8}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 49.96438331684281
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6ADE28C5-6333-4FB1-ADFD-C0D42438A783}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E09ED665-8E28-4392-9490-7BB7C78EF5D7}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 51.77438331678227
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F1C8D26F-8E4F-4C64-A346-E2352F7FC643}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EB1232AE-0017-4FB5-B4AF-F9BBB5CA6CAF}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 53.82438331682884
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0D05B4AC-F5DE-40FC-BF56-20AAD33F8D5A}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A5CE9761-9E3D-417F-8EE2-4BC27429292E}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 55.96438331684281
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F13FF4FB-DCB8-481E-B8F1-120E8FD28B6D}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4969914D-A8D1-4B8C-BA5C-5C3877881584}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 58.92122964948599
+      SNAPOFFS 0
+      LENGTH 2.68441796957713
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {99860D52-9B92-4B01-A53D-CE20E52F28B7}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3642C95E-0A13-4064-B742-E58D10793B74}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 61.03818974950068
+      SNAPOFFS 0
+      LENGTH 1.41599857747957
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.52009356101023 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DA1FAB61-5942-4A9F-AF94-2BF8A0BFBCC2}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8A3149E2-4857-4265-A16B-E9AA05A2A1D0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 61.93409476597002
+      SNAPOFFS 0
+      LENGTH 2.21676374527554
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.52009356101023 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BF78672F-F91D-4D70-988F-02AAED5E404A}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {59BAC1FE-976C-4BA1-B607-215764AF3731}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 63.15866610028456
+      SNAPOFFS 0
+      LENGTH 3.45512018600616
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C2D88BC6-4677-4FF6-9928-1A6B1140BB11}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F45055A6-F925-4CD2-A4A3-99DC20EB2256}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 65.43409476597012
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CA484228-AB6A-42F3-91C0-052CA52AA483}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D1456B78-240E-4163-8451-F9448619E7CC}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 67.24409476590958
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B22363A7-32D3-43D4-811B-161494CC3825}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B95EFFFA-A32D-4AA4-A139-7EF8D7B4FAB2}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 69.29409476595609
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C6573FCD-BB20-4A69-8C56-A7AA1492701B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E2330FCE-03EF-44E3-B627-472C4C5E9CC9}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 71.43409476597006
+      SNAPOFFS 0
+      LENGTH 3.45512018600603
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {03D1ACD2-02C5-463C-A7E3-E59D58C4B81B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C5149EE9-C8F9-4355-A785-5E3C22C7006C}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 74.39094109861324
+      SNAPOFFS 0
+      LENGTH 2.68441796957713
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FFDA993B-3B0B-4696-BE57-68651865E0FE}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {97D169EC-C1F5-4FA9-8B47-AFD4579284C5}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 76.50790119851152
+      SNAPOFFS 0
+      LENGTH 1.41599857747956
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.46484459143269 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9834AF9C-1612-4814-A8DC-EFB1646DB016}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2723D887-8606-45A5-8819-DC82CB6953CA}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 77.45905518455838
+      SNAPOFFS 0
+      LENGTH 2.21676374527546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.46484459143269 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9B77BEC4-FE6E-4EA8-AE4C-24C54A0C2AC8}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {63F1F33B-1997-49B2-8345-A3A0853B93B7}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 78.68362651898933
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0771AAFB-0593-4174-A421-5B2DFC5B1D2D}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {77437076-44B0-4A08-9475-01AE3CE0F1BB}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 80.95905518455838
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A5EBAE12-2677-47F0-8BFA-373DB5E9C19C}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CAD2F519-8726-48BB-99C6-C10AD7C6347E}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 82.76905518461426
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5C18ED25-8EEA-4BC5-99B5-61E73D0B9E6A}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B70A08A2-F20A-4F61-92B3-6350EA2C6228}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 84.81905518454441
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CDF7827D-2157-48E3-B631-D116A19FDA5D}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5AE6D16F-6001-4876-A109-8DEBB168A99E}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 86.95905518455838
+      SNAPOFFS 0
+      LENGTH 3.455120186006
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FA618D49-A520-4490-B56B-9FAC2308AF70}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CD281999-2707-4A21-B811-A7D4403AAC77}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 89.91590151731798
+      SNAPOFFS 0
+      LENGTH 2.6844179695771
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F0309FEE-787B-4402-B1D6-1C97F4E9A342}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A89221A7-C32D-4E87-B3AB-354986817DEA}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 92.03286161721626
+      SNAPOFFS 0
+      LENGTH 1.41599857747951
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.51886019469649 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {10442237-A0B6-460D-BDDB-D41A935311EF}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3A891BEA-0100-49C0-A12A-DF9DE4B7C2ED}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 92.92999999999928
+      SNAPOFFS 0
+      LENGTH 2.21676374527544
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.51886019469649 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7DE83D50-774F-41C7-85CC-AAB5910A6270}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {35614903-1D55-4D77-8764-4C3603AF7888}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 94.15457133431381
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A334DF07-831D-4AC8-8136-78638DA1582D}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1C68843C-2898-4B92-8999-0BD03237450F}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 96.42999999999928
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {49C04E66-BE53-4514-9325-35186F94A1F5}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {599F9B4A-E3D3-4F0E-8F7F-417DD96F5204}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 98.23999999993875
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1BB7C2EE-F750-4A33-87ED-EAC505C1A679}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {42671946-5DFB-41F9-A118-22F4F4F60C37}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 100.28999999998531
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7119A783-32CF-41D6-AE8A-EA0322F8A722}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5F979303-8F48-4665-A787-1B207DDD4524}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 102.42999999999928
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8111BDAB-375F-4C27-8F35-417587CF3884}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {49EDE165-3C30-40AB-8E7F-FD829F106E80}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 105.38684633264246
+      SNAPOFFS 0
+      LENGTH 2.68441796957713
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {415A2102-3BFA-4978-BFA5-B301F3A3A2D2}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A4AB6DAB-1468-4DE0-B1C4-9ED70844DAE0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 107.50380643254074
+      SNAPOFFS 0
+      LENGTH 1.41599857747954
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.35808829791834 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F90B2D21-31B8-4A72-9C04-09AC9768414F}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {48AF9A53-D2A1-400B-B4B7-F110DD2EA0D3}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 108.56171671214442
+      SNAPOFFS 0
+      LENGTH 2.21676374527544
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.35808829791834 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5E86E659-4EFF-4CEC-B133-EF165226393E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {359E5508-2763-4DC6-9086-C56B11B3E1DB}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 109.78628804657536
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3AB60280-8EBF-4FE2-8E38-5E50C2F25AD8}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E3247F2B-E1DA-4E8A-929E-E10E7010B1B9}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 112.06171671214442
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {368F8A5F-E615-4886-AE39-3E6A587F78CE}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3DAEDB34-B9CF-456A-ABF6-405A5C47F763}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 113.8717167122003
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6564E367-7886-401F-99EE-B6F4B6F7BDE3}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9E64FB4B-6A7B-478A-B1AA-674F81137ED0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 115.92171671224686
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A6F2886E-CF30-49A6-B48E-37695205BF1A}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {587C5ADB-2723-4C29-AB90-CE7B8CDFCBD3}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 118.06171671214442
+      SNAPOFFS 0
+      LENGTH 3.45512018600607
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3ACDB4A2-74AC-4C3B-A264-22DEF860C84E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C755F399-8A6B-465D-99BA-3A6A5ADB80D0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 121.01856304490401
+      SNAPOFFS 0
+      LENGTH 2.68441796957713
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B867DBFC-7DC2-4CF0-9364-CBC88B8A7785}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BC13039A-0F04-4E54-8DE4-9A6475AD1A24}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 123.13552314480229
+      SNAPOFFS 0
+      LENGTH 1.41599857747961
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.58069489143501 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {18BDD699-CC2E-496E-A1C0-22353C4DF560}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9FD34E19-C85A-4C5A-B8DA-7C41846FDF43}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 123.97082683089583
+      SNAPOFFS 0
+      LENGTH 2.21676374527544
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.58069489143501 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {ECE7B975-916B-42E6-B478-9472880CA995}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F381BCB2-5342-4913-80D3-394F9713E832}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 125.19539816532678
+      SNAPOFFS 0
+      LENGTH 3.4551201860064
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {952F6685-EC35-4F57-B210-62605B7BB3BD}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3DC45C61-876F-45D3-A187-FF1812563965}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 127.47082683089583
+      SNAPOFFS 0
+      LENGTH 2.27400000000033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BD62F17B-7D32-4197-817A-E3FE7A29BDD7}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C471C119-EAAC-4C74-9F55-C7B25975E6ED}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 129.28082683095204
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E8337D0F-0AD6-4457-8BF5-D148AE65F861}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FDF5EC84-9D75-42F9-B41E-D8975B206C08}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 131.33082683088219
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D40A25CC-B4D4-42BD-A33F-214B202BEB8C}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {731C7B4C-384C-483C-82B0-60E572BC74D8}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 133.47082683089616
+      SNAPOFFS 0
+      LENGTH 3.4551201860061
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BABFD794-C74F-4ABD-B59C-B9D177784C42}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {45167128-C6B5-468F-9F83-3B74621B2587}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 136.4276731636557
+      SNAPOFFS 0
+      LENGTH 2.68441796957708
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {131C600E-1E39-4E5B-8F90-1B5F80EA192E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {594BBC57-D9B5-4379-9B32-1651A1E33875}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 138.54463326355398
+      SNAPOFFS 0
+      LENGTH 1.41599857747954
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.56624852418615 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BBD94C2E-9830-41E1-83FC-5397BABD3E64}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D5F3F4CD-C711-4BF7-84FF-9330715C15BE}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 139.39438331680793
+      SNAPOFFS 0
+      LENGTH 2.21676374527544
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.56624852418615 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A7776672-E82D-4DFE-AA7B-C140F2CE55C9}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FC6AF63F-D3ED-450C-B321-305FAF01EC03}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 140.61895465123888
+      SNAPOFFS 0
+      LENGTH 3.4551201860061
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DC2CD1A6-23FB-494E-BB6E-9AF19677A29D}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C5C86183-4DF1-4292-8AFA-D6C92D937D59}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 142.89438331680793
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1F692168-6E4D-4512-838B-BE8928B8AC27}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E88BBE9E-0E5F-4485-9490-07E82C2F8762}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 144.7043833167474
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {51F3F16C-0152-417C-920E-F689CCDBE582}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BC4DE156-50D8-4A67-A66C-D3012FCDEFA9}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 146.75438331679396
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {50D86B0F-45E7-4B8C-84E2-8C2E29514FD4}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {95FAC3F8-71BC-46E8-9934-E3AF31B78076}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 148.89438331680793
+      SNAPOFFS 0
+      LENGTH 3.4551201860061
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8571436B-E40B-4F1E-99F9-E3C74657891E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {822E069A-BAD1-4FC0-A9E5-241F80F7CA6A}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 151.85122964945111
+      SNAPOFFS 0
+      LENGTH 2.68441796957714
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {963FDCB6-183D-4418-A0EC-2F3F8A4B390B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DBFB278E-CE4F-48D7-8B19-007730B359C7}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 153.96818974946581
+      SNAPOFFS 0
+      LENGTH 1.41599857747954
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.52009356101023 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {210863D3-99BA-451B-8699-803A95974B53}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E4285EDF-7D37-4AE7-894F-AF53E7F8C1B5}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 154.86409476592161
+      SNAPOFFS 0
+      LENGTH 2.21676374527559
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.52009356101023 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0E57381A-FF4A-4050-B085-586654DD840E}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A9F3E2B4-5FC6-41D0-957D-D20DE92DADC0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 156.08866610023614
+      SNAPOFFS 0
+      LENGTH 3.45512018600616
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {867BC6D0-BF77-4F02-BF02-7185337E4CB9}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2A644A34-4204-4137-B128-1A7C7E08F3D6}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 158.36409476592161
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {948E88F7-F177-4795-9FDC-22F0CFB46F49}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F1C7329D-CD58-409C-8047-C8C6ACE7AD9F}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 160.17409476586107
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {53D8109C-20DA-42BC-89FE-E10B90F9D0BD}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C6113935-2B73-4880-8A4B-C3419BDCB6E0}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 162.22409476590764
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2AB3BF50-6DEE-43E1-BB90-A00F920D5B7F}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {809B901C-360B-4EAF-9151-17337B64B2BA}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 164.36409476592161
+      SNAPOFFS 0
+      LENGTH 3.45512018600598
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3A87DE80-F298-4B45-B113-CDB040AC8713}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {283B61AA-796D-4B47-9538-01700D6FE3E3}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 167.32094109856479
+      SNAPOFFS 0
+      LENGTH 2.68441796957708
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9A511F6C-63A4-4729-A3E7-ED17C9EF2C17}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {203DFDDD-24BD-4C0D-862B-C61E01732E4B}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 169.43790119846307
+      SNAPOFFS 0
+      LENGTH 1.41599857747951
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1.1 0 0.46484459143269 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2509AB4C-894A-4441-9693-EB1241123BE6}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C4CE6761-AF5A-401E-9F17-4F3B2626FA09}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 170.38905518450264
+      SNAPOFFS 0
+      LENGTH 2.21676374527544
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.46484459143269 1 1 0 0
+      FADEOUT 1.1 0.01 0.99219241087462 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EE32CB99-B726-40B3-AC71-6E916B62498B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 1.78323625472455
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1E615E01-76C3-42A7-AAF8-378562900632}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 171.61362651893359
+      SNAPOFFS 0
+      LENGTH 3.4551201860061
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.99219241087462 1 1 0 0
+      FADEOUT 1.1 0.01 1.17969152040689 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2C7B576D-2E6B-4C4A-9316-4A62E6AC6327}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3F4BDE88-A339-4EF8-8017-0B2EA73F1CA8}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 173.88905518450264
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.17969152040689 1 1 0 0
+      FADEOUT 1.1 0.01 0.464 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {76E98BB8-90C8-454F-8F50-2BC35703BAD5}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7CBFEE2E-8763-45E5-BC6A-558AF8DB15FB}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 175.69905518455852
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.464 1 1 0 0
+      FADEOUT 1.1 0.01 0.224 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D65DD5FB-2F9F-4F88-AFA9-FC51692E62FF}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FED6F4A3-DD90-411C-9E45-E8DA635FFC6B}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 177.74905518448867
+      SNAPOFFS 0
+      LENGTH 2.274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.224 1 1 0 0
+      FADEOUT 1.1 0.01 0.134 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {805F7FF0-9729-4ACB-A5EA-98133AE3A609}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 8.88347726335891
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {14E0FBC1-068C-4C04-B425-842A17802264}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 179.88905518450264
+      SNAPOFFS 0
+      LENGTH 3.45512018600598
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.134 1 1 0 0
+      FADEOUT 1.1 0.01 0.49827385330793 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6BE39A3B-CD56-4666-A88B-E30A5BDFAA4A}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {43D5E421-314C-418F-9C0F-5589F622510B}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 182.84590151726223
+      SNAPOFFS 0
+      LENGTH 2.68441796957708
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.49827385330793 1 1 0 0
+      FADEOUT 1.1 0.01 0.5674578696474 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DBB9799E-F103-47C4-858B-636FC1ABEE7B}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 18.49436367815477
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FC81EA77-0789-44B3-B82D-6B59B68199BA}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 184.96286161716051
+      SNAPOFFS 0
+      LENGTH 1.41599857747951
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5674578696474 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5AE54478-DABD-458A-A8D8-1E563C161669}
+      IID 2
+      NAME env_wind_whistling_light_clear_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 23.56817011078262
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D78E8DC1-2FC5-4013-90BA-8D541CA809FA}
+      <SOURCE WAVE
+        FILE "Media\env_wind_whistling_light_clear_01.WAV"
+      >
+    >
+  >
+  <TRACK {0CFE24AB-0AB7-46B3-AF02-3C7CB2813AF3}
+    NAME Animals
+    PEAKCOL 21004543
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0CFE24AB-0AB7-46B3-AF02-3C7CB2813AF3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 7.65868001033096
+      SNAPOFFS 0
+      LENGTH 1.91111773912711
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.71755721803657 0 1 0 0 0
+      FADEOUT 1.1 0.41206256085269 0.38364445320768 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6F613C22-F5B5-4BB4-8A97-D40D4EF84AAC}
+      IID 3
+      NAME anim_crow_caw_moderate_wind_01.WAV
+      VOLPAN 1 0 0.510631 -1
+      SOFFS 16.65868001033094
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39AD9F7E-6770-43EA-AE98-9E35898057D3}
+      <SOURCE WAVE
+        FILE "Media\anim_crow_caw_moderate_wind_01.WAV"
+      >
+    >
+    <ITEM
+      POSITION 9.18615329625039
+      SNAPOFFS 0
+      LENGTH 2.81086088960845
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.41206256085266 0.38364445320768 1 1 0 0
+      FADEOUT 1 0.40695806845626 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {ECF83D1F-596D-4A73-B4E3-1746FA3E2CB0}
+      IID 3
+      NAME anim_crow_caw_moderate_wind_01.WAV
+      VOLPAN 1 0 1 -1
+      SOFFS 5.18913911039156
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A36E9FE8-1F23-424A-BB90-11C61D78F270}
+      <SOURCE WAVE
+        FILE "Media\anim_crow_caw_moderate_wind_01.WAV"
+      >
+    >
+  >
+  <TRACK {19027545-73FB-44E3-9F1E-97B63A5380F6}
+    NAME Waves
+    PEAKCOL 33554304
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {19027545-73FB-44E3-9F1E-97B63A5380F6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {747CB5F2-E9EE-4848-9475-57942617DFCA}
+    NAME Trees
+    PEAKCOL 25231232
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {747CB5F2-E9EE-4848-9475-57942617DFCA}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 15.70870512641554
+      SNAPOFFS 0
+      LENGTH 36.483046875
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 34.36411499098985 0 1 0 0 0
+      FADEOUT 1.1 0 2.11893188401015 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5A2D0D66-2D76-411F-97F2-E87A9FB1A2D3}
+      IID 5
+      NAME env_tree_rustling_moderate_chirping_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E5BC3BE6-5CD5-40FF-BDD6-E53F72C3746B}
+      <SOURCE WAVE
+        FILE "Media\env_tree_rustling_moderate_chirping_01.wav"
+      >
+    >
+    <ITEM
+      POSITION 46.85112610307095
+      SNAPOFFS 0
+      LENGTH 36.48304687500025
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 5.34062589834458 1 1 0 0
+      FADEOUT 1 22.01422711121783 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A9D0AF9E-39A8-41B1-A8E0-B910D3B350E2}
+      IID 5
+      NAME env_tree_rustling_moderate_chirping_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8A750BE2-3D70-43F3-B62E-F7BBE731D828}
+      <SOURCE WAVE
+        FILE "Media\env_tree_rustling_moderate_chirping_01.wav"
+      >
+    >
+  >
+  <TRACK {079F0B51-1721-4167-B044-92335E184297}
+    NAME Trees
+    PEAKCOL 25231232
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 3.98107170553497 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {079F0B51-1721-4167-B044-92335E184297}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 66.25019277072097
+      SNAPOFFS 0
+      LENGTH 139.51999999999975
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 20.18319826270802 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BFD31F8F-CD6A-4651-9EFC-05AEA933F13A}
+      IID 6
+      NAME env_tree_rustling_light_chirping_01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {489F900C-AAA4-472F-8693-D01BE4244E02}
+      <SOURCE WAVE
+        FILE "Media\env_tree_rustling_light_chirping_01.wav"
+      >
+    >
+  >
+>
