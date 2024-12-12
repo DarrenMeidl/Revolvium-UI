@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcb96a6be8637f47a813d27f1e2c20e, type: 3}
   m_Name: LevelThreeCameraOffsets
   m_EditorClassIdentifier: 
-  playerOffset: {x: 0, y: 0.7, z: -1}
+  playerOffset: {x: 0, y: 0.7, z: -2}
   levelOffset: {x: -5, y: 5, z: -5}
