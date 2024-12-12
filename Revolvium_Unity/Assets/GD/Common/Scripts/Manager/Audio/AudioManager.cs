@@ -53,7 +53,16 @@ namespace GD.Audio {
 
             // Initialize the AudioSource pool
             audioSourcePool = new ObjectPool<AudioSource>(audioSourcePrefab,
-                initialPoolSize);
+                initialPoolSize);            
+        }
+
+        private void Start()
+        {
+            foreach (AudioMixerGroupName groupName in AudioMixerGroupName.GetValues(typeof(AudioMixerGroupName)))
+            {
+                SetVolume(groupName, GetVolume(groupName));
+                Debug.Log("Setting volume for " + groupName + " to " + GetVolume(groupName));
+            }
         }
 
         /// <summary>
@@ -75,9 +84,13 @@ namespace GD.Audio {
         }
         public void SetVolume(AudioMixerGroupName groupName, float volume)
         {
-            if (volume < -0.1f || volume > 1f) // don't allow invalid values
+            if (volume < 0 || volume > 1f) // don't allow invalid values
                 return;
-            audioMixer.SetFloat(GetVolumeParameterName(groupName), Mathf.Log10(volume) * 20f);
+            else if (volume == 0)
+                audioMixer.SetFloat(GetVolumeParameterName(groupName), -80f);
+            else
+                audioMixer.SetFloat(GetVolumeParameterName(groupName), Mathf.Log10(volume) * 60f);
+
             switch (groupName)
             {
                 case AudioMixerGroupName.Master:
