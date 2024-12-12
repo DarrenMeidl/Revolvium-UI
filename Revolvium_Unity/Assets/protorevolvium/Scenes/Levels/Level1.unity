@@ -4064,7 +4064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: nextLevel
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1131155518112364602, guid: 49eb7c3e460d33d4986d8c649a2042ec, type: 3}
       propertyPath: transition
