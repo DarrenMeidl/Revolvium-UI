@@ -79,7 +79,7 @@ MonoBehaviour:
   speed: 3
   canMove: 1
   CameraFocus: {fileID: 5061975719640489541}
-  Model: {fileID: 0}
+  Model: {fileID: 3687532937745733076}
 --- !u!114 &2230159393316501807
 MonoBehaviour:
   m_ObjectHideFlags: 0

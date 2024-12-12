@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public static class MenuManager
 {
     // Menu objects (panels)
-    public static GameObject title_screen, pause, options, level_end, player_hud;
+    public static GameObject title_screen, pause, options, level_end, player_hud, logo;
     public static void OpenMenu(Menu menu)
     {
         // find the next menu, turn it on
@@ -14,6 +14,7 @@ public static class MenuManager
         {
             case Menu.TITLE_SCREEN:
                 title_screen.SetActive(true);
+                logo.SetActive(true);
                 break;
             case Menu.PAUSE:
                 pause.SetActive(true);
@@ -59,6 +60,8 @@ public static class MenuManager
         options.SetActive(false);
         level_end.SetActive(false);
         player_hud.SetActive(false);
+        if (logo != null)
+            logo.SetActive(false); // hard-code turn off logo, for when options menu is opened
     }
     public static void Initialize()
     {
@@ -70,6 +73,6 @@ public static class MenuManager
         level_end = canvas.transform.Find("level_end").gameObject;
         player_hud = canvas.transform.Find("player_hud").gameObject;
 
-        Debug.Log("INITIALISED");
+        logo = GameObject.Find("Logo");
     }
 }

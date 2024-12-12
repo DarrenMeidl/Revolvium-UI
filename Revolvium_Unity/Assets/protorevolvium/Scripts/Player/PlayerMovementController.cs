@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.LightAnchor;
 /*
  *  PLAYER MOVEMENT CONTROLLER - STARTED BY AND WRITTEN BY RUBY
  */
@@ -41,10 +42,14 @@ public class PlayerMovementController : MonoBehaviour
             characterController.SimpleMove(rawInputMovement);
 
             // ported and changed from animation test 2 branch
-            // ported and fixed by ruby
+            // ported and fixed by Ruby :3 & Darren :D
             Vector3 movement = rawInputMovement.normalized;
             if (movement.magnitude > 0) {
-                Model.right = movement * -1; //rotate to face movement direction
+                Model.right = movement * -1; //rotate to face movement direction              
+           
+                Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
+                euler.x = -90; // Force x-axis
+                Model.rotation = Quaternion.Euler(euler); // current model exported in a way that requires this to be forced, would fix in a future release
             }
         }
     }

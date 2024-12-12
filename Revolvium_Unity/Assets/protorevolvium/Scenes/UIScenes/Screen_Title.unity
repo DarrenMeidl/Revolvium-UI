@@ -1065,10 +1065,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1619617084}
     m_Modifications:
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: levelController
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2568292796640137782, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
       propertyPath: m_Name
       value: SmallRamp
@@ -1156,6 +1152,10 @@ PrefabInstance:
     - target: {fileID: 8000192112658723874, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: levelController
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8000192112658723874, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
@@ -1571,6 +1571,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1619617084}
     m_Modifications:
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: cubeCenter.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: cubeCenter.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6772276485085626959, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1674,38 +1706,6 @@ PrefabInstance:
     - target: {fileID: 9018456023490353721, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: cubeCenter.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645335989467507702, guid: 3a57a02bd070ca248870d105612c0b24, type: 3}
-      propertyPath: levelController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: cubeCenter.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991719544053748820, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
-      propertyPath: levelController
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8162807026515359852, guid: c1a65c2bdf9fdb64bada53784fa4ba2a, type: 3}
@@ -2727,7 +2727,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f9a94780aa94b7c4985400ab0bedcdbb, type: 2}
     - target: {fileID: 919132149155446097, guid: dad940ea7dd0ec343ad5cbb63454f48d, type: 3}
       propertyPath: m_Name
-      value: Logo (1)
+      value: Logo
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dad940ea7dd0ec343ad5cbb63454f48d, type: 3}
       propertyPath: m_IsActive
@@ -2789,6 +2789,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1619617084}
     m_Modifications:
+    - target: {fileID: 8000192112658723874, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803556373649392176, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2859,10 +2863,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4447574532148782491, guid: 606d0043c6c9f7e4caeffbd8a05329ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8000192112658723874, guid: e366e68b80e07f04dabc7e3399190cc1, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -4367,7 +4367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5641119706629576411, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5932574336361927519, guid: 41b42ebc3a8d59d4a92c0d5403dff5d4, type: 3}
       propertyPath: m_IsActive
