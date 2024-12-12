@@ -21,7 +21,7 @@ public class PlayerMovementController : MonoBehaviour
     private Vector3 rawInputMovement;
 
     [SerializeField]
-    private Transform CameraFocus;
+    private Transform CameraFocus, Model;
 
     private void Start()
     {
@@ -39,6 +39,13 @@ public class PlayerMovementController : MonoBehaviour
         if (canMove) {
             rawInputMovement = inputMovement.y * CameraFocus.forward + inputMovement.x * CameraFocus.right;
             characterController.SimpleMove(rawInputMovement);
+
+            // ported and changed from animation test 2 branch
+            // ported and fixed by ruby
+            Vector3 movement = rawInputMovement.normalized;
+            if (movement.magnitude > 0) {
+                Model.right = movement * -1; //rotate to face movement direction
+            }
         }
     }
 
