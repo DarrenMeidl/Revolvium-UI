@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: LevelOneCreationSettings
   m_EditorClassIdentifier: 
   w: 3
-  h: 1
+  h: 3
   d: 3
   blockWidth: 1
+  cubeCenter: {x: 1, y: 1, z: 1}
