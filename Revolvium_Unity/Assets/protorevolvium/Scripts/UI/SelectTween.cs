@@ -50,7 +50,7 @@ public class SelectTween : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private IEnumerator MoveButton(bool startingAnimation)
     {
         Vector3 endPosition;
-        Vector2 endScale; //= new Vector2(0f,100f);
+        Vector2 endScale;
 
         float elapsedTime = 0f;
         while(elapsedTime < _moveTime)
@@ -69,7 +69,6 @@ public class SelectTween : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                     endPosition = _startPos + new Vector3(0f, _moveAmount, 0f);
                     endScale = new Vector2(_startScale.x, _startScale.y * _scaleAmount);
                 }                
-                Debug.Log(endScale);
             }
 
             else

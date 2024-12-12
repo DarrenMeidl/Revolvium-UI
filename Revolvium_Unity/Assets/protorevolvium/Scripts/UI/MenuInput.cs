@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuInput : Singleton<MenuInput>
 {
@@ -29,9 +30,7 @@ public class MenuInput : Singleton<MenuInput>
         MenuManager.Initialize(); // prevents needing to look for menus every time we want to open/close them
         MenuManager.CloseAllMenus(); // ensure no other menus are open
 
-        _navigationAction = _UIInputs.actions["Navigate"];
-
-        
+        _navigationAction = _UIInputs.currentActionMap["Navigate"];
     }
     private void Start()
     {
@@ -45,17 +44,27 @@ public class MenuInput : Singleton<MenuInput>
             MenuManager.OpenMenu(Menu.PLAYER_HUD);
             canPause = true;
         }
-        paused = false;
+        paused = false;        
     }
-
     private void Update()
     {
-        _navigationInput = _navigationAction.ReadValue<Vector2>();
+        _navigationInput = _navigationAction.ReadValue<Vector2>(); // read the input value
         // if we try to navigate but our button isn't active or doesn't exist
-        if ((_navigationInput.x != 0 || _navigationInput.y != 0) && (EventSystem.current.currentSelectedGameObject == null || EventSystem.current.currentSelectedGameObject.activeInHierarchy == false))
+        if ((_navigationInput != Vector2.zero) && (EventSystem.current.currentSelectedGameObject == null || EventSystem.current.currentSelectedGameObject.activeInHierarchy == false))
         {
             EnableFirstSelected(); // select the first button
         }
+        else if(EventSystem.current.currentSelectedGameObject == null)
+        {
+            StartCoroutine(WaitBeforeSelect(0.5f)); // if we haven't selected a button after a certain amount of time, auto-select the first button
+            // gives time for user scrolling through buttons with a mouse to highlight next button without auto-selecting the first button in a menu instantly
+        }
+    }
+    private IEnumerator WaitBeforeSelect(float time)
+    {
+        yield return new WaitForSeconds(time); // wait
+        if (EventSystem.current.currentSelectedGameObject == null) // if we still haven't selected a button
+            EnableFirstSelected(); // select the first button
     }
     private void EnableFirstSelected()
     {
@@ -64,6 +73,7 @@ public class MenuInput : Singleton<MenuInput>
             if (g.activeInHierarchy) // if the current first selected is active
             {
                 EventSystem.current.SetSelectedGameObject(g); // set new selected button
+                Debug.Log("Selected: " + g.name);
                 return; // end loop early, we enable first active button so no need to loop through rest of array
             }
         }
