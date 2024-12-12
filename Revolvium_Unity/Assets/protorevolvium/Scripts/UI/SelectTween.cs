@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using TreeEditor;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,19 +14,25 @@ public class SelectTween : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     [SerializeField] private Color highlightedTextColor = Color.white;
 
     [Header("Button Animation")]
-    [SerializeField] private float _verticalMoveAmount = 0f;
+    //[SerializeField] private Color defaultButtonColor = Color.white;
+    //[SerializeField] private Color highlightedButtonColor = Color.black;
+    [SerializeField] private float _moveAmount = 0f;
     [SerializeField] private float _moveTime = 0.17f;
-    [Range(0f, 2f), SerializeField] private float _scaleAmount = 1.1f;
+    [Range(0f, 2f), SerializeField] private float _scaleAmount = 1.2f;
+    [SerializeField] private bool expandHorizontally = true;
 
     private TextMeshProUGUI text;
     private Vector3 _startPos;
     private Vector2 _startScale;
     private RectTransform _rectTransform;
+    //private Button _button;
     void Awake()
     { // before the game starts, save our inital Rect Transform width & height
         if (GetComponentInChildren<RectTransform>(true) != null) // ensures the RectTransform component is found in inactive children
             _rectTransform = GetComponentInChildren<RectTransform>(true);
         _startScale = _rectTransform.sizeDelta;
+
+        //UnityEngine.ColorUtility.TryParseHtmlString("#981756", out highlightedButtonColor); // hard-code specific colour
     }
     void OnEnable()
     {
@@ -52,8 +59,16 @@ public class SelectTween : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
             if (startingAnimation)
             {
-                endPosition = _startPos + new Vector3(0f, _verticalMoveAmount, 0f);
-                endScale = new Vector2(_startScale.x * _scaleAmount, 100f);
+                if (expandHorizontally)
+                {
+                    endPosition = _startPos + new Vector3(_moveAmount, 0f, 0f);
+                    endScale = new Vector2(_startScale.x * _scaleAmount, _startScale.y);
+                }
+                else
+                {
+                    endPosition = _startPos + new Vector3(0f, _moveAmount, 0f);
+                    endScale = new Vector2(_startScale.x, _startScale.y * _scaleAmount);
+                }                
                 Debug.Log(endScale);
             }
 
