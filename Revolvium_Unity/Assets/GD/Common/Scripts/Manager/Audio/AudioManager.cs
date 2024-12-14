@@ -38,6 +38,12 @@ namespace GD.Audio {
         private AudioMixerGroup backgroundGroup;
 
         [SerializeField]
+        private AudioMixerGroup PlayModeGroup;
+
+        [SerializeField]
+        private AudioMixerGroup RotationModeGroup;
+
+        [SerializeField]
         private AudioMixerGroup sfxGroup;
 
         [SerializeField]
@@ -77,6 +83,8 @@ namespace GD.Audio {
                 AudioMixerGroupName.Master => masterGroup,
                 AudioMixerGroupName.Ambient => ambientGroup,
                 AudioMixerGroupName.Background => backgroundGroup,
+                AudioMixerGroupName.PlayMode => PlayModeGroup,
+                AudioMixerGroupName.RotationMode => RotationModeGroup,
                 AudioMixerGroupName.SFX => sfxGroup,
                 AudioMixerGroupName.UI => uiGroup,
                 _ => null,
@@ -84,7 +92,7 @@ namespace GD.Audio {
         }
         public void SetVolume(AudioMixerGroupName groupName, float volume)
         {
-            if (volume < 0 || volume > 1f) // don't allow invalid values
+            if (volume < 0 || volume > 1f || groupName == AudioMixerGroupName.PlayMode || groupName == AudioMixerGroupName.RotationMode) // don't allow invalid values
                 return;
             else if (volume == 0)
                 audioMixer.SetFloat(GetVolumeParameterName(groupName), -80f);

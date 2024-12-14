@@ -50,6 +50,8 @@ MonoBehaviour:
   masterGroup: {fileID: 24300002, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
   ambientGroup: {fileID: -978210973995481303, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
   backgroundGroup: {fileID: -293641666222251810, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
+  PlayModeGroup: {fileID: 6767858585631477042, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
+  RotationModeGroup: {fileID: 2364304683989320117, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
   sfxGroup: {fileID: -4628288177261963110, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
   uiGroup: {fileID: 204370294822756366, guid: 2a23254abeb3c5d4bad7a6651d8755d9, type: 2}
   volumeLevels: {fileID: 11400000, guid: f5639b99910ebad49b217f282be44be6, type: 2}

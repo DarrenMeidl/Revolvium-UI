@@ -12,6 +12,12 @@
         [Description("Background music group")]
         Background,
 
+        [Description("Music in play mode")]
+        PlayMode,
+
+        [Description("Music in rotationmode")]
+        RotationMode,
+
         [Description("Sound effects group")]
         SFX,
 

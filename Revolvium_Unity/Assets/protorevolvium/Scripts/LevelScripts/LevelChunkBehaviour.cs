@@ -26,6 +26,8 @@ public class LevelChunkBehaviour : MonoBehaviour
     [SerializeField]
     private GameEvent startRotation, endRotation;
 
+    private bool canRotate = true;
+
     private void Start() {
        
     }
@@ -44,6 +46,7 @@ public class LevelChunkBehaviour : MonoBehaviour
                 transform.position = startPosition;
                 transform.RotateAround(pivotPos, rotationDirection, degree);
                 endRotation?.Raise();
+                canRotate = true;
                 yield break;
             }
 
@@ -54,11 +57,14 @@ public class LevelChunkBehaviour : MonoBehaviour
 
     [ContextMenu("rotate")]
     public void rotate() {
-        startRotation?.Raise();
-        rotateDirection = levelController.currentRotationDirection;
-        //transform.RotateAround(cubeCenter, rotateDirection.dir, 90);
-        coroutine = RotateFunction(gameObject, cubeCenter, 90, rotateDirection.dir);
-        StartCoroutine(coroutine);
+        if (canRotate) {
+            canRotate = false;
+            startRotation?.Raise();
+            rotateDirection = levelController.currentRotationDirection;
+            //transform.RotateAround(cubeCenter, rotateDirection.dir, 90);
+            coroutine = RotateFunction(gameObject, cubeCenter, 90, rotateDirection.dir);
+            StartCoroutine(coroutine);
+        }
     }
 
 }
