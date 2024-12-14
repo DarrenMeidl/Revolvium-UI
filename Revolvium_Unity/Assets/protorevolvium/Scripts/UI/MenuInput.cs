@@ -49,6 +49,8 @@ public class MenuInput : Singleton<MenuInput>
     private void Update()
     {
         _navigationInput = _navigationAction.ReadValue<Vector2>(); // read the input value
+        //Debug.Log(_UIInputs.ToString());
+        //Debug.Log(_navigationAction.ReadValue<Vector2>());
         // if we try to navigate but our button isn't active or doesn't exist
         if ((_navigationInput != Vector2.zero) && (EventSystem.current.currentSelectedGameObject == null || EventSystem.current.currentSelectedGameObject.activeInHierarchy == false))
         {
