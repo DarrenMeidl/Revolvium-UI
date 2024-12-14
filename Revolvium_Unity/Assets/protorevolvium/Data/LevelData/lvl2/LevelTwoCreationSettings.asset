@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcb96a6be8637f47a813d27f1e2c20e, type: 3}
-  m_Name: LevelOneCameraOffsets
+  m_Script: {fileID: 11500000, guid: ddca19a4c8489ac4a9f4b1cd14166f9d, type: 3}
+  m_Name: LevelTwoCreationSettings
   m_EditorClassIdentifier: 
-  playerOffset: {x: 0, y: 1, z: -3}
-  levelOffset: {x: -3, y: 3, z: -3}
+  w: 3
+  h: 3
+  d: 3
+  blockWidth: 1
+  cubeCenter: {x: 1, y: 1, z: 1}

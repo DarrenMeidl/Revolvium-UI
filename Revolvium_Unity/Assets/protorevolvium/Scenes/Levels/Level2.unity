@@ -253,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 4095002438620170286, guid: 6a68884a6da8ff7458d6a97eb8ac6375, type: 3}
       propertyPath: creationSettings
       value: 
-      objectReference: {fileID: 11400000, guid: 155d8c64e28643248ac08fd988be393a, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ce66a3605d97fa4e8733fa504285058, type: 2}
     - target: {fileID: 4095002438620170286, guid: 6a68884a6da8ff7458d6a97eb8ac6375, type: 3}
       propertyPath: blocks.Array.size
       value: 27
@@ -369,7 +369,7 @@ PrefabInstance:
     - target: {fileID: 4939091879224446003, guid: 6a68884a6da8ff7458d6a97eb8ac6375, type: 3}
       propertyPath: creationSettings
       value: 
-      objectReference: {fileID: 11400000, guid: 155d8c64e28643248ac08fd988be393a, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ce66a3605d97fa4e8733fa504285058, type: 2}
     - target: {fileID: 4939091879224446003, guid: 6a68884a6da8ff7458d6a97eb8ac6375, type: 3}
       propertyPath: levelChunkFinder
       value: 
@@ -1522,7 +1522,7 @@ Transform:
   m_GameObject: {fileID: 523444295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 1}
+  m_LocalPosition: {x: 1, y: 0.7, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4400,7 +4400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 601002966786667842, guid: 226243b86a166494585fb6f27263dd1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.409
+      value: 0.299
       objectReference: {fileID: 0}
     - target: {fileID: 601002966786667842, guid: 226243b86a166494585fb6f27263dd1b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5819,7 +5819,7 @@ PrefabInstance:
     - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: CameraOffset
       value: 
-      objectReference: {fileID: 11400000, guid: df862ce49d1e330488acf1656789aa63, type: 2}
+      objectReference: {fileID: 11400000, guid: 4cbf70cc1d696ea4da1abbfcb930585c, type: 2}
     - target: {fileID: 7617631216826033758, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: VirtualCamera
       value: 
@@ -5827,7 +5827,7 @@ PrefabInstance:
     - target: {fileID: 8412136237185162389, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: CameraOffset
       value: 
-      objectReference: {fileID: 11400000, guid: df862ce49d1e330488acf1656789aa63, type: 2}
+      objectReference: {fileID: 11400000, guid: 4cbf70cc1d696ea4da1abbfcb930585c, type: 2}
     - target: {fileID: 8412136237185162389, guid: 66e44961fd3f92144bac67fa6fac171f, type: 3}
       propertyPath: VirtualCamera
       value: 

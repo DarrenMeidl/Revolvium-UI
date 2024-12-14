@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1525574406633675999}
   - component: {fileID: 4052443410235827695}
   - component: {fileID: 5488033674797555858}
+  - component: {fileID: 318334899159261143}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -152,6 +153,29 @@ MonoBehaviour:
   unlockSound: {fileID: 8300000, guid: 13b6db6be930d0a46a1833f2e70a12c7, type: 3}
   UnlockEvent: {fileID: 11400000, guid: cfe6a4d570b17ac418a3c3121877ec2e, type: 2}
   CameraFocus: {fileID: 4770749114355336443}
+  Animator: {fileID: 318334899159261143}
+--- !u!95 &318334899159261143
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321747065464100842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea53f3bc0d23c9944a44172b6d60548f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &5314354694567386906
 PrefabInstance:
   m_ObjectHideFlags: 0

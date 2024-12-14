@@ -117,6 +117,8 @@ MonoBehaviour:
   CameraOffset: {fileID: 0}
   cameraWhoosh: {fileID: 8300000, guid: 24793e9d186baf84e97736e3b61b5d57, type: 3}
   unlockEvent: {fileID: 11400000, guid: 5d5c9632062ef9047aa345dc7565fa93, type: 2}
+  pauseEvent: {fileID: 11400000, guid: 203ff4956dfdf9540819c29f78b13c09, type: 2}
+  unpauseEvent: {fileID: 11400000, guid: d53619843144b7643a5c01cce27d987b, type: 2}
 --- !u!114 &598603672908243389
 MonoBehaviour:
   m_ObjectHideFlags: 0

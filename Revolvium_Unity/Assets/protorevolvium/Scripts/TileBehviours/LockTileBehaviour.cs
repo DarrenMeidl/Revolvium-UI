@@ -17,13 +17,19 @@ public class LockTileBehaviour : LevelTile {
     [SerializeField]
     private Transform CameraFocus;
 
+    [SerializeField]
+    private Animator Animator;
+
     private void Start() {
     
     }
 
     private IEnumerator Unlock() {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
+        Animator.SetTrigger("OpenTrigger");
+        yield return new WaitForSeconds(0.3f);
         AudioManager.Instance.PlaySound(unlockSound, GD.Types.AudioMixerGroupName.SFX);
+        yield return new WaitForSeconds(1.5f);
         this.gameObject.SetActive(false);
     }
 

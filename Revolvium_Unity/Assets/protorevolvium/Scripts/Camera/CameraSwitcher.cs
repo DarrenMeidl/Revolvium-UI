@@ -56,7 +56,7 @@ public class CameraSwitcher : MonoBehaviour
         VirtualCamera.Follow = PlayerTransform;
         AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
     }
-
+     
     private IEnumerator UnlockFocus() {
         transposer.m_FollowOffset = new Vector3(1, 1, 1);
         yield return new WaitForSeconds(2f);
