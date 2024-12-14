@@ -10,6 +10,8 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField]
     private CharacterController characterController;
     [SerializeField]
+    private Animator PlayerAnimationController; //reference to animator
+    [SerializeField]
     private float TurnSpeed = 0.5f;
 
     [SerializeField, ReadOnly]
@@ -47,7 +49,13 @@ public class PlayerMovementController : MonoBehaviour
                 Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
                 euler.x = -90; // Force x-axis
                 Model.rotation = Quaternion.Euler(euler); // current model exported in a way that requires this to be forced, would fix in a future release
+                PlayerAnimationController.SetBool("isWalking", true); //play walking animation
             }
+            else
+            {
+                PlayerAnimationController.SetBool("isWalking", false); //stop walking animation
+            }
+
         }
     }
 
