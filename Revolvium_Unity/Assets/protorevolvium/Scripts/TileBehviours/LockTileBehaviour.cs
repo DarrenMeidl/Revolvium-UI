@@ -1,5 +1,6 @@
+using GD;
 using GD.Audio;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class LockTileBehaviour : LevelTile {
@@ -8,17 +9,28 @@ public class LockTileBehaviour : LevelTile {
     private int keyID;
 
     [SerializeField]
-    private AudioClip unlock;
+    private AudioClip unlockSound;
+
+    [SerializeField]
+    private TransformGameEvent UnlockEvent;
+
+    [SerializeField]
+    private Transform CameraFocus;
 
     private void Start() {
     
     }
 
+    private IEnumerator Unlock() {
+        yield return new WaitForSeconds(1f);
+        AudioManager.Instance.PlaySound(unlockSound, GD.Types.AudioMixerGroupName.SFX);
+        this.gameObject.SetActive(false);
+    }
 
     public void AttemptUnlock(int keyID) {
         if (keyID == this.keyID) {
-            this.gameObject.SetActive(false);
-            AudioManager.Instance.PlaySound(unlock, GD.Types.AudioMixerGroupName.SFX);
+            UnlockEvent?.Raise(CameraFocus);
+            StartCoroutine(Unlock());
         }
     }
 

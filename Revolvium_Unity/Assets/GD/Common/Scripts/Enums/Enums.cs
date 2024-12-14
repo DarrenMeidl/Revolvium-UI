@@ -137,7 +137,7 @@
         Informative,
 
         /// <summary>
-        /// Items used to unlock or solve puzzles or progress the storyline.
+        /// Items used to unlockSound or solve puzzles or progress the storyline.
         /// </summary>
         [Description("Items used to unlock or solve puzzles or progress the storyline")]
         PuzzleItem,
@@ -290,7 +290,7 @@
         Artifact,
 
         /// <summary>
-        /// Represents a key or access card used to unlock doors or access restricted areas.
+        /// Represents a key or access card used to unlockSound doors or access restricted areas.
         /// </summary>
         [Description("Key or access card used to unlock doors or access restricted areas")]
         Key,

@@ -1,6 +1,8 @@
 using Cinemachine;
 using UnityEngine;
 using GD.Audio;
+using System.Collections;
+using GD;
 
 /*
  *  CAMERA SWITCHER - STARTED BY AND WRITTEN BY RUBY
@@ -23,6 +25,9 @@ public class CameraSwitcher : MonoBehaviour
 
     [SerializeField]
     private AudioClip cameraWhoosh;
+
+    [SerializeField]
+    private GameEvent unlockEvent, pauseEvent, unpauseEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +55,20 @@ public class CameraSwitcher : MonoBehaviour
         VirtualCamera.LookAt = PlayerTransform;
         VirtualCamera.Follow = PlayerTransform;
         AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
+    }
+
+    private IEnumerator UnlockFocus() {
+        transposer.m_FollowOffset = new Vector3(1, 1, 1);
+        yield return new WaitForSeconds(2f);
+        disableRotation();
+        unlockEvent?.Raise();
+        unpauseEvent?.Raise();
+    }
+    public void LockFocus(Transform lockTransform) {
+        AudioManager.Instance.PlaySound(cameraWhoosh, GD.Types.AudioMixerGroupName.SFX);
+        VirtualCamera.LookAt = lockTransform;
+        VirtualCamera.Follow = lockTransform;
+        StartCoroutine(UnlockFocus());
+        pauseEvent?.Raise();
     }
 }
