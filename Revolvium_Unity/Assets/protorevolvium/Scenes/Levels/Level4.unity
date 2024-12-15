@@ -451,6 +451,30 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1371661484}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1371661484}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: 834c6cc0bb782a142b1a41d8782c468b, type: 2}
+    - target: {fileID: 268863038870459743, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 360357696789296414, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1359,6 +1383,7 @@ MonoBehaviour:
   selectorMoveDir: {fileID: 11400000, guid: 9ad08d49798fba24b8c90aa0a1f4032f, type: 2}
   highlight: {fileID: 2134188961}
   selector: {fileID: 1062453155}
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &394483177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4600,6 +4625,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5061975719640489541, guid: 34cc93e1b9e96b140a9f0f08a0e0d62f, type: 3}
   m_PrefabInstance: {fileID: 1805023312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1371661484 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3147957738581348942, guid: b1bdbe26452e9944bbfbf5288f3416b7, type: 3}
+  m_PrefabInstance: {fileID: 141783565}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377836376
 GameObject:
