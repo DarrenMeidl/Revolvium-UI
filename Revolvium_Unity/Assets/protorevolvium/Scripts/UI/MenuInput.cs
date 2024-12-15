@@ -19,7 +19,7 @@ public class MenuInput : Singleton<MenuInput>
     [SerializeField] private AudioClip hover;
     [SerializeField] private GameObject[] firstSelectButtons;
 
-    [SerializeField] private PlayerInput _UIInputs;
+    private PlayerInput _UIInputs; 
     private InputAction _navigationAction;
     private Vector2 _navigationInput;
 
@@ -30,7 +30,9 @@ public class MenuInput : Singleton<MenuInput>
         MenuManager.Initialize(); // prevents needing to look for menus every time we want to open/close them
         MenuManager.CloseAllMenus(); // ensure no other menus are open
 
-        _navigationAction = _UIInputs.currentActionMap["Navigate"];
+        _UIInputs = GetComponent<PlayerInput>();
+        _navigationAction = _UIInputs.currentActionMap["UI_Navigate_Tracker"]; // no way to track if you're navigating a menu if you're not selecting anything
+                                                                               // we need this in PlayerControls map so we can track if the player is trying to navigate the menu even if currentSelectedGameObject is null
     }
     private void Start()
     {
@@ -49,25 +51,15 @@ public class MenuInput : Singleton<MenuInput>
     private void Update()
     {
         _navigationInput = _navigationAction.ReadValue<Vector2>(); // read the input value
-        //Debug.Log(_UIInputs.ToString());
         //Debug.Log(_navigationAction.ReadValue<Vector2>());
+        //Debug.Log(EventSystem.current.currentSelectedGameObject);
         // if we try to navigate but our button isn't active or doesn't exist
         if ((_navigationInput != Vector2.zero) && (EventSystem.current.currentSelectedGameObject == null || EventSystem.current.currentSelectedGameObject.activeInHierarchy == false))
         {
             EnableFirstSelected(); // select the first button
         }
-        else if(EventSystem.current.currentSelectedGameObject == null) // if we're not selecting a button
-        {
-            StartCoroutine(WaitBeforeSelect(1.5f)); // if we haven't selected a button after a certain amount of time, auto-select the first button
-            // gives time for user scrolling through buttons with a mouse to highlight next button without auto-selecting the first button in a menu instantly
-        }
     }
-    private IEnumerator WaitBeforeSelect(float time)
-    {
-        yield return new WaitForSeconds(time); // wait
-        if (EventSystem.current.currentSelectedGameObject == null) // if we still haven't selected a button
-            EnableFirstSelected(); // select the first button
-    }
+
     private void EnableFirstSelected()
     {
         foreach (GameObject g in firstSelectButtons) // run through our first selected buttons
