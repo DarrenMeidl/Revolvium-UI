@@ -49,11 +49,11 @@ public class PlayerMovementController : MonoBehaviour
                 Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
                 euler.x = -90; // Force x-axis
                 Model.rotation = Quaternion.Euler(euler); // current model exported in a way that requires this to be forced, would fix in a future release
-                player_anim.SetBool("isWalking", true); //play walking animation
+                player_anim.SetBool("isWalking", true); //play walk animation
             }
             else
             {
-                player_anim.SetBool("isWalking", false); //stop walking animation
+                player_anim.SetBool("isWalking", false); //stop walk animation
             }
 
         }
