@@ -9,9 +9,10 @@ public class SelectorBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject highlight, selector;
 
+    [SerializeField, ReadOnly]
     private Vector3 originalPosition;
 
-    private void Start() {
+    private void Awake() {
         originalPosition = transform.position;
     }
 

@@ -33,6 +33,9 @@ public class RotationSelectionController : MonoBehaviour {
     [SerializeField]
     private GameEvent disableRotationEvent;
 
+    [SerializeField]
+    private ForwardOrBackwardRotationDirction rotationDirction;
+
     private Vector3 selectorMoveDirection = new Vector3(1,1,1);
 
     private IEnumerator coroutine;
@@ -69,8 +72,14 @@ public class RotationSelectionController : MonoBehaviour {
         selectorMoveDirection.z = (pos.z < 0) ? 1 : -1;
         selectorMoveDirection.x = (pos.x < 0) ? 1 : -1;
     }
+
+    public void ToggleRotationDirection(int dir) {
+        rotationDirction.Direction = dir;
+    }
+
     // Start is called before the first frame update
     void Start() {
+        rotationDirction.Direction = 1;
         foreach (var selector in selectors) {
             selector.disableHighLight();
         }

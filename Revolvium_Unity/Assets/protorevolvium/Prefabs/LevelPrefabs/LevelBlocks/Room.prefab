@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeCenter: {x: 1, y: 1, z: 1}
-  rotateDirection: {fileID: 11400000, guid: e746954634f142f4a81c94d760c76cae, type: 2}
+  rotationTurnDirection: {fileID: 0}
+  rotationDirction: {fileID: 11400000, guid: 7a235b0932c8c7c428d0df4318170140, type: 2}
   levelController: {fileID: 0}
   startRotation: {fileID: 11400000, guid: 0b191738bf037604794720eec5d8b41b, type: 2}
   endRotation: {fileID: 11400000, guid: 52754b963067df445898384a253f4caa, type: 2}

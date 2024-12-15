@@ -485,6 +485,7 @@ MonoBehaviour:
   currentSelector: 0
   canRotate: 0
   disableRotationEvent: {fileID: 11400000, guid: d8cda6c0ac8fc174c8076f3bfa742ef0, type: 2}
+  rotationDirction: {fileID: 11400000, guid: 7a235b0932c8c7c428d0df4318170140, type: 2}
   RotationSound: {fileID: 8300000, guid: a9541a6171987724a8e15a275d190b2c, type: 3}
 --- !u!114 &8740174971109775450
 MonoBehaviour:
@@ -706,6 +707,110 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f385f6e3-d0f3-4bd8-ae1c-fd58f6bbddee
     m_ActionName: 'RotateActions/ToggleSelectorUp1[/Keyboard/w,/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: ToggleRotationDirection
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 450205017231639927}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 69e5cfd8a5c03014fbae74b8f25b4546, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6877357253898265370}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 69e5cfd8a5c03014fbae74b8f25b4546, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3147957738581348942}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 69e5cfd8a5c03014fbae74b8f25b4546, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 83d58b32-a4a6-40c7-8c3e-5ffcfa5ceb4a
+    m_ActionName: 'RotateActions/ToggleRotateForward[/Keyboard/x,/DualShock4GamepadHID/rightTrigger]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052797091732764537}
+        m_TargetAssemblyTypeName: RotationSelectionController, Assembly-CSharp
+        m_MethodName: ToggleRotationDirection
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 450205017231639927}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 834c6cc0bb782a142b1a41d8782c468b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6877357253898265370}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 834c6cc0bb782a142b1a41d8782c468b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3147957738581348942}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 834c6cc0bb782a142b1a41d8782c468b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 78455e54-22be-4aa3-bb81-203f3d8136ae
+    m_ActionName: 'RotateActions/ToggleRotateBackward[/Keyboard/z,/DualShock4GamepadHID/leftTrigger]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: RotateActions

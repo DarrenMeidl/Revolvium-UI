@@ -58,6 +58,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleRotateForward",
+                    "type": "Button",
+                    "id": "83d58b32-a4a6-40c7-8c3e-5ffcfa5ceb4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleRotateBackward",
+                    "type": "Button",
+                    "id": "78455e54-22be-4aa3-bb81-203f3d8136ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -88,17 +106,6 @@
                     "id": "9facd720-616f-4271-a70a-857ac47b64e8",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2c06739d-7951-4a12-b883-31d03b277411",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Rotate",
@@ -256,6 +263,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "ToggleSelectorDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf1d124a-d59e-4520-af7d-8e4c28942ae8",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleRotateForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4fc6ffd-421c-4471-a260-24a19796acc1",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleRotateForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb28c599-89c9-4609-ba45-343977b88e1c",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleRotateBackward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13353dc7-ee80-4018-82c1-b181676193c2",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleRotateBackward",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 [CreateAssetMenu(fileName = "VolumeLevels",
-            menuName = "RUB/audio")]
+            menuName = "RUB/audio/VolumeLevels")]
 public class VolumeState : ScriptableObject
 {
     [SerializeField] public float MasterVolume = 1.0f;
