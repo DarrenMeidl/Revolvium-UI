@@ -57,6 +57,8 @@ public class PlayerMovementController : MonoBehaviour
             }
 
         }
+        else
+            player_anim.SetBool("isWalking", false); //stop walk animation
     }
 
 
