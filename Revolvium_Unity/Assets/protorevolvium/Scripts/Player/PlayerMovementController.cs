@@ -9,8 +9,8 @@ public class PlayerMovementController : MonoBehaviour
 
     [SerializeField]
     private CharacterController characterController;
-    //[SerializeField]
-    //private Animator PlayerAnimationController; //reference to animator
+    [SerializeField]
+    private Animator player_anim; //reference to animator
     [SerializeField]
     private float TurnSpeed = 0.5f;
 
@@ -49,11 +49,11 @@ public class PlayerMovementController : MonoBehaviour
                 Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
                 euler.x = -90; // Force x-axis
                 Model.rotation = Quaternion.Euler(euler); // current model exported in a way that requires this to be forced, would fix in a future release
-                //PlayerAnimationController.SetBool("isWalking", true); //play walking animation
+                player_anim.SetBool("isWalking", true); //play walking animation
             }
             else
             {
-                //PlayerAnimationController.SetBool("isWalking", false); //stop walking animation
+                player_anim.SetBool("isWalking", false); //stop walking animation
             }
 
         }
@@ -82,7 +82,10 @@ public class PlayerMovementController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other) {
         if(other.tag == "Respawn") {
-            LevelChangeManager.Instance.ReloadLevel();
+            Debug.Log("Player collided with " + other.tag);
+            Debug.Log("Player collided with " + other.gameObject.ToString());            
+            Debug.Log("Calling Restart..");
+            LevelChangeManager.Instance.ReloadLevel();   
         }
     }
 }

@@ -27,11 +27,14 @@ public class LevelChangeManager : Singleton<LevelChangeManager>
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene($"Level{levelNum}");
+        Debug.Log("Loaded Level" + levelNum);
     }
     public void ChangeLevel() {
         StartCoroutine(LoadLevel(nextLevel));
     }
     public void ReloadLevel() {
+        Debug.Log("RELOADING");
+        Debug.Log("ReloadLevel called. Stack trace:\n" + System.Environment.StackTrace);
         StartCoroutine(LoadLevel(currentLevel));
     }
 

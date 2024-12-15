@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 7379927814983025275}
+  player_anim: {fileID: 4300566072991025152}
   TurnSpeed: 0.3
   canMove: 1
   CameraFocus: {fileID: 5061975719640489541}
@@ -129,6 +130,50 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f73bae46-4820-45fc-8267-0aeb19959a85
     m_ActionName: 'PlayerControls/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5395c846-fb2d-4af8-9995-2c8a478bc00c
+    m_ActionName: 'PlayerControls/UI_Navigate_Tracker[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6d6e31b4-206b-4c9f-b286-05216637fd7f
+    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2679b745-cbcf-4a2f-b2d4-f63b6081dae9
+    m_ActionName: 'UI/Submit[/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96920455-42e9-4c36-8e05-03c5e520764b
+    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69ca0960-6235-4259-bff5-418e96e06814
+    m_ActionName: 'UI/Point[/Mouse/position]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 03a1a6b0-76a4-40dd-bbb1-9207e68fc309
+    m_ActionName: 'UI/Click[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c85d3156-ec26-4d3c-bf7e-2164cdb991d2
+    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 185d0607-ba00-458e-8c02-0595a3029d02
+    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c8407b2b-763b-4496-9ed9-fd9ae67ecf77
+    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4a830a43-d616-4800-a4f6-308aa9f93956
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 75ee9fd1-b591-4a5a-9423-096e0313d3ce
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerControls
@@ -257,10 +302,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b12e03ed753445340aa26364a804c49e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4300566072991025152}
   m_SourcePrefab: {fileID: 100100000, guid: b12e03ed753445340aa26364a804c49e, type: 3}
 --- !u!4 &3687532937745733076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b12e03ed753445340aa26364a804c49e, type: 3}
   m_PrefabInstance: {fileID: 3793727252791718463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4064339268763602798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b12e03ed753445340aa26364a804c49e, type: 3}
+  m_PrefabInstance: {fileID: 3793727252791718463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4300566072991025152
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064339268763602798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93db900af26208243a9f716d19f0acc3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
