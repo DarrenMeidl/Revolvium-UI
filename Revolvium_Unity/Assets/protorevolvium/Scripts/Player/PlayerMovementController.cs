@@ -45,8 +45,11 @@ public class PlayerMovementController : MonoBehaviour
             // ported and fixed by Ruby :3 & Darren :D
             Vector3 movement = rawInputMovement.normalized;
             if (movement.magnitude > 0) {
-                Model.right = Vector3.Lerp(Model.right, movement * -1, TurnSpeed); //rotate to face movement direction              
-           
+                if(Vector3.Lerp(Model.right, movement * -1, TurnSpeed) != Vector3.zero)
+                    Model.right = Vector3.Lerp(Model.right, movement * -1, TurnSpeed); //rotate to face movement direction              
+                else
+                    Model.right = movement * -1;
+
                 Vector3 euler = Model.rotation.eulerAngles; // Lock the x-axis rotation to -90
                 euler.x = -90; // Force x-axis
                 Model.rotation = Quaternion.Euler(euler); // current model exported in a way that requires this to be forced, would fix in a future release

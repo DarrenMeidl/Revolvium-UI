@@ -64,7 +64,7 @@ public class CameraController : MonoBehaviour {
         else
             transposer.m_FollowOffset = new Vector3(CameraOffset.playerOffset.x, newCamOffsetY, CameraOffset.playerOffset.z);
 
-        camMoveEvent?.Raise(transposer.m_FollowOffset);
+        camMoveEvent?.Raise(cameraFocus.forward);
     
     }
 

@@ -66,8 +66,8 @@ public class RotationSelectionController : MonoBehaviour {
 
 
     public void CamMoved(Vector3 pos) {
-        selectorMoveDirection.z = (pos.z < 0) ? 1 : -1;
-        selectorMoveDirection.x = (pos.x < 0) ? 1 : -1;
+        selectorMoveDirection.z = (pos.z < 0) ? -1 : 1;
+        selectorMoveDirection.x = (pos.x < 0) ? -1 : 1;
     }
 
     public void ToggleRotationDirection(int dir) {
@@ -155,7 +155,7 @@ public class RotationSelectionController : MonoBehaviour {
         Vector3 currentPosition = selectors[currentSelector].gameObject.transform.position;
 
         float newX = currentPosition.x + (blockSize * moveDir.x * dir * selectorMoveDirection.z);
-        float newY = currentPosition.y + (blockSize * moveDir.y * dir);
+        float newY = currentPosition.y - (blockSize * moveDir.y * dir);
         float newZ = currentPosition.z + (blockSize * moveDir.z * dir * selectorMoveDirection.x);
 
         //Debug.Log(newX);

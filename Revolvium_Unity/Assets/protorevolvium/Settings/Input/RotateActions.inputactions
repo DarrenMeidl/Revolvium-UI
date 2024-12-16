@@ -159,7 +159,7 @@
                 {
                     "name": "",
                     "id": "dcfb5d6a-cb9c-4876-86bf-300c1916a58b",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -170,7 +170,7 @@
                 {
                     "name": "",
                     "id": "485e1a37-6b2b-4375-a41a-6a5a5efaefeb",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -203,7 +203,7 @@
                 {
                     "name": "",
                     "id": "ebc7d65f-43f8-4578-a03a-e047dee0ac8f",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -214,7 +214,7 @@
                 {
                     "name": "",
                     "id": "6231b63a-d44f-4246-8a27-f32d27fd137a",
-                    "path": "<Gamepad>/dpad/down",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
