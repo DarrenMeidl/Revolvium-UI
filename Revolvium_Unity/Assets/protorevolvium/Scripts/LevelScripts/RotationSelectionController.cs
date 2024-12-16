@@ -93,6 +93,7 @@ public class RotationSelectionController : MonoBehaviour {
             }
             else if (value.started && canRotate && delay <= 0) {
                 AudioManager.Instance.PlaySound(RotationSound, GD.Types.AudioMixerGroupName.SFX);
+                RumbleManager.Instance.Rumble(0.5f, 1f, 0.8f);
                 levelController.currentRotationDirection = selectors[currentSelector].selectorMoveDir;
                 selectors[currentSelector].enableSelector();
                 delay = 1;
