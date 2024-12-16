@@ -24,6 +24,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 820a87c1a75143548a499411eb5f7397
   m_Children:
+  - {fileID: -978210973995481303}
   - {fileID: 204370294822756366}
   m_Volume: 3b995c662ed36394facad4adb5350e0c
   m_Pitch: 875d082ee70889d4784c9481066b570b
@@ -126,7 +127,6 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: f5f216e165bea924f83b59d21b28879e
   m_Children:
-  - {fileID: -978210973995481303}
   - {fileID: -293641666222251810}
   - {fileID: -4628288177261963110}
   m_Volume: 355abaf9842221946a11c2563d90ff2a
@@ -162,6 +162,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: cd8c9a09aaf479043885d8f25aec208f
   m_FloatValues:
+    3e3a809242ba1f340b279a48d5c80765: -27.16953
     b9983573ee02aca4d84328edaba062a8: -80
     b4528c975c3873041bb39f026adc794f: 0
     ecef74980c7c2a94ba14d7c7cf3e357b: 0

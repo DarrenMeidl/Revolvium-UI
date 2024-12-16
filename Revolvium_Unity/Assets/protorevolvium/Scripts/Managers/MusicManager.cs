@@ -50,6 +50,10 @@ public class MusicManager : Singleton<MusicManager> {
     [SerializeField]
     AudioClip RotationModeMusic;
 
+    [Title("Ambience")]
+    [SerializeField]
+    AudioClip AmbienceSFX;
+
     private ObjectPool<AudioSource> audioSourcePool;
 
     protected override void Awake() {
@@ -74,6 +78,7 @@ public class MusicManager : Singleton<MusicManager> {
         SetVolume(AudioMixerGroupName.RotationMode, 0f);
         StartCoroutine(StartSong(PlayModeMusicIntro, PlayModeMusic, AudioMixerGroupName.PlayMode));
         StartCoroutine(StartSong(RotationModeMusicIntro, RotationModeMusic, AudioMixerGroupName.RotationMode));
+        StartCoroutine(StartSong(AmbienceSFX, AmbienceSFX, AudioMixerGroupName.Ambient));
     }
 
 

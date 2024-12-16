@@ -56,6 +56,7 @@ MonoBehaviour:
   PlayModeMusic: {fileID: 8300000, guid: 86cb74ce92ef61243b7b8579451f4555, type: 3}
   RotationModeMusicIntro: {fileID: 8300000, guid: ede35725adf087f4eb77db3346c19f2b, type: 3}
   RotationModeMusic: {fileID: 8300000, guid: 965f4d7742a896e43b8dd89a93e66b9a, type: 3}
+  AmbienceSFX: {fileID: 8300000, guid: 4b04c91a62a84bd46a6aa6f96f70b557, type: 3}
 --- !u!114 &4464919318244403595
 MonoBehaviour:
   m_ObjectHideFlags: 0
