@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,18 +8,16 @@ using UnityEngine.InputSystem;
 
 public abstract class LevelTile : MonoBehaviour 
 {
-    [SerializeField]
+    [SerializeField, Title("References")]
     private BoxCollider area;
 
-    [SerializeField]
+    [SerializeField, Title("Attributes")]
     private bool needsCorrectOrientation = true;
-    [SerializeField]
-    private Transform transform;
 
-    [SerializeField, ReadOnly]
+    [SerializeField, ReadOnly, Title("Debugging")]
     private bool canInterract = false;
 
-    private GameObject collider;
+    private GameObject GameObjectCollidedWith;
 
     public bool isCorrectlyOrientated()
     {
@@ -28,7 +27,7 @@ public abstract class LevelTile : MonoBehaviour
 
     public void interractKeyPressed(InputAction.CallbackContext value) {
         if (canInterract) {
-            interact(collider);
+            interact(GameObjectCollidedWith);
             canInterract = false;
         }
     }
@@ -38,7 +37,7 @@ public abstract class LevelTile : MonoBehaviour
        if(other.tag == "player" && isCorrectlyOrientated())
         {
             canInterract = true;
-            collider = other.gameObject;
+            GameObjectCollidedWith = other.gameObject;
         } 
     }
     private void OnTriggerExit(Collider other) {

@@ -1,6 +1,7 @@
 using GD;
 using GD.Audio;
 using NUnit.Framework.Constraints;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,16 +14,15 @@ using UnityEngine;
  *  ROTATION TILE BEHAVIOUR - STARTED BY AND WRITTEN BY RUBY
  */
 
-public class KeyTileBehaviour : LevelTile
-{
+public class KeyTileBehaviour : LevelTile {
 
-    [SerializeField]
-    private IntGameEvent gameEvent;
-
-    [SerializeField]
+    [SerializeField, Title("Attributes")]
     private int keyID;
 
-    [SerializeField]
+    [SerializeField, Title("Events")]
+    private IntGameEvent gameEvent;
+
+    [SerializeField, Title("Sounds")]
     private AudioClip getKey;
 
     private void Start() {

@@ -1,4 +1,4 @@
-using System.Collections;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,12 +7,12 @@ using UnityEngine;
  */
 public class LevelCreationBehaviour : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Title("References")]
     private levelCreationSettings creationSettings;
-    [ReadOnly, SerializeField]
-    private float offsetX, offsetY, offsetZ;
     [SerializeField]
     public List<Transform> blocks;
+    [ReadOnly, SerializeField, Title("Debugging")]
+    private float offsetX, offsetY, offsetZ;
 
     private void Start()
     {

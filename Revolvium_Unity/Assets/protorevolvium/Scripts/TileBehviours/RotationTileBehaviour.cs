@@ -1,6 +1,7 @@
 using GD;
 using GD.Audio;
 using NUnit.Framework.Constraints;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,12 +16,12 @@ using UnityEngine;
 
 public class RotationTileBehaviour : LevelTile
 {
-    [SerializeField]
+    [SerializeField, Title("Events")]
     private GameEvent enableRotation;
     [SerializeField]
     private GameEvent disableRotation;
 
-    [SerializeField]
+    [SerializeField, Title("Sounds")]
     private AudioClip enable;
 
 

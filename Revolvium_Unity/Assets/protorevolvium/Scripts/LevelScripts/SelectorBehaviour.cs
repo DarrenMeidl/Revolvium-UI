@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class SelectorBehaviour : MonoBehaviour
@@ -9,7 +8,7 @@ public class SelectorBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject highlight, selector;
 
-    [SerializeField, ReadOnly]
+    [SerializeField, ReadOnly, Title("Debugging")]
     private Vector3 originalPosition;
 
     private void Awake() {

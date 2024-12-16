@@ -1,6 +1,6 @@
 using GD;
+using Sirenix.OdinInspector;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /*
@@ -8,31 +8,28 @@ using UnityEngine;
  */
 public class LevelChunkBehaviour : MonoBehaviour
 {
-    [SerializeField, ReadOnly]
+
+
+    [SerializeField, Title("References")]
+    private levelRotationDirection rotationTurnDirection;
+    [SerializeField]
+    private ForwardOrBackwardRotationDirction rotationDirction;
+
+    [SerializeField]
+    private LevelReferences levelController;
+
+    [SerializeField, Title("Events")]
+    private GameEvent startRotation, endRotation;
+
+    [SerializeField, ReadOnly, Title("Debugging")]
     private Vector3 cubeCenter = new Vector3(1, 1, 1);
 
     public void SetCenter(Vector3 center) {
         cubeCenter = center;
     }
 
-    [SerializeField]
-    private levelRotationDirection rotationTurnDirection;
-    [SerializeField]
-    private ForwardOrBackwardRotationDirction rotationDirction;
-
-    [SerializeField]
-    private LevelController levelController;
-
-    private IEnumerator coroutine;
-
-    [SerializeField]
-    private GameEvent startRotation, endRotation;
-
     private bool canRotate = true;
 
-    private void Start() {
-       
-    }
 
     //https://discussions.unity.com/t/smooth-rotatearound/435587/7 04/12/2024
     IEnumerator RotateFunction(GameObject poll, Vector3 pivotPos, float degree, Vector3 rotationDirection) {
@@ -64,8 +61,7 @@ public class LevelChunkBehaviour : MonoBehaviour
             startRotation?.Raise();
             rotationTurnDirection = levelController.currentRotationDirection;
             //transform.RotateAround(cubeCenter, rotationTurnDirection.dir, 90);
-            coroutine = RotateFunction(gameObject, cubeCenter, 90*rotationDirction.Direction, rotationTurnDirection.dir);
-            StartCoroutine(coroutine);
+            StartCoroutine(RotateFunction(gameObject, cubeCenter, 90 * rotationDirction.Direction, rotationTurnDirection.dir));
         }
     }
 

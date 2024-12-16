@@ -1,28 +1,26 @@
 using GD;
 using GD.Audio;
+using Sirenix.OdinInspector;
 using System.Collections;
 using UnityEngine;
 
 public class LockTileBehaviour : LevelTile {
 
-    [SerializeField]
+    [SerializeField, Title("Attributes")]
     private int keyID;
 
-    [SerializeField]
-    private AudioClip unlockSound;
-
-    [SerializeField]
+    [SerializeField, Title("Events")]
     private TransformGameEvent UnlockEvent;
 
-    [SerializeField]
+    [SerializeField, Title("Sounds")]
+    private AudioClip unlockSound;
+
+    [SerializeField, Title("References")]
     private Transform CameraFocus;
 
     [SerializeField]
     private Animator Animator;
 
-    private void Start() {
-    
-    }
 
     private IEnumerator Unlock() {
         yield return new WaitForSeconds(0.2f);
@@ -41,6 +39,11 @@ public class LockTileBehaviour : LevelTile {
     }
 
     protected override void interact(GameObject player) {
-        
+        /*
+         * the lock has no need to interact, so this is empty
+         * Isn't that just fun?
+         * Maybe one day the lock will gain the courage to interact
+         * We will be there for it if it does
+         */
     }
 }

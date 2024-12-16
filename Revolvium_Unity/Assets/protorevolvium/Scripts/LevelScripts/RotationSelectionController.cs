@@ -1,50 +1,48 @@
 using GD;
 using GD.Audio;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/*
+ *  Rotation Selection behaviour - STARTED BY AND WRITTEN BY RUBY
+ */
 public class RotationSelectionController : MonoBehaviour {
-    [SerializeField]
-    private LevelController levelController;
+    [SerializeField, Title("References")]
+    private LevelReferences levelController;
     [SerializeField]
     private levelCreationSettings creationSettings;
     [SerializeField]
     private LevelSelectorBoundaries levelSelectorBoundaries;
+    [SerializeField]
+    private BoxCollider player;
+    [SerializeField]
+    private ForwardOrBackwardRotationDirction rotationDirction;
 
+    [SerializeField]
+    private List<SelectorBehaviour> selectors = new List<SelectorBehaviour>();
+
+    [SerializeField, Title("Events")]
+    private GameEvent disableRotationEvent;
+
+    [SerializeField, Title("Sounds")]
+    private AudioClip RotationSound;
+
+    [SerializeField, ReadOnly, Title("Debugging")]
+    private int currentSelector = 0;
+    [SerializeField, ReadOnly]
+    private bool canRotate;
+
+    private Vector3 selectorMoveDirection = new Vector3(1, 1, 1);
 
     private int blockSize;
 
     private float delay = 0f; // delay is used between turns so that the chunk locator can activate and unactivate 
 
-    [SerializeField]
-    private List<SelectorBehaviour> selectors = new List<SelectorBehaviour>();
 
-    [SerializeField]
-    private BoxCollider player;
-
-    [SerializeField, ReadOnly]
-    private int currentSelector = 0;
-    [SerializeField, ReadOnly]
-    private bool canRotate;
-
-    [SerializeField]
-    private GameEvent disableRotationEvent;
-
-    [SerializeField]
-    private ForwardOrBackwardRotationDirction rotationDirction;
-
-    private Vector3 selectorMoveDirection = new Vector3(1,1,1);
-
-    private IEnumerator coroutine;
-
-    [SerializeField]
-    private AudioClip RotationSound;
-
-
-    // these 2 functions could be made into one, using canRotate = !canRotate and making the event a toggle rather than an enable/disable
     public void enableRotation() {
         selectors[currentSelector].enableHighLight();
         canRotate = true;
@@ -63,8 +61,7 @@ public class RotationSelectionController : MonoBehaviour {
         yield break;
     }
     public void StartRotation() {
-        coroutine = DisableAfterRotationStart(gameObject);
-        StartCoroutine(coroutine);
+        StartCoroutine(DisableAfterRotationStart(gameObject));
     }
 
 

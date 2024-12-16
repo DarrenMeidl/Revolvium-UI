@@ -1,6 +1,7 @@
 using GD;
 using GD.Audio;
 using NUnit.Framework.Constraints;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,10 +18,10 @@ using UnityEngine.SceneManagement;
 public class EndTileBehaviour : LevelTile
 {
 
-    [SerializeField]
+    [SerializeField, Title("Sounds")]
     private AudioClip win;
 
-    [SerializeField]
+    [SerializeField, Title("Events")]
     private GameEvent disablePlayer;
 
     protected override void interact(GameObject player)

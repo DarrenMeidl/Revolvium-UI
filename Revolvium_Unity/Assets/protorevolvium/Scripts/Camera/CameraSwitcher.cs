@@ -3,15 +3,15 @@ using UnityEngine;
 using GD.Audio;
 using System.Collections;
 using GD;
+using Sirenix.OdinInspector;
 
 /*
  *  CAMERA SWITCHER - STARTED BY AND WRITTEN BY RUBY
  */
 public class CameraSwitcher : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Title("References")]
     private CinemachineVirtualCamera VirtualCamera;
-    private CinemachineTransposer transposer;
 
     [SerializeField]
     private Transform Transform;
@@ -23,11 +23,13 @@ public class CameraSwitcher : MonoBehaviour
     [SerializeField]
     private CameraOffset CameraOffset;
 
-    [SerializeField]
+    [SerializeField, Title("Sounds")]
     private AudioClip cameraWhoosh;
 
-    [SerializeField]
+    [SerializeField, Title("Events")]
     private GameEvent unlockEvent, pauseEvent, unpauseEvent;
+
+    private CinemachineTransposer transposer;
 
     // Start is called before the first frame update
     void Start()

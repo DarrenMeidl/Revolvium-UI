@@ -7,6 +7,10 @@ using System.Collections;
 using GD;
 using GD.Audio;
 
+/*
+ * MUSIC MANAGER - STARTED BY AND WRITTEN BY RUBY
+ * BAsed on the audio manager given in class - Found in the GD folder
+ */
 public class MusicManager : Singleton<MusicManager> {
     [Title("AudioSource & Pool")]
     [SerializeField]

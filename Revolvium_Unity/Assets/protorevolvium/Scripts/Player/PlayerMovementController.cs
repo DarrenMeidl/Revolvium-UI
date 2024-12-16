@@ -1,27 +1,28 @@
-
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 /*
  *  PLAYER MOVEMENT CONTROLLER - STARTED BY AND WRITTEN BY RUBY
+ *  Animation scripts added by Jay, aided by Darren
  */
 public class PlayerMovementController : MonoBehaviour
 {
 
-    [SerializeField]
+    [SerializeField, Title("References")]
     private CharacterController characterController;
     [SerializeField]
     private Animator player_anim; //reference to animator
     [SerializeField]
+    private Transform CameraFocus, Model;
+    [SerializeField, Title("Player Attributes")]
     private float TurnSpeed = 0.5f;
 
-    [SerializeField, ReadOnly]
+    [SerializeField, ReadOnly, Title("Debugging")]
     private bool canMove = true;
 
     private Vector2 inputMovement = Vector2.zero;
     private Vector3 rawInputMovement;
 
-    [SerializeField]
-    private Transform CameraFocus, Model;
 
     private void Start()
     {

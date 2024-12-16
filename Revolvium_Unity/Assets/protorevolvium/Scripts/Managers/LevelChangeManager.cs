@@ -1,18 +1,24 @@
 using GD;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ *  Level change manager - STARTED BY AND WRITTEN BY RUBY
+ */
 public class LevelChangeManager : Singleton<LevelChangeManager>
 {
-    [SerializeField]
+    [SerializeField, Title("Next Level")]
     private int nextLevel;
-
     private int currentLevel;
 
-    [SerializeField] private float transitionTime = 1f;
-    [SerializeField] private Animator transition;
+   
+    [SerializeField, Title("Transition Fields")] 
+    private float transitionTime = 1f;
+    [SerializeField] 
+    private Animator transition;
 
     private void Start() {
         string currentLevelStr =  SceneManager.GetActiveScene().name.Substring(5);

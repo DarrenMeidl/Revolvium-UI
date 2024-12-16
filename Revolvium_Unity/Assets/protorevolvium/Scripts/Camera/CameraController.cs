@@ -1,40 +1,41 @@
 using Cinemachine;
 using GD;
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+
+/*
+ *  Camera Controller - STARTED BY AND WRITTEN BY RUBY
+ */
 
 public class CameraController : MonoBehaviour {
-    [SerializeField]
+    [SerializeField, Title("References")]
     private CinemachineVirtualCamera VirtualCamera;
-    private CinemachineTransposer transposer;
-
-    private float camVerticalPos = 0f;
 
     [SerializeField]
     private Transform player, level;
-    private Transform cameraFocus;
 
-    [SerializeField]
+    [SerializeField, Title("Camera Attributes")]
     private CameraOffset CameraOffset;
-
-    [SerializeField]
-    private Vector3GameEvent camMoveEvent;
-
     [SerializeField]
     private float sensativity = 0.05f;
     [SerializeField]
     private float maxHeight = 1.4f;
 
+    [SerializeField, Title("Events")]
+    private Vector3GameEvent camMoveEvent;
+
+    [SerializeField, ReadOnly, Title("Debugging")]
+    private Vector3 camMoveAmout;
+
 
     private bool canRotate = false;
 
-    private int offSetValue = 0;
+    private CinemachineTransposer transposer;
 
-    [SerializeField, ReadOnly]
-    private Vector3 camMoveAmout;
+    private float camVerticalPos = 0f;
+
+    private Transform cameraFocus;
 
     public void RotationEnabled() {
         canRotate = true;
